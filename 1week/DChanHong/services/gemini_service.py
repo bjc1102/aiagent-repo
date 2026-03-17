@@ -11,6 +11,22 @@ class GeminiService:
         self.base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
         # 2026년 기준 최신 Flash 모델 사용 (추론 능력과 속도의 균형)
         self.model_name = "gemini-3-flash-preview" 
+
+        # 생성(샘플링) 옵션 기본값
+        # - temperature: 높을수록 다양/창의적, 낮을수록 결정적
+        # - top_p: nucleus sampling
+        # - max_tokens: 출력 토큰 상한 (response_format json_schema 사용 시 너무 낮으면 스키마를 못 맞출 수 있음)
+        # - presence_penalty: 새로운 토픽/단어를 더 도입하도록 유도(반복 억제에 도움)
+        # - frequency_penalty: 같은 단어/구문 반복을 더 강하게 억제
+        # - seed: 동일 입력에서 재현성을 높이기 위한 시드(모델/플랫폼에 따라 완전 고정은 아닐 수 있음)
+        self.generation_defaults = {
+            "temperature": 0.2,
+            "top_p": 0.95,
+            "max_tokens": 512,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.0,
+            "seed": None,
+        }
         
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY가 .env 파일에 없습니다.")
@@ -25,6 +41,7 @@ class GeminiService:
         return {
             "model": self.model_name,
             "base_url": self.base_url,
+            "generation_defaults": self.generation_defaults,
             "response_format": {
                 "type": "json_schema",
                 "json_schema_name": "inquiry_analysis",
@@ -32,10 +49,34 @@ class GeminiService:
             "reasoning_effort": "low",
         }
 
-    def analyze_inquiry(self, customer_text: str) -> InquiryAnalysis:
+    def analyze_inquiry(
+        self,
+        customer_text: str,
+        *,
+        temperature: float | None = None,
+        top_p: float | None = None,
+        max_tokens: int | None = None,
+        presence_penalty: float | None = None,
+        frequency_penalty: float | None = None,
+        seed: int | None = None,
+    ) -> InquiryAnalysis:
         """고객 문의를 분석하여 구조화된 데이터를 반환합니다."""
         
         try:
+            generation_opts = dict(self.generation_defaults)
+            if temperature is not None:
+                generation_opts["temperature"] = temperature
+            if top_p is not None:
+                generation_opts["top_p"] = top_p
+            if max_tokens is not None:
+                generation_opts["max_tokens"] = max_tokens
+            if presence_penalty is not None:
+                generation_opts["presence_penalty"] = presence_penalty
+            if frequency_penalty is not None:
+                generation_opts["frequency_penalty"] = frequency_penalty
+            if seed is not None:
+                generation_opts["seed"] = seed
+
             response = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=[
@@ -45,6 +86,12 @@ class GeminiService:
                     },
                     {"role": "user", "content": customer_text}
                 ],
+                temperature=generation_opts["temperature"],
+                top_p=generation_opts["top_p"],
+                max_tokens=generation_opts["max_tokens"],
+                presence_penalty=generation_opts["presence_penalty"],
+                frequency_penalty=generation_opts["frequency_penalty"],
+                seed=generation_opts["seed"],
                 # [핵심 옵션 1] 구조화된 응답 강제 (Response Format)
                 # Pydantic 모델의 스키마를 JSON 형태로 전달합니다.
                 response_format={
