@@ -166,7 +166,7 @@ exact match 개수: 12개 (v1: 8개 -> v2: 12개)
 - ticket 11 : 부차적인 요청인 "선물 포장 요청" 이 메인 요청인 배송 문의가 명확하면 크게 상관하지 않는 판단을 내리고 있었다.
 - ticket 12 : 교환 또는 환불을 문의하고 있어 returns 로의 판단이 맞을 수 있지만, 교환이나 환불을 결정하지 못했을 때는 명확성이 부족하다고 판단을 하겠금 바꿔주어야 했다.
 
-<img width="1232" height="606" alt="image" src="https://github.com/user-attachments/assets/2deefdb3-b9ae-47e5-960a-90b9daa6f6d4" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/2deefdb3-b9ae-47e5-960a-90b9daa6f6d4" />
 
 - 사람은 저 문의사항을 보고 환불이 가능하다면 바로 환불처리를 하겠거니 하고 판단을 내릴 것인데, AI 는 아직 환불 진행 여부를 결정한 것은 아니라고 판단하고 있었다. 그래서 "가능한지 알고싶다" 는 것도 결정한 것 으로 확인한다는 문구를 추가해 주었다.
 
