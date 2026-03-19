@@ -481,3 +481,92 @@
 
 - Gemini 권장값 방향으로 온도를 높였지만, 현재 분류 과제에서는 이득보다 손해가 컸다.
 - 채택하지 않는 것이 맞다.
+
+## 7. 모델 변경: `gemini-3.1-flash-lite-preview`
+
+### 개선 목적
+
+- 현재 `gemini-3-flash-preview` 대비 더 저렴한 모델로도 비슷한 품질이 나오는지 확인한다.
+- exact match가 비슷하거나 더 좋다면 가성비 모델로 채택할 수 있는지 본다.
+
+### 적용 내용
+
+- 수정 파일: `1week/V2/services/gemini_service.py`
+- 변경 사항:
+- 모델을 `gemini-3-flash-preview`에서 `gemini-3.1-flash-lite-preview`로 변경
+- 프롬프트는 1차 개선 few-shot 버전을 그대로 사용
+- 초기 `max_tokens=150` 실행은 JSON이 중간에서 끊겨 파싱 실패
+- 이후 실행 시 `max_tokens=300` 오버라이드로 재실행
+
+### 평가 기준
+
+- 정답 데이터: `1week/dataset.pretty.json`
+- 실패 실행 참고: `1week/V2/json/result/20260319-214654/model-config.json`
+- 실험 결과 데이터: `1week/V2/json/result/20260319-214909/analysis-results.json`
+- 비교 기준:
+- 베이스라인 `1week/V2/V1PromptResult.md`
+- 1차 개선 `1week/V2/json/result/20260319-202059-Few-shot`
+
+### 결과 요약
+
+- 완전 일치(4개 필드 모두 일치): `10/12` = `83.3%`
+- 필드 단위 정확도: `45/48` = `93.8%`
+
+#### 필드별 정확도
+
+- `intent`: `12/12` = `100%`
+- `urgency`: `10/12` = `83.3%`
+- `needs_clarification`: `11/12` = `91.7%`
+- `route_to`: `12/12` = `100%`
+
+### 토큰 사용량 분석
+
+- 총 prompt tokens: `9,443`
+- 평균 prompt tokens: `786.92`
+- 총 completion tokens: `489`
+- 평균 completion tokens: `40.75`
+- 총 tokens: `11,299`
+- 평균 total tokens: `941.58`
+
+### 핵심 지표 분석
+
+- 정답 기준 `needs_clarification=true` 필요 건수: `4건`
+- 예측 `needs_clarification=true`: `3건`
+- 정답 기준 `intent=other` 필요 건수: `3건`
+- 예측 `intent=other`: `3건`
+- 정답 기준 `route_to=human_support` 필요 건수: `3건`
+- 예측 `route_to=human_support`: `3건`
+
+### 이전 결과와 비교
+
+- 베이스라인 대비 완전 일치율: `75.0% -> 83.3%`로 개선
+- 베이스라인 대비 필드 정확도: `93.8% -> 93.8%`로 동일
+- 1차 개선 대비 완전 일치율: `75.0% -> 83.3%`로 개선
+- 1차 개선 대비 필드 정확도: `93.8% -> 93.8%`로 동일
+- 1차 개선 대비 평균 prompt tokens: `786.92 -> 786.92`로 동일
+- 1차 개선 대비 평균 completion tokens: `32.5 -> 40.75`로 증가
+- 1차 개선 대비 평균 total tokens: `819.42 -> 941.58`로 증가
+
+### 세부 분석
+
+#### 개선된 항목
+
+- `ticket-11`: 기존 few-shot에서는 `needs_clarification=false`였지만, flash-lite에서는 정답인 `true`로 개선되었다.
+
+#### 여전히 오답인 항목
+
+- `ticket-09`: 기대값 `urgency=high`, 예측값 `urgency=medium`
+- `ticket-12`: 기대값 `urgency=medium`, `needs_clarification=true` / 예측값 `urgency=low`, `needs_clarification=false`
+
+### 해석
+
+- `max_tokens=150`에서는 JSON이 중간에서 끊겨 안정적으로 사용하기 어려웠다.
+- `max_tokens=300`으로 올리면 정상 파싱되고, exact match는 기존보다 `+1` 개선되었다.
+- 필드 정확도는 기존 few-shot과 동일했고, 특히 `ticket-11`이 개선된 점은 긍정적이다.
+- 다만 completion token과 total token은 더 늘었다.
+
+### 결론
+
+- `gemini-3.1-flash-lite-preview`는 `max_tokens=300` 이상으로 써야 안정적으로 보인다.
+- 안정화 후 성능은 충분히 경쟁력이 있으며, exact match 기준으로는 현재까지 가장 좋은 결과다.
+- 비용 이점을 감안하면 가성비 모델 후보로 검토할 가치가 높다.

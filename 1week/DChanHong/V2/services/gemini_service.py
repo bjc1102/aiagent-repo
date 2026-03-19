@@ -14,15 +14,15 @@ class GeminiService:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
         self.base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
-        # 2026년 기준 최신 Flash 모델 사용 (추론 능력과 속도의 균형)
-        self.model_name = "gemini-3-flash-preview" 
+        # 비용 효율 비교를 위한 Flash-Lite 모델 실험
+        self.model_name = "gemini-3.1-flash-lite-preview"
         self.system_prompt = INQUIRY_SYSTEM_PROMPT
         self.reasoning_effort = "low"
 
         self.generation_defaults = {
             "temperature": 0.2,
             "top_p": 0.95,
-            "max_tokens": 2000,
+            "max_tokens": 150,
             "presence_penalty": 0.0,
             "frequency_penalty": 0.0,
             "seed": None,
