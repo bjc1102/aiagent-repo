@@ -1,8 +1,11 @@
 # 1주차 과제: LLM 호출 테스트
+
 ---
 
 ## 사용한 모델, SDK, 실행 환경
+
 ---
+
 SDK: google-genai (Python)
 
 실행 환경: Window / VS Code / Python 3.10.2
@@ -17,10 +20,14 @@ SDK: google-genai (Python)
 - `max_tokens`의 경우 토큰 MAX값이 고정되어 있으므로 여유롭게 설정
 
 ## 실험 결과
+
 ---
 
+
 ### 프롬프트v1 구성
+
 ---
+
 ```
 ### 당신은 고객 지원 전문 분류 모델입니다.
 ### 당신의 목적은 주어진 고객 문의사항을 분석해 json 파일만 출력하는 것입니다.
@@ -52,11 +59,19 @@ SDK: google-genai (Python)
 
 ### 고객문의사항:
 ```
+
+System
 - 역할부여
 - 출력 json 구조 명시
-- schema 분류 조건 명시
+- 분류 조건 정의
+
+User
+- 고객문의사항 전달
 
 ### 프롬프트v1 결과
+
+---
+
 Parsing 성공 횟수: 12/12
 Schema 규칙 준수: 12/12
 일치 정확도: 8/12
@@ -73,5 +88,9 @@ ticket-11
 ticket-12
 - [needs_clarification] 정답: true | 출력결과: false
 
-### 분석
-12개 입력에 대해 사전 정의된 json 구조만 출력함
+## 실험 분석
+
+---
+
+- 프롬프트v1의 경우 12개 입력에 대해 사전 정의된 json 구조로 출력함
+- `urgency`와 `needs_clarification`에서 오답 출력하는 케이스 확인
