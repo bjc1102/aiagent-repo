@@ -22,7 +22,7 @@ class GeminiService:
         self.generation_defaults = {
             "temperature": 0.2,
             "top_p": 0.95,
-            "max_tokens": 150,
+            "max_tokens": 300,
             "presence_penalty": 0.0,
             "frequency_penalty": 0.0,
             "seed": None,
