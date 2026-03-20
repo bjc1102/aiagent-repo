@@ -10,4 +10,4 @@
 {"id":"ticket-10","customer_message":"앱에서 계속 안 되는데 주문 문제인지 결제 문제인지 모르겠습니다.","expected_output":{"intent":"other","urgency":"medium","needs_clarification":true,"route_to":"human_support"},"difficulty":"ambiguous"}
 {"id":"ticket-11","customer_message":"선물용으로 포장 가능한가요? 가능하면 이번 주 안에 받고 싶어요.","expected_output":{"intent":"other","urgency":"medium","needs_clarification":true,"route_to":"human_support"},"difficulty":"ambiguous"}
 {"id":"ticket-12","customer_message":"사이즈가 안 맞아서 교환할지 환불할지 고민 중인데 어떤 절차로 진행하면 될까요?","expected_output":{"intent":"refund_exchange","urgency":"medium","needs_clarification":true,"route_to":"returns_ops"},"difficulty":"normal"}
-ㅇ
+
