@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "python": "/Users/parkjiho/Desktop/스칼라/AI agent/1주차/aiagent-repo/1week/venv/bin/python"
+    }
+  ]
+}
