@@ -3,6 +3,11 @@ import json
 from google import genai
 from pydantic import BaseModel
 from typing import Literal
+from pathlib import Path
+
+
+# 현재 파일 디렉터리 절대 경로 고정
+BASE_DIR = Path(__file__).parent
 
 
 api_key = os.getenv("GOOGLE_API_KEY") 
@@ -17,10 +22,6 @@ class ClassifyTicket(BaseModel) :
     route_to: Literal["order_ops", "shipping_ops", "billing_ops", "returns_ops", "human_support"]
 
 
-api_key = os.getenv("GOOGLE_API_KEY") 
-client = genai.Client(api_key=api_key)
-
-
 # prompt.txt 파일 불러오기
 def load_text_file(file_path):
     try:
@@ -30,12 +31,20 @@ def load_text_file(file_path):
         print(f"{file_path} 프롬프트 파일 찾기 실패")
         return None
 
+
 print("- - - 데이터 분류 시작 - - -\n")
+
+
 total_result = []
 
 
 # 현재 프롬프트 설정 (프롬프트가 길어서 따로 .txt로 저장)
-current_prompt = load_text_file("prompt_v2.txt")
+prompt_path = BASE_DIR / "prompts" / "prompt_v2.txt"
+current_prompt = load_text_file(prompt_path)
+
+# if not current_prompt:
+#     print("프롬프트 불러오기 실패, 경로 재확인 필요.")
+#     exit()
 
 # JSON 파일명에 붙을 버전명 작성
 version_name = "v2"
@@ -67,8 +76,20 @@ with open("dataset.jsonl", "r", encoding="utf-8") as file:
                 },
             )
 
+
             #JSON으로 파싱하기
             parsing_result = ClassifyTicket.model_validate_json(response.text)
+
+
+            # 토큰 사용량 확인하기
+            used_tokens = response.usage_metadata
+            input_tokens = used_tokens.prompt_token_count if used_tokens else 0
+            output_tokens = used_tokens.candidates_token_count if used_tokens else 0
+            total_tokens = used_tokens.total_token_count if used_tokens else 0
+
+            # 분류 과정 표시
+            print(f"분류 완료: {ticket_id} | 토큰 - 입력: {input_tokens}, 출력: {output_tokens}, 총합: {total_tokens}")
+
 
             #결과 보기 좋게 데이터 저장
             entry_result = {
@@ -78,15 +99,13 @@ with open("dataset.jsonl", "r", encoding="utf-8") as file:
             }
             total_result.append(entry_result)
 
-            # 분류 과정 표시
-            print(f"분류 완료: {ticket_id}...")
 
         except Exception as e:
-            print(f"에러 발생 ({ticket_id}): {e} -> 통과하고 다음 진행")
+            print(f"({ticket_id}) 에러 발생 : {e} -> 통과하고 다음 진행 ")
             
 
 #JSON 형식으로 파일 저장
-file_name = f"classification_results_{version_name}.json"
+file_name = BASE_DIR / f"classification_results_{version_name}.json"
 
 with open(file_name, "w", encoding="utf-8") as outfile:
     json.dump(total_result, outfile, ensure_ascii=False, indent=2)
