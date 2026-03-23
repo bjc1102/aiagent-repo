@@ -13,19 +13,20 @@ api_key = os.getenv("GOOGLE_API_KEY")
 client = genai.Client(api_key=api_key)
 
 # 1. 개별 티켓 분석 스키마 (v6 튜닝 내용 적용 + ticket_id 추가)
-class TicketAnalysis(BaseModel):
+class TicketAnalysis(BaseModel) : 
+    """Classify customer inquiry based on the provided schema"""
     ticket_id: str
     intent: Literal["order_change", "shipping_issue", "payment_issue", "refund_exchange", "other"] = Field(
-        description="Category. 'other' for custom requests(gift wrap) or ambiguous context."
+        description="Category. MUST USE 'other' IF referring to a past request without specific details, customer is unsure of the issue, or custom requests (gift wrap)."
     )
     urgency: Literal["low", "medium", "high"] = Field(
-        description="high: payment/delivery errors, unresolved past issues. medium: standard tasks (incl. ANY refund/exchange). low: general info."
+        description="high: ACTUAL payment errors, double charges, misdelivery, delayed past requests. medium: ALL refund/exchange questions, address changes, unclear app errors. low: purely general info."
     )
     needs_clarification: bool = Field(
-        description="True IF core issue is hidden, action is undecided, OR custom request (gift wrap). False for simple policy questions."
+        description="True IF customer is undecided (e.g., 'refund or exchange?'), exact issue is unknown, context missing, or custom request. False IF customer has a clear goal."
     )
     route_to: Literal["order_ops", "shipping_ops", "billing_ops", "returns_ops", "human_support"] = Field(
-        description="Target dept. human_support if intent='other'. returns_ops for undecided return/exchange."
+        description="Target dept. MUST USE 'human_support' IF intent='other'. USE 'returns_ops' for ALL refund/exchange questions."
     )
 
 # 2. 여러 개의 분석 결과를 담는 최상위 리스트 스키마
@@ -76,7 +77,7 @@ with open("dataset.jsonl", "r", encoding="utf-8") as file:
             all_tickets.append({"ticket_id": ticket_id, "message": inquiry})
 
 # 3. 5개씩 묶어서 API 호출 (Batch 처리)
-batch_size = 5
+batch_size = 4
 
 for i in range(0, len(all_tickets), batch_size):
     batch = all_tickets[i : i + batch_size]
@@ -94,7 +95,7 @@ for i in range(0, len(all_tickets), batch_size):
                 "response_mime_type": "application/json",
                 "response_schema": BatchClassification, 
                 "temperature": 0.1,
-                "max_output_tokens": 1024, # 여러 개를 출력하므로 넉넉하게 설정
+                "max_output_tokens": 300, # 여러 개를 출력하므로 넉넉하게 설정
             },
         )
 
