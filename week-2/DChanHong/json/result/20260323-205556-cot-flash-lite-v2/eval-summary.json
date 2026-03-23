@@ -1,0 +1,10 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "prompt_profile": "chain_of_thought",
+  "total_items": 30,
+  "evaluated_items": 30,
+  "correct": 26,
+  "accuracy": 0.8667,
+  "eval_exclude_ids": [],
+  "self_consistency_samples": 1
+}
