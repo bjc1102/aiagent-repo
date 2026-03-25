@@ -95,7 +95,7 @@ for i in range(0, len(all_tickets), batch_size):
                 "response_mime_type": "application/json",
                 "response_schema": BatchClassification, 
                 "temperature": 0.1,
-                "max_output_tokens": 300, # 여러 개를 출력하므로 넉넉하게 설정
+                "max_output_tokens": 300,
             },
         )
 
