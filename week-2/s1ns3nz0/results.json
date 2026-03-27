@@ -1,0 +1,1496 @@
+{
+  "model": "claude-sonnet-4-20250514",
+  "steps": [
+    {
+      "step": "zero_shot",
+      "accuracy": 86.66666666666667,
+      "correct": 26,
+      "total": 30,
+      "by_difficulty": {
+        "easy": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 100.0
+        },
+        "medium": {
+          "correct": 8,
+          "total": 10,
+          "accuracy": 80.0
+        },
+        "hard": {
+          "correct": 13,
+          "total": 15,
+          "accuracy": 86.66666666666667
+        }
+      },
+      "results": [
+        {
+          "id": "q01",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "65세 이상 틀니·임플란트 표에 따르면 1종 수급권자의 틀니 본인부담률은 5%입니다."
+        },
+        {
+          "id": "q02",
+          "difficulty": "easy",
+          "predicted": "20%",
+          "expected": "20%",
+          "correct": true,
+          "reason": "65세 이상 틀니·임플란트 본인부담률 표에 따르면, 2종 수급권자의 임플란트 본인부담률은 20%입니다."
+        },
+        {
+          "id": "q03",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "15세 이하 아동 입원 시 6세 미만(1세 이상)은 무료이므로, 4세 아동은 수급권자 종별과 관계없이 무료입니다."
+        },
+        {
+          "id": "q04",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "분만 및 임신부 입원 시 자연분만은 1종, 2종 구분 없이 무료입니다."
+        },
+        {
+          "id": "q05",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "참조 데이터의 '07. 정신질환 외래진료 (2종 수급권자)' 섹션에서 '치매질환 입원 및 병원급 이상 외래진료'의 본인부담률이 5%로 명시되어 있습니다."
+        },
+        {
+          "id": "q06",
+          "difficulty": "medium",
+          "predicted": "30%",
+          "expected": "30%",
+          "correct": true,
+          "reason": "1종 수급권자가 디스크(디스크·협착증)로 복잡추나를 받는 경우 본인부담률은 30%입니다."
+        },
+        {
+          "id": "q07",
+          "difficulty": "medium",
+          "predicted": "80%",
+          "expected": "80%",
+          "correct": true,
+          "reason": "2종 수급권자가 디스크·협착증 외 질환으로 복잡추나를 받는 경우 본인부담률은 80%입니다."
+        },
+        {
+          "id": "q08",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "1세 미만 아동은 제1차의료급여기관 외래 진료 시 본인부담률이 무료입니다."
+        },
+        {
+          "id": "q09",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "생후 8개월(1세 미만) 아기가 제2·3차의료급여기관에서 외래 진료를 받을 경우 본인부담률은 5%입니다."
+        },
+        {
+          "id": "q10",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "치아 홈메우기 입원 시 16세 이상 ~ 18세 이하는 5% 본인부담률이 적용됩니다."
+        },
+        {
+          "id": "q11",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "의료급여 참조 데이터의 '03. 분만 및 임신부' 섹션에서 고위험 임신부의 입원 본인부담률은 5%로 명시되어 있습니다."
+        },
+        {
+          "id": "q12",
+          "difficulty": "medium",
+          "predicted": "병원급 이상에서 10%",
+          "expected": "병원급 이상 10%",
+          "correct": false,
+          "reason": "정신질환 외래진료 참조 데이터에 따르면, 2종 수급권자의 조현병 외 정신질환은 병원급 이상에서 10% 본인부담률이 적용됩니다."
+        },
+        {
+          "id": "q13",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "2종 수급권자 임신부가 제1차의료급여기관에서 CT를 찍는 경우, CT, MRI, PET 본인부담률 표에 따라 임신부는 제1차의료급여기관에서 5%의 본인부담률이 적용됩니다."
+        },
+        {
+          "id": "q14",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "1세 미만 만성질환자는 외래 진료 시 제2·3차의료급여기관에서 무료로 진료받을 수 있습니다."
+        },
+        {
+          "id": "q15",
+          "difficulty": "medium",
+          "predicted": "적용되지 않습니다",
+          "expected": "해당되지 않음",
+          "correct": false,
+          "reason": "65세 이상 틀니·임플란트의 경우 본인부담 보상제·상한제 해당되지 않는다고 명시되어 있습니다"
+        },
+        {
+          "id": "q16",
+          "difficulty": "hard",
+          "predicted": "60,000원",
+          "expected": "60,000원",
+          "correct": true,
+          "reason": "65세 이상 1종 수급권자의 틀니 본인부담률은 5%입니다. 따라서 1,200,000원 × 5% = 60,000원입니다."
+        },
+        {
+          "id": "q17",
+          "difficulty": "hard",
+          "predicted": "190,000원",
+          "expected": "190,000원",
+          "correct": true,
+          "reason": "65세 이상 2종 수급권자의 임플란트 본인부담률은 20%입니다. 따라서 950,000원 × 20% = 190,000원입니다."
+        },
+        {
+          "id": "q18",
+          "difficulty": "hard",
+          "predicted": "72,000원",
+          "expected": "72,000원",
+          "correct": true,
+          "reason": "2종 수급권자 10세 아동의 입원 시 본인부담률은 3%입니다. 따라서 2,400,000원 × 3% = 72,000원이 본인부담금입니다."
+        },
+        {
+          "id": "q19",
+          "difficulty": "hard",
+          "predicted": "175,000원",
+          "expected": "175,000원",
+          "correct": true,
+          "reason": "2종 수급권자 고위험 임신부의 입원 시 본인부담률은 5%입니다. 따라서 3,500,000원 × 5% = 175,000원이 본인부담금입니다."
+        },
+        {
+          "id": "q20",
+          "difficulty": "hard",
+          "predicted": "54,000원",
+          "expected": "54,000원",
+          "correct": true,
+          "reason": "1종 수급권자가 디스크로 복잡추나를 받는 경우 본인부담률은 30%입니다. 따라서 180,000원 × 30% = 54,000원이 본인부담금입니다."
+        },
+        {
+          "id": "q21",
+          "difficulty": "hard",
+          "predicted": "200,000원",
+          "expected": "200,000원",
+          "correct": true,
+          "reason": "2종 수급권자가 디스크·협착증 외 질환으로 복잡추나를 받을 경우 본인부담률은 80%입니다. 따라서 250,000원 × 80% = 200,000원입니다."
+        },
+        {
+          "id": "q22",
+          "difficulty": "hard",
+          "predicted": "39,000원",
+          "expected": "39,000원",
+          "correct": true,
+          "reason": "2종 수급권자 조현병 환자의 병원급 이상 외래진료 본인부담률은 5%입니다. 따라서 780,000원 × 5% = 39,000원입니다."
+        },
+        {
+          "id": "q23",
+          "difficulty": "hard",
+          "predicted": "45,000원",
+          "expected": "45,000원",
+          "correct": true,
+          "reason": "2종 수급권자의 조현병 외 정신질환자가 병원급 이상에서 외래진료를 받을 경우 본인부담률은 10%입니다. 따라서 450,000원 × 10% = 45,000원입니다."
+        },
+        {
+          "id": "q24",
+          "difficulty": "hard",
+          "predicted": "310,000원",
+          "expected": "310,000원",
+          "correct": true,
+          "reason": "2종 수급권자 치매질환 입원 시 본인부담률은 5%이므로, 6,200,000원 × 5% = 310,000원"
+        },
+        {
+          "id": "q25",
+          "difficulty": "hard",
+          "predicted": "210,000원",
+          "expected": "210,000원",
+          "correct": true,
+          "reason": "2종 수급권자 조현병 환자가 제2차의료급여기관에서 PET 검사 시 본인부담률은 15%입니다. 따라서 1,400,000원 × 15% = 210,000원입니다."
+        },
+        {
+          "id": "q26",
+          "difficulty": "hard",
+          "predicted": "틀니 본인부담금: 75,000원, 임플란트 본인부담금: 100,000원",
+          "expected": "틀니 75,000원, 임플란트 100,000원",
+          "correct": false,
+          "reason": "65세 이상 틀니·임플란트 본인부담률에 따라 1종 수급권자는 틀니 5%, 임플란트 10%입니다. 틀니: 1,500,000원 × 5% = 75,000원, 임플란트: 1,000,000원 × 10% = 100,000원"
+        },
+        {
+          "id": "q27",
+          "difficulty": "hard",
+          "predicted": "16,000원",
+          "expected": "16,000원",
+          "correct": true,
+          "reason": "16세 청소년의 치아 홈메우기 입원 시 본인부담률은 5%입니다. 따라서 320,000원 × 5% = 16,000원이 본인부담금입니다."
+        },
+        {
+          "id": "q28",
+          "difficulty": "hard",
+          "predicted": "복잡추나: 60,000원, 단순추나: 36,000원",
+          "expected": "복잡추나 60,000원, 단순추나 36,000원",
+          "correct": false,
+          "reason": "1종 수급권자의 디스크·협착증에 대한 추나요법 본인부담률은 복잡추나와 단순추나 모두 30%입니다. 따라서 복잡추나 200,000원 × 30% = 60,000원, 단순추나 120,000원 × 30% = 36,000원입니다."
+        },
+        {
+          "id": "q29",
+          "difficulty": "hard",
+          "predicted": "19,000원",
+          "expected": "19,000원",
+          "correct": true,
+          "reason": "2종 수급권자 임신부(유산 포함)가 제1차의료급여기관에서 CT 촬영 시 본인부담률은 5%입니다. 380,000원 × 5% = 19,000원"
+        },
+        {
+          "id": "q30",
+          "difficulty": "hard",
+          "predicted": "26,000원",
+          "expected": "26,000원",
+          "correct": true,
+          "reason": "1세 미만 만성질환자는 제2·3차의료급여기관에서 CT, MRI, PET 검사 시 본인부담률이 5%입니다. 따라서 520,000원 × 5% = 26,000원입니다."
+        }
+      ]
+    },
+    {
+      "step": "few_shot",
+      "accuracy": 93.33333333333333,
+      "correct": 28,
+      "total": 30,
+      "by_difficulty": {
+        "easy": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 100.0
+        },
+        "medium": {
+          "correct": 8,
+          "total": 10,
+          "accuracy": 80.0
+        },
+        "hard": {
+          "correct": 15,
+          "total": 15,
+          "accuracy": 100.0
+        }
+      },
+      "results": [
+        {
+          "id": "q01",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 틀니 → 1종 = 5%"
+        },
+        {
+          "id": "q02",
+          "difficulty": "easy",
+          "predicted": "20%",
+          "expected": "20%",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 2종 → 임플란트 = 20%"
+        },
+        {
+          "id": "q03",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 입원 → 6세 미만 (1세 이상) = 무료"
+        },
+        {
+          "id": "q04",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "03번 분만 및 임신부 → 입원 → 자연분만 = 무료"
+        },
+        {
+          "id": "q05",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 치매질환 입원 및 병원급 이상 외래진료 = 5%"
+        },
+        {
+          "id": "q06",
+          "difficulty": "medium",
+          "predicted": "30%",
+          "expected": "30%",
+          "correct": true,
+          "reason": "05번 추나요법 → 1종 → 디스크·협착증 - 복잡추나 = 30%"
+        },
+        {
+          "id": "q07",
+          "difficulty": "medium",
+          "predicted": "80%",
+          "expected": "80%",
+          "correct": true,
+          "reason": "05번 추나요법 → 디스크·협착증 외 - 복잡추나 → 2종 = 80%"
+        },
+        {
+          "id": "q08",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 외래 → 1세 미만 → 제1차의료급여기관 = 무료"
+        },
+        {
+          "id": "q09",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "5%",
+          "correct": false,
+          "reason": "02번 15세 이하 아동 → 외래 → 1세 미만 → 제2·3차의료급여기관 = 무료"
+        },
+        {
+          "id": "q10",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "06번 치아 홈메우기 → 입원 → 16세 이상 ~ 18세 이하 = 5%"
+        },
+        {
+          "id": "q11",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "03번 분만 및 임신부 → 입원 → 고위험 임신부 = 5%"
+        },
+        {
+          "id": "q12",
+          "difficulty": "medium",
+          "predicted": "병원급 이상 10%",
+          "expected": "병원급 이상 10%",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 조현병 외 정신질환 = 병원급 이상 10%"
+        },
+        {
+          "id": "q13",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "08번 CT, MRI, PET (2종 수급권자) → 임신부 → 제1차의료급여기관 = 5%"
+        },
+        {
+          "id": "q14",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 외래 → 1세 미만 만성질환자 = 무료"
+        },
+        {
+          "id": "q15",
+          "difficulty": "medium",
+          "predicted": "적용되지 않음",
+          "expected": "해당되지 않음",
+          "correct": false,
+          "reason": "04번 65세 이상 틀니·임플란트 → 본인부담 보상제·상한제 해당되지 않음"
+        },
+        {
+          "id": "q16",
+          "difficulty": "hard",
+          "predicted": "60,000원",
+          "expected": "60,000원",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 1종 → 틀니 = 5% → 1,200,000원 × 5% = 60,000원"
+        },
+        {
+          "id": "q17",
+          "difficulty": "hard",
+          "predicted": "190,000원",
+          "expected": "190,000원",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 2종 → 임플란트 = 20% → 950,000원 × 20% = 190,000원"
+        },
+        {
+          "id": "q18",
+          "difficulty": "hard",
+          "predicted": "72,000원",
+          "expected": "72,000원",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 입원 → 6세 이상~15세 이하 = 3% → 2,400,000원 × 3% = 72,000원"
+        },
+        {
+          "id": "q19",
+          "difficulty": "hard",
+          "predicted": "175,000원",
+          "expected": "175,000원",
+          "correct": true,
+          "reason": "03번 분만 및 임신부 → 입원 → 고위험 임신부 = 5% → 3,500,000원 × 5% = 175,000원"
+        },
+        {
+          "id": "q20",
+          "difficulty": "hard",
+          "predicted": "54,000원",
+          "expected": "54,000원",
+          "correct": true,
+          "reason": "05번 추나요법 → 1종 → 디스크·협착증 - 복잡추나 = 30%, 180,000원 × 30% = 54,000원"
+        },
+        {
+          "id": "q21",
+          "difficulty": "hard",
+          "predicted": "200,000원",
+          "expected": "200,000원",
+          "correct": true,
+          "reason": "05번 추나요법 → 디스크·협착증 외 - 복잡추나 → 2종 = 80%, 따라서 250,000원 × 80% = 200,000원"
+        },
+        {
+          "id": "q22",
+          "difficulty": "hard",
+          "predicted": "39,000원",
+          "expected": "39,000원",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 2종 수급권자 조현병 환자 → 병원급 이상 5% → 780,000원 × 5% = 39,000원"
+        },
+        {
+          "id": "q23",
+          "difficulty": "hard",
+          "predicted": "45,000원",
+          "expected": "45,000원",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 조현병 외 정신질환 = 병원급 이상 10% → 450,000원 × 10% = 45,000원"
+        },
+        {
+          "id": "q24",
+          "difficulty": "hard",
+          "predicted": "310,000원",
+          "expected": "310,000원",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 치매질환 입원 및 병원급 이상 외래진료 = 5%, 6,200,000원 × 5% = 310,000원"
+        },
+        {
+          "id": "q25",
+          "difficulty": "hard",
+          "predicted": "210,000원",
+          "expected": "210,000원",
+          "correct": true,
+          "reason": "08번 CT, MRI, PET → 2종 수급권자 조현병 등 정신질환자 → 제2·3차의료급여기관 = 15%, 1,400,000원 × 15% = 210,000원"
+        },
+        {
+          "id": "q26",
+          "difficulty": "hard",
+          "predicted": "틀니 75,000원, 임플란트 100,000원",
+          "expected": "틀니 75,000원, 임플란트 100,000원",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 1종 → 틀니 5%, 임플란트 10% → 틀니: 1,500,000원 × 5% = 75,000원, 임플란트: 1,000,000원 × 10% = 100,000원"
+        },
+        {
+          "id": "q27",
+          "difficulty": "hard",
+          "predicted": "16,000원",
+          "expected": "16,000원",
+          "correct": true,
+          "reason": "06번 치아 홈메우기 → 입원 → 16세 이상~18세 이하 = 5% → 320,000원 × 5% = 16,000원"
+        },
+        {
+          "id": "q28",
+          "difficulty": "hard",
+          "predicted": "복잡추나 60,000원, 단순추나 36,000원",
+          "expected": "복잡추나 60,000원, 단순추나 36,000원",
+          "correct": true,
+          "reason": "05번 추나요법 → 1종 → 디스크·협착증 - 복잡추나 30%, 단순추나 30% → 200,000원 × 30% = 60,000원, 120,000원 × 30% = 36,000원"
+        },
+        {
+          "id": "q29",
+          "difficulty": "hard",
+          "predicted": "19,000원",
+          "expected": "19,000원",
+          "correct": true,
+          "reason": "08번 CT, MRI, PET → 임신부 (유산·사산 포함) → 제1차의료급여기관 = 5% → 380,000원 × 5% = 19,000원"
+        },
+        {
+          "id": "q30",
+          "difficulty": "hard",
+          "predicted": "26,000원",
+          "expected": "26,000원",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 외래 → 1세 미만 만성질환자 = 무료이지만, 08번 CT, MRI, PET → 1세 미만 만성질환자 → 제2·3차의료급여기관 = 5%이므로 520,000원 × 5% = 26,000원"
+        }
+      ]
+    },
+    {
+      "step": "cot",
+      "accuracy": 86.66666666666667,
+      "correct": 26,
+      "total": 30,
+      "by_difficulty": {
+        "easy": {
+          "correct": 4,
+          "total": 5,
+          "accuracy": 80.0
+        },
+        "medium": {
+          "correct": 9,
+          "total": 10,
+          "accuracy": 90.0
+        },
+        "hard": {
+          "correct": 13,
+          "total": 15,
+          "accuracy": 86.66666666666667
+        }
+      },
+      "results": [
+        {
+          "id": "q01",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 틀니 → 1종 = 5%",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 1종 수급권자",
+            "특수 조건 확인: 65세 이상, 틀니",
+            "적용할 표 결정: 04번 65세 이상 틀니·임플란트 표",
+            "해당 표에서 본인부담률 찾기: 틀니 → 1종 → 5%"
+          ]
+        },
+        {
+          "id": "q02",
+          "difficulty": "easy",
+          "predicted": "20%",
+          "expected": "20%",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 2종 → 임플란트 = 20%",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 2종 수급권자",
+            "특수 조건 확인: 65세 이상, 임플란트",
+            "적용할 표 결정: 04번 65세 이상 틀니·임플란트 표",
+            "해당 표에서 본인부담률 찾기: 2종 임플란트 = 20%"
+          ]
+        },
+        {
+          "id": "q03",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 입원 → 6세 미만(1세 이상) = 무료",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 4세 아동 (15세 이하)",
+            "적용할 표: 02번 15세 이하 아동 입원 표",
+            "4세는 6세 미만에 해당",
+            "02번 표에서 6세 미만 입원 본인부담률 확인"
+          ]
+        },
+        {
+          "id": "q04",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "03번 분만 및 임신부 → 입원 → 자연분만 = 무료",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 임신부, 자연분만, 입원",
+            "적용할 표: 03번 분만 및 임신부 표 확인",
+            "03번 표에서 자연분만 입원 본인부담률 확인"
+          ]
+        },
+        {
+          "id": "q05",
+          "difficulty": "easy",
+          "predicted": "10%",
+          "expected": "5%",
+          "correct": false,
+          "reason": "01번 표 → 2종 수급권자 → 입원 = 10% (치매 환자라도 입원 시에는 기본 본인부담률 적용)",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 치매 환자, 입원",
+            "치매는 정신질환에 해당하므로 07번 정신질환 외래진료 표 확인",
+            "하지만 질문은 입원에 관한 것이므로 01번 기본 표 적용",
+            "01번 표에서 2종 수급권자 입원 = 10%"
+          ]
+        },
+        {
+          "id": "q06",
+          "difficulty": "medium",
+          "predicted": "30%",
+          "expected": "30%",
+          "correct": true,
+          "reason": "05번 추나요법 표 → 디스크·협착증 - 복잡추나 → 1종 = 30%",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 1종 수급권자",
+            "2. 특수 조건: 디스크 진단, 복잡추나 치료",
+            "3. 적용할 표: 05번 추나요법 표",
+            "4. 해당 조건: 디스크·협착증 - 복잡추나",
+            "5. 1종 수급권자의 본인부담률 확인"
+          ]
+        },
+        {
+          "id": "q07",
+          "difficulty": "medium",
+          "predicted": "80%",
+          "expected": "80%",
+          "correct": true,
+          "reason": "05번 추나요법 표 → 디스크·협착증 외 - 복잡추나 → 2종 = 80%",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 2종 수급권자",
+            "특수 조건 확인: 디스크가 아닌 질환으로 복잡추나 치료",
+            "적용할 표 결정: 05번 추나요법 표",
+            "해당 표에서 조건 매칭: 디스크·협착증 외 - 복잡추나",
+            "2종 수급권자 본인부담률 확인: 80%"
+          ]
+        },
+        {
+          "id": "q08",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 외래 → 1세 미만 + 제1차의료급여기관 = 무료",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 생후 8개월 아기 (1세 미만)",
+            "진료 형태: 제1차의료급여기관 외래",
+            "적용 표: 02번 15세 이하 아동 표 확인",
+            "해당 조건: 1세 미만 + 제1차의료급여기관 외래 = 무료"
+          ]
+        },
+        {
+          "id": "q09",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 외래 → 1세 미만 → 제2·3차의료급여기관 = 5%",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 생후 8개월 (1세 미만 아동)",
+            "진료 형태: 제2차의료급여기관 외래",
+            "적용 표: 02번 15세 이하 아동 표 확인",
+            "해당 조건: 1세 미만 → 제2·3차의료급여기관 외래 = 5%"
+          ]
+        },
+        {
+          "id": "q10",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "06번 치아 홈메우기 → 입원 → 16세 이상 ~ 18세 이하 = 5%",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "나이: 17세 청소년",
+            "진료 내용: 치아 홈메우기",
+            "진료 형태: 입원",
+            "06번 치아 홈메우기 표 확인",
+            "입원 부분에서 16세 이상 ~ 18세 이하에 해당"
+          ]
+        },
+        {
+          "id": "q11",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "03번 분만 및 임신부 → 입원 → 고위험 임신부 = 5%",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 고위험 임신부, 입원",
+            "적용할 표: 03번 분만 및 임신부 표 확인",
+            "03번 표에서 입원 → 고위험 임신부 = 5% 확인"
+          ]
+        },
+        {
+          "id": "q12",
+          "difficulty": "medium",
+          "predicted": "병원급 이상 10%",
+          "expected": "병원급 이상 10%",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 표 → 2종 수급권자 → 조현병 외 정신질환 = 병원급 이상 10%",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 2종 수급권자",
+            "특수 조건 확인: 조현병 외 정신질환 환자, 외래 진료",
+            "적용할 표 결정: 07번 정신질환 외래진료 (2종 수급권자)",
+            "해당 표에서 본인부담률 찾기: 조현병 외 정신질환 = 병원급 이상 10%"
+          ]
+        },
+        {
+          "id": "q13",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "reason": "08번 CT, MRI, PET 표 → 임신부 → 제1차의료급여기관 = 5%",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 임신부",
+            "진료 내용: 제1차의료급여기관에서 CT",
+            "적용할 표: 08번 CT, MRI, PET (2종 수급권자)",
+            "해당 표에서 임신부 + 제1차의료급여기관 = 5%"
+          ]
+        },
+        {
+          "id": "q14",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 외래 표 → 1세 미만 만성질환자 → 제2·3차의료급여기관 = 무료",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 생후 8개월(1세 미만) + 만성질환자",
+            "3. 진료 형태: 제2차의료급여기관 외래",
+            "4. 적용 표: 02번 15세 이하 아동 외래 표",
+            "5. 해당 조건: 1세 미만 만성질환자 → 제2·3차의료급여기관 = 무료"
+          ]
+        },
+        {
+          "id": "q15",
+          "difficulty": "medium",
+          "predicted": "적용되지 않습니다",
+          "expected": "해당되지 않음",
+          "correct": false,
+          "reason": "04번 65세 이상 틀니·임플란트 표 하단 주석에 '본인부담 보상제·상한제 해당되지 않음'으로 명시되어 있음",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 2종 수급권자",
+            "특수 조건 확인: 65세 이상, 임플란트",
+            "적용할 표 결정: 04번 65세 이상 틀니·임플란트 표",
+            "해당 표에서 본인부담률 확인: 2종 임플란트 = 20%",
+            "보상제·상한제 적용 여부 확인: 표 하단 주석에 '본인부담 보상제·상한제 해당되지 않음' 명시"
+          ]
+        },
+        {
+          "id": "q16",
+          "difficulty": "hard",
+          "predicted": "60,000원",
+          "expected": "60,000원",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 1종 틀니 = 5% → 1,200,000원 × 5% = 60,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별 확인: 1종 수급권자",
+            "2. 특수 조건 확인: 65세 이상, 틀니 시술",
+            "3. 적용할 표 결정: 04번 65세 이상 틀니·임플란트 표",
+            "4. 해당 표에서 본인부담률 찾기: 1종 틀니 = 5%",
+            "5. 본인부담금 계산: 1,200,000원 × 5% = 60,000원"
+          ]
+        },
+        {
+          "id": "q17",
+          "difficulty": "hard",
+          "predicted": "190,000원",
+          "expected": "190,000원",
+          "correct": true,
+          "reason": "04번 65세 이상 틀니·임플란트 → 2종 임플란트 = 20% → 950,000원 × 20% = 190,000원",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 2종 수급권자",
+            "특수 조건 확인: 65세 이상, 임플란트 시술",
+            "적용할 표 결정: 04번 65세 이상 틀니·임플란트 표",
+            "해당 표에서 본인부담률 찾기: 2종 임플란트 = 20%",
+            "본인부담금 계산: 950,000원 × 20% = 190,000원"
+          ]
+        },
+        {
+          "id": "q18",
+          "difficulty": "hard",
+          "predicted": "72,000원",
+          "expected": "72,000원",
+          "correct": true,
+          "reason": "02번 15세 이하 아동 → 입원 → 6세 이상~15세 이하 = 3% → 2,400,000원 × 3% = 72,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 10세 아동 (15세 이하)",
+            "3. 적용할 표: 02번 15세 이하 아동 입원 표",
+            "4. 해당 조건: 6세 이상 ~ 15세 이하 입원",
+            "5. 본인부담률: 3%",
+            "6. 본인부담금 계산: 2,400,000원 × 3% = 72,000원"
+          ]
+        },
+        {
+          "id": "q19",
+          "difficulty": "hard",
+          "predicted": "175,000원",
+          "expected": "175,000원",
+          "correct": true,
+          "reason": "03번 분만 및 임신부 → 입원 → 고위험 임신부 = 5% (3,500,000원 × 5% = 175,000원)",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "특수 조건: 고위험 임신부, 입원",
+            "적용할 표: 03번 분만 및 임신부 표 확인",
+            "03번 표에서 고위험 임신부 입원 본인부담률 = 5%",
+            "본인부담금 계산: 3,500,000원 × 5% = 175,000원"
+          ]
+        },
+        {
+          "id": "q20",
+          "difficulty": "hard",
+          "predicted": "54,000원",
+          "expected": "54,000원",
+          "correct": true,
+          "reason": "05번 추나요법 → 디스크·협착증 - 복잡추나 → 1종 = 30%, 180,000원 × 30% = 54,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 1종 수급권자",
+            "2. 특수 조건: 디스크 질환으로 복잡추나 치료",
+            "3. 적용할 표: 05번 추나요법 표",
+            "4. 해당 본인부담률: 디스크·협착증 - 복잡추나 → 1종 = 30%",
+            "5. 본인부담금 계산: 180,000원 × 30% = 54,000원"
+          ]
+        },
+        {
+          "id": "q21",
+          "difficulty": "hard",
+          "predicted": "200,000원",
+          "expected": "200,000원",
+          "correct": true,
+          "reason": "05번 추나요법 → 2종 → 디스크·협착증 외 - 복잡추나 = 80%, 250,000원 × 80% = 200,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별 확인: 2종 수급권자",
+            "2. 특수 조건 확인: 디스크가 아닌 질환으로 복잡추나 치료",
+            "3. 적용할 표 결정: 05번 추나요법 표",
+            "4. 해당 본인부담률 찾기: 디스크·협착증 외 - 복잡추나 = 80%",
+            "5. 본인부담금 계산: 250,000원 × 80% = 200,000원"
+          ]
+        },
+        {
+          "id": "q22",
+          "difficulty": "hard",
+          "predicted": "39,000원",
+          "expected": "39,000원",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 2종 수급권자 조현병 환자 → 병원급 이상 5% → 780,000원 × 5% = 39,000원",
+          "reasoning_steps": [
+            "수급권자 종별 확인: 2종 수급권자",
+            "특수 조건 확인: 조현병 환자",
+            "적용할 표 결정: 07번 정신질환 외래진료 표",
+            "해당 표에서 본인부담률 찾기: 조현병 → 병원급 이상 5%",
+            "본인부담금 계산: 780,000원 × 5% = 39,000원"
+          ]
+        },
+        {
+          "id": "q23",
+          "difficulty": "hard",
+          "predicted": "45,000원",
+          "expected": "45,000원",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 → 2종 수급권자 → 조현병 외 정신질환 = 병원급 이상 10%, 450,000원 × 10% = 45,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 조현병 외 정신질환 환자, 외래 진료",
+            "3. 적용할 표: 07번 정신질환 외래진료 (2종 수급권자)",
+            "4. 해당 본인부담률: 조현병 외 정신질환 = 병원급 이상 10%",
+            "5. 본인부담금 계산: 450,000원 × 10% = 45,000원"
+          ]
+        },
+        {
+          "id": "q24",
+          "difficulty": "hard",
+          "predicted": "310,000원",
+          "expected": "310,000원",
+          "correct": true,
+          "reason": "07번 정신질환 외래진료 표 → 치매질환 입원 = 5% → 6,200,000원 × 5% = 310,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 치매 환자, 입원",
+            "3. 치매는 정신질환에 해당하므로 07번 표 확인",
+            "4. 07번 표에서 치매질환은 '입원 및 병원급 이상 외래진료 5%'로 명시",
+            "5. 입원 진료비 6,200,000원 × 5% = 310,000원"
+          ]
+        },
+        {
+          "id": "q25",
+          "difficulty": "hard",
+          "predicted": "210,000원",
+          "expected": "210,000원",
+          "correct": true,
+          "reason": "08번 CT, MRI, PET 표 → 조현병 등 정신질환자 → 제2·3차의료급여기관 = 15% → 1,400,000원 × 15% = 210,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 조현병 환자, PET 검사",
+            "3. 적용할 표: 08번 CT, MRI, PET (2종 수급권자)",
+            "4. 해당 표에서 조현병 등 정신질환자의 제2·3차의료급여기관 본인부담률: 15%",
+            "5. 본인부담금 계산: 1,400,000원 × 15% = 210,000원"
+          ]
+        },
+        {
+          "id": "q26",
+          "difficulty": "hard",
+          "predicted": "틀니 본인부담금 75,000원, 임플란트 본인부담금 100,000원",
+          "expected": "틀니 75,000원, 임플란트 100,000원",
+          "correct": false,
+          "reason": "04번 65세 이상 틀니·임플란트 표 → 1종 → 틀니 5%, 임플란트 10% 적용",
+          "reasoning_steps": [
+            "1. 수급권자 종별 확인: 1종 수급권자",
+            "2. 특수 조건 확인: 65세 이상, 틀니·임플란트 시술",
+            "3. 적용할 표 결정: 04번 '65세 이상 틀니·임플란트' 표 적용",
+            "4. 해당 표에서 본인부담률 확인: 1종 - 틀니 5%, 임플란트 10%",
+            "5. 본인부담금 계산: 틀니 1,500,000원 × 5% = 75,000원, 임플란트 1,000,000원 × 10% = 100,000원"
+          ]
+        },
+        {
+          "id": "q27",
+          "difficulty": "hard",
+          "predicted": "16,000원",
+          "expected": "16,000원",
+          "correct": true,
+          "reason": "06번 치아 홈메우기 → 입원 → 16세 이상 ~ 18세 이하 = 5% (320,000원 × 5% = 16,000원)",
+          "reasoning_steps": [
+            "수급권자 종별: 2종 수급권자",
+            "나이: 16세 청소년",
+            "진료 내용: 치아 홈메우기 입원",
+            "적용 표: 06번 치아 홈메우기",
+            "해당 조건: 16세 이상 ~ 18세 이하 입원",
+            "본인부담률: 5%",
+            "본인부담금 계산: 320,000원 × 5% = 16,000원"
+          ]
+        },
+        {
+          "id": "q28",
+          "difficulty": "hard",
+          "predicted": "복잡추나 본인부담금: 60,000원, 단순추나 본인부담금: 36,000원",
+          "expected": "복잡추나 60,000원, 단순추나 36,000원",
+          "correct": false,
+          "reason": "05번 추나요법 표 → 디스크 질환 → 1종 수급권자 → 복잡추나·단순추나 모두 30% 적용",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 1종 수급권자 확인",
+            "2. 특수 조건: 디스크 질환으로 추나요법 치료",
+            "3. 적용할 표: 05번 추나요법 표 적용",
+            "4. 디스크 질환 + 1종 수급권자 → 복잡추나 30%, 단순추나 30%",
+            "5. 본인부담금 계산: 복잡추나 200,000원 × 30% = 60,000원, 단순추나 120,000원 × 30% = 36,000원"
+          ]
+        },
+        {
+          "id": "q29",
+          "difficulty": "hard",
+          "predicted": "19,000원",
+          "expected": "19,000원",
+          "correct": true,
+          "reason": "08번 표 → 2종 수급권자 → CT → 임신부(유산·사산 포함) → 제1차의료급여기관 = 5% → 380,000원 × 5% = 19,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 유산한 임신부",
+            "3. 검사 종류: CT, 제1차의료급여기관",
+            "4. 적용 표: 08번 CT, MRI, PET (2종 수급권자)",
+            "5. 해당 조건: 임신부 (유산·사산 포함) → 제1차의료급여기관 → 5%",
+            "6. 본인부담금 계산: 380,000원 × 5% = 19,000원"
+          ]
+        },
+        {
+          "id": "q30",
+          "difficulty": "hard",
+          "predicted": "26,000원",
+          "expected": "26,000원",
+          "correct": true,
+          "reason": "08번 CT, MRI, PET 표 → 1세 미만 만성질환자 → 제2차의료급여기관 = 5% → 520,000원 × 5% = 26,000원",
+          "reasoning_steps": [
+            "1. 수급권자 종별: 2종 수급권자",
+            "2. 특수 조건: 생후 6개월(1세 미만) + 만성질환자 + MRI 검사",
+            "3. 적용할 표: 08번 CT, MRI, PET (2종 수급권자) 표",
+            "4. 해당 조건: 1세 미만 만성질환자 + 제2차의료급여기관 = 5%",
+            "5. 본인부담금 계산: 520,000원 × 5% = 26,000원"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "self_consistency",
+      "accuracy": 76.66666666666667,
+      "correct": 23,
+      "total": 30,
+      "n_samples": 5,
+      "temperature": 0.7,
+      "by_difficulty": {
+        "easy": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 100.0
+        },
+        "medium": {
+          "correct": 9,
+          "total": 10,
+          "accuracy": 90.0
+        },
+        "hard": {
+          "correct": 9,
+          "total": 15,
+          "accuracy": 60.0
+        }
+      },
+      "results": [
+        {
+          "id": "q01",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "all_samples": [
+            "5%",
+            "5%",
+            "5%",
+            "5%",
+            "5%"
+          ],
+          "vote_counts": {
+            "5%": 5
+          }
+        },
+        {
+          "id": "q02",
+          "difficulty": "easy",
+          "predicted": "20%",
+          "expected": "20%",
+          "correct": true,
+          "all_samples": [
+            "20%",
+            "20%",
+            "20%",
+            "20%",
+            "20%"
+          ],
+          "vote_counts": {
+            "20%": 5
+          }
+        },
+        {
+          "id": "q03",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "all_samples": [
+            "무료",
+            "무료",
+            "무료",
+            "무료",
+            "무료"
+          ],
+          "vote_counts": {
+            "무료": 5
+          }
+        },
+        {
+          "id": "q04",
+          "difficulty": "easy",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "all_samples": [
+            "무료",
+            "무료",
+            "무료",
+            "무료",
+            "무료"
+          ],
+          "vote_counts": {
+            "무료": 5
+          }
+        },
+        {
+          "id": "q05",
+          "difficulty": "easy",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "all_samples": [
+            "5%",
+            "5%",
+            "5%",
+            "10%",
+            "10%"
+          ],
+          "vote_counts": {
+            "5%": 3,
+            "10%": 2
+          }
+        },
+        {
+          "id": "q06",
+          "difficulty": "medium",
+          "predicted": "30%",
+          "expected": "30%",
+          "correct": true,
+          "all_samples": [
+            "30%",
+            "30%",
+            "30%",
+            "30%",
+            "30%"
+          ],
+          "vote_counts": {
+            "30%": 5
+          }
+        },
+        {
+          "id": "q07",
+          "difficulty": "medium",
+          "predicted": "80%",
+          "expected": "80%",
+          "correct": true,
+          "all_samples": [
+            "80%",
+            "80%",
+            "80%",
+            "80%",
+            "80%"
+          ],
+          "vote_counts": {
+            "80%": 5
+          }
+        },
+        {
+          "id": "q08",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "all_samples": [
+            "무료",
+            "무료",
+            "무료",
+            "무료",
+            "무료"
+          ],
+          "vote_counts": {
+            "무료": 5
+          }
+        },
+        {
+          "id": "q09",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "all_samples": [
+            "5%",
+            "5%",
+            "5%",
+            "5%",
+            "5%"
+          ],
+          "vote_counts": {
+            "5%": 5
+          }
+        },
+        {
+          "id": "q10",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "all_samples": [
+            "5%",
+            "5%",
+            "5%",
+            "5%",
+            "5%"
+          ],
+          "vote_counts": {
+            "5%": 5
+          }
+        },
+        {
+          "id": "q11",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "all_samples": [
+            "5%",
+            "5%",
+            "5%",
+            "5%",
+            "5%"
+          ],
+          "vote_counts": {
+            "5%": 5
+          }
+        },
+        {
+          "id": "q12",
+          "difficulty": "medium",
+          "predicted": "병원급 이상 10%",
+          "expected": "병원급 이상 10%",
+          "correct": true,
+          "all_samples": [
+            "병원급 이상 10%",
+            "병원급 이상 10%",
+            "병원급 이상 10%",
+            "병원급 이상 10%",
+            "병원급 이상 10%"
+          ],
+          "vote_counts": {
+            "병급이상10%": 5
+          }
+        },
+        {
+          "id": "q13",
+          "difficulty": "medium",
+          "predicted": "5%",
+          "expected": "5%",
+          "correct": true,
+          "all_samples": [
+            "5%",
+            "5%",
+            "5%",
+            "5%",
+            "5%"
+          ],
+          "vote_counts": {
+            "5%": 5
+          }
+        },
+        {
+          "id": "q14",
+          "difficulty": "medium",
+          "predicted": "무료",
+          "expected": "무료",
+          "correct": true,
+          "all_samples": [
+            "무료",
+            "무료",
+            "무료",
+            "무료",
+            "무료"
+          ],
+          "vote_counts": {
+            "무료": 5
+          }
+        },
+        {
+          "id": "q15",
+          "difficulty": "medium",
+          "predicted": "적용되지 않습니다",
+          "expected": "해당되지 않음",
+          "correct": false,
+          "all_samples": [
+            "적용되지 않습니다",
+            "적용되지 않습니다",
+            "적용되지 않음",
+            "적용되지 않음",
+            "적용되지 않습니다"
+          ],
+          "vote_counts": {
+            "적용되지않습니다": 3,
+            "적용되지않음": 2
+          }
+        },
+        {
+          "id": "q16",
+          "difficulty": "hard",
+          "predicted": "60,000원",
+          "expected": "60,000원",
+          "correct": true,
+          "all_samples": [
+            "60,000원",
+            "60,000원",
+            "60,000원",
+            "60,000원",
+            "60,000원"
+          ],
+          "vote_counts": {
+            "60000": 5
+          }
+        },
+        {
+          "id": "q17",
+          "difficulty": "hard",
+          "predicted": "190,000원",
+          "expected": "190,000원",
+          "correct": true,
+          "all_samples": [
+            "190,000원",
+            "190,000원",
+            "190,000원",
+            "190,000원",
+            "190,000원"
+          ],
+          "vote_counts": {
+            "190000": 5
+          }
+        },
+        {
+          "id": "q18",
+          "difficulty": "hard",
+          "predicted": "72,000원",
+          "expected": "72,000원",
+          "correct": true,
+          "all_samples": [
+            "72,000원",
+            "72,000원",
+            "72,000원",
+            "72,000원",
+            "72,000원"
+          ],
+          "vote_counts": {
+            "72000": 5
+          }
+        },
+        {
+          "id": "q19",
+          "difficulty": "hard",
+          "predicted": "175,000원",
+          "expected": "175,000원",
+          "correct": true,
+          "all_samples": [
+            "175,000원",
+            "175,000원",
+            "175,000원",
+            "175,000원",
+            "175,000원"
+          ],
+          "vote_counts": {
+            "175000": 5
+          }
+        },
+        {
+          "id": "q20",
+          "difficulty": "hard",
+          "predicted": "54,000원",
+          "expected": "54,000원",
+          "correct": true,
+          "all_samples": [
+            "54,000원",
+            "54,000원",
+            "54,000원",
+            "54,000원",
+            "54,000원"
+          ],
+          "vote_counts": {
+            "54000": 5
+          }
+        },
+        {
+          "id": "q21",
+          "difficulty": "hard",
+          "predicted": "200,000원",
+          "expected": "200,000원",
+          "correct": true,
+          "all_samples": [
+            "200,000원",
+            "200,000원",
+            "200,000원",
+            "200,000원",
+            "200,000원"
+          ],
+          "vote_counts": {
+            "200000": 5
+          }
+        },
+        {
+          "id": "q22",
+          "difficulty": "hard",
+          "predicted": "39,000원",
+          "expected": "39,000원",
+          "correct": true,
+          "all_samples": [
+            "39,000원",
+            "39,000원",
+            "39,000원",
+            "39,000원",
+            "39,000원"
+          ],
+          "vote_counts": {
+            "39000": 5
+          }
+        },
+        {
+          "id": "q23",
+          "difficulty": "hard",
+          "predicted": "45,000원",
+          "expected": "45,000원",
+          "correct": true,
+          "all_samples": [
+            "45,000원",
+            "45,000원",
+            "45,000원",
+            "45,000원",
+            "45,000원"
+          ],
+          "vote_counts": {
+            "45000": 5
+          }
+        },
+        {
+          "id": "q24",
+          "difficulty": "hard",
+          "predicted": "310,000원",
+          "expected": "310,000원",
+          "correct": true,
+          "all_samples": [
+            "310,000원",
+            "620,000원",
+            "310,000원",
+            "310,000원",
+            "310,000원"
+          ],
+          "vote_counts": {
+            "310000": 4,
+            "620000": 1
+          }
+        },
+        {
+          "id": "q25",
+          "difficulty": "hard",
+          "predicted": "ERROR",
+          "expected": "210,000원",
+          "correct": false,
+          "reason": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZUS6tP7jzNiw267824JX'}"
+        },
+        {
+          "id": "q26",
+          "difficulty": "hard",
+          "predicted": "ERROR",
+          "expected": "틀니 75,000원, 임플란트 100,000원",
+          "correct": false,
+          "reason": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZUS6v8HroCbVAZmHNh81'}"
+        },
+        {
+          "id": "q27",
+          "difficulty": "hard",
+          "predicted": "ERROR",
+          "expected": "16,000원",
+          "correct": false,
+          "reason": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZUS6wRvSGGkiQ2Me2LX7'}"
+        },
+        {
+          "id": "q28",
+          "difficulty": "hard",
+          "predicted": "ERROR",
+          "expected": "복잡추나 60,000원, 단순추나 36,000원",
+          "correct": false,
+          "reason": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZUS6yArAPFv61NiyaMQ4'}"
+        },
+        {
+          "id": "q29",
+          "difficulty": "hard",
+          "predicted": "ERROR",
+          "expected": "19,000원",
+          "correct": false,
+          "reason": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZUS6zvWzkiVYid7K1sbD'}"
+        },
+        {
+          "id": "q30",
+          "difficulty": "hard",
+          "predicted": "ERROR",
+          "expected": "26,000원",
+          "correct": false,
+          "reason": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZUS72Bg36TU3pTvAE5Mc'}"
+        }
+      ]
+    }
+  ]
+}
