@@ -1,0 +1,272 @@
+[
+  {
+    "id": "q04",
+    "difficulty": "easy",
+    "question": "2종 수급권자인 임신부가 자연분만으로 입원하면 본인부담률은 얼마인가요?",
+    "predicted_answer": "본인부담 없음",
+    "predicted_reason": "의료급여 2종 수급권자 분만 입원 자연분만 규칙 적용",
+    "expected_answer": "무료",
+    "expected_reasoning": "분만 및 임신부 → 입원 → 자연분만 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q05",
+    "difficulty": "easy",
+    "question": "2종 수급권자의 치매 환자가 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reason": "치매질환 입원 규칙 적용",
+    "expected_answer": "5%",
+    "expected_reasoning": "치매질환 입원 및 병원급 이상 외래진료 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q06",
+    "difficulty": "medium",
+    "question": "1종 수급권자가 디스크 진단을 받고 복잡추나를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "30%",
+    "predicted_reason": "추나요법 복잡추나 디스크 1종 규칙 적용",
+    "expected_answer": "30%",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 → 복잡추나 1종 = 30%",
+    "is_correct": true
+  },
+  {
+    "id": "q07",
+    "difficulty": "medium",
+    "question": "2종 수급권자가 디스크가 아닌 질환으로 복잡추나를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "80%",
+    "predicted_reason": "복잡추나 디스크/협착증 외 2종 규칙 적용",
+    "expected_answer": "80%",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 외 → 복잡추나 2종 = 80%",
+    "is_correct": true
+  },
+  {
+    "id": "q08",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 생후 8개월 아기가 제1차의료급여기관에서 외래 진료를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "무료",
+    "predicted_reason": "1세 미만 아동 외래 제1차의료급여기관 규칙 적용",
+    "expected_answer": "무료",
+    "expected_reasoning": "15세 이하 아동 → 외래 → 1세 미만 → 제1차의료급여기관 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q09",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 생후 8개월 아기가 제2차의료급여기관에서 외래 진료를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reason": "15세 이하 아동 외래 1세 미만 제2·3차의료급여기관 규칙 적용",
+    "expected_answer": "5%",
+    "expected_reasoning": "15세 이하 아동 → 외래 → 1세 미만 → 제2·3차의료급여기관 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q10",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 17세 청소년이 치아 홈메우기로 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reason": "의료급여 2종 수급권자 치아 홈메우기 입원 16세 이상 ~ 18세 이하 규칙 적용",
+    "expected_answer": "5%",
+    "expected_reasoning": "치아 홈메우기 → 입원 → 16세 이상~18세 이하 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q11",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 고위험 임신부가 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reason": "의료급여 2종 수급권자 고위험 임신부 입원 규칙 적용",
+    "expected_answer": "5%",
+    "expected_reasoning": "분만 및 임신부 → 입원 → 고위험 임신부 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q12",
+    "difficulty": "medium",
+    "question": "2종 수급권자의 조현병 외 정신질환 환자가 외래 진료를 받으면 본인부담률은 얼마인가요?",
+    "predicted_answer": "10%",
+    "predicted_reason": "정신질환 외래진료 조현병 외 정신질환 병원급 이상 규칙 적용",
+    "expected_answer": "병원급 이상 10%",
+    "expected_reasoning": "정신질환 외래진료 → 조현병 외 정신질환 = 병원급 이상 10%",
+    "is_correct": false
+  },
+  {
+    "id": "q13",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 임신부가 제1차의료급여기관에서 CT를 찍으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reason": "임신부 CT/MRI/PET 등 제1차의료급여기관 규칙 적용",
+    "expected_answer": "5%",
+    "expected_reasoning": "CT/MRI/PET 표 → 임신부(유산·사산 포함) → 제1차의료급여기관 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q14",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 생후 8개월 아기가 만성질환자이고 제2차의료급여기관에서 외래 진료를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "무료",
+    "predicted_reason": "1세 미만 만성질환자 외래 제2차의료급여기관 규칙 적용",
+    "expected_answer": "무료",
+    "expected_reasoning": "15세 이하 아동 → 외래 → 1세 미만 만성질환자 → 제2차의료급여기관 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q15",
+    "difficulty": "medium",
+    "question": "65세 이상 2종 수급권자가 임플란트를 할 때 본인부담 보상제나 상한제가 적용되나요?",
+    "predicted_answer": "적용되지 않습니다.",
+    "predicted_reason": "65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음",
+    "expected_answer": "해당되지 않음",
+    "expected_reasoning": "04번 표 하단 ※ 본인부담 보상제·상한제 해당되지 않음",
+    "is_correct": false
+  },
+  {
+    "id": "q16",
+    "difficulty": "hard",
+    "question": "65세 이상 1종 수급권자가 틀니 시술을 받았고 시술비가 1,200,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "60,000원",
+    "predicted_reason": "65세 이상 1종 수급권자 틀니 규칙 적용",
+    "expected_answer": "60,000원",
+    "expected_reasoning": "04번 표 → 1종 틀니 = 5%. 1,200,000 × 0.05 = 60,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q17",
+    "difficulty": "hard",
+    "question": "65세 이상 2종 수급권자가 임플란트를 했고 시술비가 950,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "190,000원",
+    "predicted_reason": "65세 이상 2종 수급권자 치과 임플란트 규칙 적용",
+    "expected_answer": "190,000원",
+    "expected_reasoning": "04번 표 → 2종 임플란트 = 20%. 950,000 × 0.20 = 190,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q18",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 10세 아동이 입원하여 진료비가 2,400,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "72,000원",
+    "predicted_reason": "15세 이하 아동 입원 6세 이상 ~ 15세 이하 규칙 적용",
+    "expected_answer": "72,000원",
+    "expected_reasoning": "15세 이하 아동 → 입원 → 6세 이상~15세 이하 = 3%. 2,400,000 × 0.03 = 72,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q19",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 고위험 임신부가 입원하여 진료비가 3,500,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "175,000원",
+    "predicted_reason": "2종 수급권자 고위험 임신부 입원 규칙 적용",
+    "expected_answer": "175,000원",
+    "expected_reasoning": "분만 및 임신부 → 입원 → 고위험 임신부 = 5%. 3,500,000 × 0.05 = 175,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q20",
+    "difficulty": "hard",
+    "question": "1종 수급권자가 디스크로 복잡추나를 받았고 치료비가 180,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "54,000원",
+    "predicted_reason": "추나요법 복잡추나 디스크 1종 규칙 적용",
+    "expected_answer": "54,000원",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 → 복잡추나 1종 = 30%. 180,000 × 0.30 = 54,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q21",
+    "difficulty": "hard",
+    "question": "2종 수급권자가 디스크가 아닌 질환으로 복잡추나를 받았고 치료비가 250,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "200,000원",
+    "predicted_reason": "추나요법 복잡추나 디스크/협착증 외 2종 규칙 적용",
+    "expected_answer": "200,000원",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 외 → 복잡추나 2종 = 80%. 250,000 × 0.80 = 200,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q22",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 조현병 환자가 병원에서 외래 진료를 받았고 진료비가 780,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "39,000원",
+    "predicted_reason": "정신질환 외래진료 조현병 병원급 이상 규칙 적용",
+    "expected_answer": "39,000원",
+    "expected_reasoning": "정신질환 외래진료 → 조현병 = 병원급 이상 5%. 780,000 × 0.05 = 39,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q23",
+    "difficulty": "hard",
+    "question": "2종 수급권자의 조현병 외 정신질환 환자가 병원에서 외래 진료를 받았고 진료비가 450,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "45,000원",
+    "predicted_reason": "정신질환 외래진료 조현병 외 정신질환 병원급 이상 규칙 적용",
+    "expected_answer": "45,000원",
+    "expected_reasoning": "정신질환 외래진료 → 조현병 외 정신질환 = 병원급 이상 10%. 450,000 × 0.10 = 45,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q24",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 치매 환자가 입원하여 진료비가 6,200,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "310,000원",
+    "predicted_reason": "치매질환 입원 규칙 적용",
+    "expected_answer": "310,000원",
+    "expected_reasoning": "치매질환 입원 = 5%. 6,200,000 × 0.05 = 310,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q25",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 조현병 환자가 제2차의료급여기관에서 PET를 찍었고 검사비가 1,400,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "210,000원",
+    "predicted_reason": "CT/MRI/PET 등 조현병 등 정신질환자 제2·3차의료급여기관 규칙 적용",
+    "expected_answer": "210,000원",
+    "expected_reasoning": "CT/MRI/PET → 조현병 등 정신질환자 → 제2·3차의료급여기관 = 15%. 1,400,000 × 0.15 = 210,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q26",
+    "difficulty": "hard",
+    "question": "65세 이상 1종 수급권자가 틀니(시술비 1,500,000원)와 임플란트(시술비 1,000,000원)를 동시에 하면 각각의 본인부담금은 얼마인가요?",
+    "predicted_answer": "틀니 본인부담금 75,000원, 임플란트 본인부담금 100,000원",
+    "predicted_reason": "65세 이상 1종 수급권자 틀니 및 치과 임플란트 규칙 적용",
+    "expected_answer": "틀니 75,000원, 임플란트 100,000원",
+    "expected_reasoning": "04번 표 → 1종 틀니 = 5%, 임플란트 = 10%. 틀니: 1,500,000 × 0.05 = 75,000원. 임플란트: 1,000,000 × 0.10 = 100,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q27",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 16세 청소년이 치아 홈메우기로 입원하여 진료비가 320,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "16,000원",
+    "predicted_reason": "의료급여 2종 수급권자 치아 홈메우기 입원 16세 이상 ~ 18세 이하 규칙 적용",
+    "expected_answer": "16,000원",
+    "expected_reasoning": "치아 홈메우기 → 입원 → 16세 이상~18세 이하 = 5%. 320,000 × 0.05 = 16,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q28",
+    "difficulty": "hard",
+    "question": "1종 수급권자가 디스크로 복잡추나(치료비 200,000원)와 단순추나(치료비 120,000원)를 각각 받았습니다. 각각의 본인부담금은 얼마인가요?",
+    "predicted_answer": "복잡추나 본인부담금 60,000원, 단순추나 본인부담금 36,000원",
+    "predicted_reason": "추나요법 복잡추나 디스크 1종 규칙 및 추나요법 단순추나 디스크 1종 규칙 적용",
+    "expected_answer": "복잡추나 60,000원, 단순추나 36,000원",
+    "expected_reasoning": "05번 표 → 디스크 + 1종: 복잡추나 30%, 단순추나 30%. 복잡추나: 200,000 × 0.30 = 60,000원. 단순추나: 120,000 × 0.30 = 36,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q29",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 유산한 임신부가 제1차의료급여기관에서 CT를 찍었고 검사비가 380,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "19,000원",
+    "predicted_reason": "CT/MRI/PET 등 임신부(유산·사산 포함) 제1차의료급여기관 규칙 적용",
+    "expected_answer": "19,000원",
+    "expected_reasoning": "CT/MRI/PET → 임신부(유산·사산 포함) → 제1차의료급여기관 = 5%. 380,000 × 0.05 = 19,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q30",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 생후 6개월 만성질환 아기가 제2차의료급여기관에서 MRI를 찍었고 검사비가 520,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "26,000원",
+    "predicted_reason": "CT/MRI/PET 등 1세 미만 만성질환자 제2차의료급여기관 규칙 적용",
+    "expected_answer": "26,000원",
+    "expected_reasoning": "CT/MRI/PET → 1세 미만 만성질환자 → 제2차의료급여기관 = 5%. 520,000 × 0.05 = 26,000원",
+    "is_correct": true
+  }
+]

@@ -75,6 +75,7 @@ Self-Consistency는 **CoT + 다수결**의 조합입니다. Step 3의 CoT 프롬
 아래 중 하나 이상을 추가로 시도해보세요.
 
 - **프롬프트 구조 변경**: XML tags vs 마크다운 vs 구분자 없음
+<!-- 구분자 없다? -->
 - **한/영 전환**: system prompt를 영어로 작성
 - **표 형식 변경**: 마크다운 표 대신 JSON이나 YAML로 데이터 제공
 - **역할 부여**: "당신은 국민건강보험공단의 본인부담률 산정 전문가입니다"
@@ -107,8 +108,8 @@ Self-Consistency는 **CoT + 다수결**의 조합입니다. Step 3의 CoT 프롬
 
 - Langchain, LlamaIndex, Pydantic AI 등 AI 프레임워크 자유롭게 사용
 - Python 사용
-- Step 3에서 `pydantic` BaseModel로 추론 과정 구조화
-
+- Step 3에서 `pydantic` BaseModel로 추론 과정 구조화 
+<!-- 왜 step3에서만 구조화를 권장한 걸까 -->
 ### 금지
 
 - ChatGPT/Claude 웹 UI 사용
