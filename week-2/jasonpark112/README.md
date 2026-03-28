@@ -104,10 +104,10 @@
 
 | Step | 기법 | 프롬프트 특징 | 정확도 |
 |------|------|--------------|--------|
-| Step 1 | Zero-shot | 규칙만 제공 | 40% |
-| Step 2 | Few-shot | 예시 3개 추가 | 63% |
-| Step 3 | CoT | 단계적 추론 추가 | 58% |
-| Step 4 | Self-Consistency | CoT + 다수결 | 70% |
+| Step 1 | Zero-shot | 규칙만 제공 | 83.33% |
+| Step 2 | Few-shot | 예시 3개 추가 | 92.59% |
+| Step 3 | CoT | 단계적 추론 추가 | 86.67% |
+| Step 4 | Self-Consistency | CoT + 다수결 | 86.7% |
 
 - 의외로 Few-shot이 일치율이 가장 높게 나왔다. 
 
