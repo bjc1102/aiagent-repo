@@ -165,7 +165,7 @@ def solve_cot(question: str) -> CopaymentCoTResult:
             question,
         ],
         config=types.GenerateContentConfig(
-            temperature=0.5,
+            temperature=0,
             response_mime_type="application/json",
             response_schema=CopaymentCoTResult,
         ),
