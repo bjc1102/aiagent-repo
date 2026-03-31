@@ -1,0 +1,182 @@
+[
+    {
+        "id": "q01",
+        "is_correct": true,
+        "predicted": "5%",
+        "expected": "5%"
+    },
+    {
+        "id": "q02",
+        "is_correct": true,
+        "predicted": "20%",
+        "expected": "20%"
+    },
+    {
+        "id": "q03",
+        "is_correct": true,
+        "predicted": "무료",
+        "expected": "무료"
+    },
+    {
+        "id": "q04",
+        "is_correct": true,
+        "predicted": "무료",
+        "expected": "무료"
+    },
+    {
+        "id": "q05",
+        "is_correct": true,
+        "predicted": "5%",
+        "expected": "5%"
+    },
+    {
+        "id": "q06",
+        "is_correct": true,
+        "predicted": "30%",
+        "expected": "30%"
+    },
+    {
+        "id": "q07",
+        "is_correct": true,
+        "predicted": "80%",
+        "expected": "80%"
+    },
+    {
+        "id": "q08",
+        "is_correct": true,
+        "predicted": "무료",
+        "expected": "무료"
+    },
+    {
+        "id": "q09",
+        "is_correct": true,
+        "predicted": "5%",
+        "expected": "5%"
+    },
+    {
+        "id": "q10",
+        "is_correct": true,
+        "predicted": "5%",
+        "expected": "5%"
+    },
+    {
+        "id": "q11",
+        "is_correct": true,
+        "predicted": "5%",
+        "expected": "5%"
+    },
+    {
+        "id": "q12",
+        "is_correct": false,
+        "predicted": "10%",
+        "expected": "병원급 이상 10%"
+    },
+    {
+        "id": "q13",
+        "is_correct": true,
+        "predicted": "5%",
+        "expected": "5%"
+    },
+    {
+        "id": "q14",
+        "is_correct": true,
+        "predicted": "무료",
+        "expected": "무료"
+    },
+    {
+        "id": "q15",
+        "is_correct": true,
+        "predicted": "해당되지 않음",
+        "expected": "해당되지 않음"
+    },
+    {
+        "id": "q16",
+        "is_correct": true,
+        "predicted": "60,000원",
+        "expected": "60,000원"
+    },
+    {
+        "id": "q17",
+        "is_correct": true,
+        "predicted": "190,000원",
+        "expected": "190,000원"
+    },
+    {
+        "id": "q18",
+        "is_correct": true,
+        "predicted": "72,000원",
+        "expected": "72,000원"
+    },
+    {
+        "id": "q19",
+        "is_correct": true,
+        "predicted": "175,000원",
+        "expected": "175,000원"
+    },
+    {
+        "id": "q20",
+        "is_correct": true,
+        "predicted": "54,000원",
+        "expected": "54,000원"
+    },
+    {
+        "id": "q21",
+        "is_correct": true,
+        "predicted": "200,000원",
+        "expected": "200,000원"
+    },
+    {
+        "id": "q22",
+        "is_correct": true,
+        "predicted": "39,000원",
+        "expected": "39,000원"
+    },
+    {
+        "id": "q23",
+        "is_correct": true,
+        "predicted": "45,000원",
+        "expected": "45,000원"
+    },
+    {
+        "id": "q24",
+        "is_correct": true,
+        "predicted": "310,000원",
+        "expected": "310,000원"
+    },
+    {
+        "id": "q25",
+        "is_correct": true,
+        "predicted": "210,000원",
+        "expected": "210,000원"
+    },
+    {
+        "id": "q26",
+        "is_correct": true,
+        "predicted": "틀니 75,000원, 임플란트 100,000원",
+        "expected": "틀니 75,000원, 임플란트 100,000원"
+    },
+    {
+        "id": "q27",
+        "is_correct": true,
+        "predicted": "16,000원",
+        "expected": "16,000원"
+    },
+    {
+        "id": "q28",
+        "is_correct": true,
+        "predicted": "복잡추나 60,000원, 단순추나 36,000원",
+        "expected": "복잡추나 60,000원, 단순추나 36,000원"
+    },
+    {
+        "id": "q29",
+        "is_correct": true,
+        "predicted": "19,000원",
+        "expected": "19,000원"
+    },
+    {
+        "id": "q30",
+        "is_correct": true,
+        "predicted": "26,000원",
+        "expected": "26,000원"
+    }
+]
