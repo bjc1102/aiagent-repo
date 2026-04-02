@@ -1,0 +1,5 @@
+data/*.pdf
+gemini_medical_index/
+.venv/
+__pycache__/
+.env
