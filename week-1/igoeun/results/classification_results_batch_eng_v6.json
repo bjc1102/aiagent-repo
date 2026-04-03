@@ -1,0 +1,122 @@
+[
+  {
+    "ticket_id": "ticket-01",
+    "analysis": {
+      "ticket_id": "ticket-01",
+      "intent": "shipping_issue",
+      "urgency": "medium",
+      "needs_clarification": false,
+      "route_to": "shipping_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-02",
+    "analysis": {
+      "ticket_id": "ticket-02",
+      "intent": "payment_issue",
+      "urgency": "high",
+      "needs_clarification": false,
+      "route_to": "billing_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-03",
+    "analysis": {
+      "ticket_id": "ticket-03",
+      "intent": "order_change",
+      "urgency": "medium",
+      "needs_clarification": false,
+      "route_to": "order_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-04",
+    "analysis": {
+      "ticket_id": "ticket-04",
+      "intent": "refund_exchange",
+      "urgency": "medium",
+      "needs_clarification": false,
+      "route_to": "returns_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-05",
+    "analysis": {
+      "ticket_id": "ticket-05",
+      "intent": "order_change",
+      "urgency": "medium",
+      "needs_clarification": false,
+      "route_to": "order_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-06",
+    "analysis": {
+      "ticket_id": "ticket-06",
+      "intent": "shipping_issue",
+      "urgency": "high",
+      "needs_clarification": false,
+      "route_to": "shipping_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-07",
+    "analysis": {
+      "ticket_id": "ticket-07",
+      "intent": "payment_issue",
+      "urgency": "high",
+      "needs_clarification": false,
+      "route_to": "billing_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-08",
+    "analysis": {
+      "ticket_id": "ticket-08",
+      "intent": "refund_exchange",
+      "urgency": "medium",
+      "needs_clarification": false,
+      "route_to": "returns_ops"
+    }
+  },
+  {
+    "ticket_id": "ticket-09",
+    "analysis": {
+      "ticket_id": "ticket-09",
+      "intent": "other",
+      "urgency": "high",
+      "needs_clarification": true,
+      "route_to": "human_support"
+    }
+  },
+  {
+    "ticket_id": "ticket-10",
+    "analysis": {
+      "ticket_id": "ticket-10",
+      "intent": "other",
+      "urgency": "medium",
+      "needs_clarification": true,
+      "route_to": "human_support"
+    }
+  },
+  {
+    "ticket_id": "ticket-11",
+    "analysis": {
+      "ticket_id": "ticket-11",
+      "intent": "other",
+      "urgency": "medium",
+      "needs_clarification": true,
+      "route_to": "human_support"
+    }
+  },
+  {
+    "ticket_id": "ticket-12",
+    "analysis": {
+      "ticket_id": "ticket-12",
+      "intent": "refund_exchange",
+      "urgency": "medium",
+      "needs_clarification": true,
+      "route_to": "returns_ops"
+    }
+  }
+]

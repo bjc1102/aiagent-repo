@@ -1,0 +1,30 @@
+고객 문의를 아래 기준과 예외 규칙에 따라 분류하라.
+
+[분류 기준]
+1. intent
+- order_change: 주문수정, 취소, 주소/옵션변경
+- shipping_issue: 출고확인, 배송지연/누락/오표시
+- payment_issue: 결제실패, 중복결제, 청구이상
+- refund_exchange: 반품, 환불, 교환, 불량접수
+- other: 시스템 외 요청(선물포장 등) 또는 맥락 부족
+
+2. urgency
+- low: 일반문의, 정책/절차 질문
+- medium: 일반처리 (배송지변경, 교환/환불접수, 배송조회, 원인 불명 앱/결제오류)
+- high: 긴급/장애 (결제실패, 중복결제, 오배송, 고객불만 고조)
+
+3. needs_clarification
+- true: 정보 부족, 의도 불명확 ("교환/환불 고민" 등)
+- false: 현재 정보로 1차 분류 가능
+
+4. route_to
+- order_ops: 주문/수정 담당
+- shipping_ops: 배송 담당
+- billing_ops: 결제/청구 담당
+- returns_ops: 환불/교환 담당
+- human_support: 복합 이슈, 에스컬레이션, intent=other
+
+[예외 규칙 (우선 적용)]
+- 시스템 외 요구(선물포장 등): intent=other, route_to=human_support
+- 의도 미결정("교환/환불 고민" 등): needs_clarification=true로 설정하되, 분야가 명확하면 human_support 대신 해당 부서(returns_ops)로 배정
+- 단순 일상 CS(배송지변경, 단순환불, 실제 오류 확인 전의 결제 문의): urgency=medium
