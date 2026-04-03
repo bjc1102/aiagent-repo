@@ -1,6 +1,0 @@
-고객 문의를 제공된 스키마의 설명(description)에 맞춰 분류하라.
-
-[예외 규칙 (우선 적용)]
-- 시스템 외 요구(선물 포장 등): intent=other, route_to=human_support
-- 의도 미결정("교환/환불 고민" 등): needs_clarification=true 설정. 단, 분야가 명확하면 human_support 대신 해당 담당 부서(returns_ops 등)로 배정
-- 단순 일상 업무(배송지 변경, 단순 환불, 실제 오류 확인 전 결제 문의): urgency=medium
