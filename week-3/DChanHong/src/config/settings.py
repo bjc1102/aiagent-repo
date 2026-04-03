@@ -11,7 +11,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # .env 파일 로드
-load_dotenv()
+load_dotenv(override=True)
 
 # ──────────────────────────────────────────────
 # 프로젝트 경로 설정
@@ -29,18 +29,21 @@ LOGS_DIR.mkdir(parents=True, exist_ok=True)
 # API 키
 # ──────────────────────────────────────────────
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
 
 # ──────────────────────────────────────────────
 # 모델 설정
 # ──────────────────────────────────────────────
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
-LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
+# 기본 LLM 모델을 Gemini로 설정 (사용자 요청 반영)
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3-flash-preview")
 
 # ──────────────────────────────────────────────
 # 청킹 설정
 # ──────────────────────────────────────────────
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "500"))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "100"))
 
 # ──────────────────────────────────────────────
 # Chroma 설정
