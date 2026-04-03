@@ -1,11 +1,14 @@
+# os, sys: 터미널 환경이나 시스템 변수(sys.path 등)에 접근할 때 사용하는 내장 모듈입니다.
 import os
 import sys
+# Path: 객체지향적인 파일 경로 조작을 다루는 내장 라이브러리입니다.
 from pathlib import Path
 
-# 파이프라인에서 src 패키지를 인식할 수 있도록 경로 추가
-base_dir = Path(__file__).resolve().parent
+# 파이프라인에서 src 패키지를 인식할 수 있도록 경로 추가 (test 폴더 안이므로 .parent.parent 사용)
+base_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(base_dir))
 
+# 프로젝트 내의 데이터 로더 및 분할 관련 함수들을 가져옵니다.
 from src.core.loader import load_pdf
 from src.core.splitter import split_documents
 

@@ -3,8 +3,10 @@ Indexing 파이프라인 모듈
 PDF 로드 → 청킹 → 임베딩 → FAISS 저장까지의 전체 프로세스를 제어합니다.
 """
 
+# Optional: 파이썬 타이핑 모듈로, 해당 값이 특정 타입이거나 None일 수 있음을 명시합니다.
 from typing import Optional
 
+# 내부 모듈: 파이썬 파일들(PDF 로드, 텍스트 분할, 임베딩 및 저장, 로그 출력)에서 필요한 함수들을 가져옵니다.
 from src.core.loader import load_pdf, load_pdfs_from_directory
 from src.core.splitter import split_documents
 from src.core.embedder import create_vector_store

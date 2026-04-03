@@ -3,12 +3,17 @@
 텍스트 임베딩을 생성하고 Chroma 벡터 스토어를 관리합니다.
 """
 
+# List, Optional: 파이썬의 타입 힌팅(타입 명시)을 위한 내장 모듈입니다.
 from typing import List, Optional
 
+# OpenAIEmbeddings: 텍스트를 숫자의 배열(벡터)로 변환해주는 OpenAI의 임베딩 모델을 사용하기 위한 LangChain 모듈입니다.
 from langchain_openai import OpenAIEmbeddings
+# Chroma: 생성된 텍스트 벡터들을 로컬에 저장하고 검색할 수 있게 해주는 ChromaDB의 LangChain 통합 모듈입니다.
 from langchain_chroma import Chroma
+# Document: LangChain의 핵심 객체로, 문서의 텍스트 데이터와 메타데이터(페이지, 출처 등)를 함께 담는 클래스입니다.
 from langchain_core.documents import Document
 
+# 설정 파일 및 로거: 직접 정의된 키값 설정 및 로그 기록용 함수들을 가져옵니다.
 from src.config.settings import OPENAI_API_KEY, EMBEDDING_MODEL, CHROMA_DB_DIR
 from src.utils.logger import get_logger
 

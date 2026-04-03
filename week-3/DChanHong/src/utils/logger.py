@@ -3,10 +3,14 @@
 파일 및 콘솔 출력을 지원하는 로거를 제공합니다.
 """
 
+# logging: 파이썬에서 프로그램의 실행 과정이나 에러 등을 기록(로그)으로 남기기 위한 내장 라이브러리입니다.
 import logging
+# sys: 파이썬 인터프리터가 제공하는 변수와 함수를 제어할 수 있게 해주는 모듈로, 여기서는 터미널(콘솔) 출력을 위해 사용됩니다.
 import sys
+# Path (pathlib 모듈): 파일 및 디렉토리 경로를 문자열이 아닌 객체로 다루어, 경로 관련 작업을 훨씬 안전하고 편리하게 해주는 라이브러리입니다.
 from pathlib import Path
 
+# LOGS_DIR: 로그 파일을 저장할 디렉토리 경로를 설정 파일에서 가져옵니다.
 from src.config.settings import LOGS_DIR
 
 

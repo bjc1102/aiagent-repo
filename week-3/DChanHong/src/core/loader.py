@@ -3,12 +3,17 @@ PDF 로드 및 검증 모듈
 PDF 파일을 로드하고, 유효성을 검증합니다.
 """
 
+# Path: 파일 시스템 경로(파일이나 폴더 위치)를 편리하게 다루기 위해 사용하는 파이썬 내장 라이브러리입니다.
 from pathlib import Path
+# List: 리스트에 들어갈 데이터의 타입을 지정할 때 사용하는 타입 힌팅 모듈입니다.
 from typing import List
 
+# PyPDFLoader (langchain-community 모듈): LangChain 커뮤니티에서 제공하는 PDF 로더로, PDF 파일을 페이지 단위로 읽어 Document 객체로 변환해줍니다.
 from langchain_community.document_loaders import PyPDFLoader
+# Document (langchain-core 모듈): LangChain의 핵심 클래스 중 하나로, 텍스트와 함께 메타데이터(페이지 번호, 소스 경로 등) 등 문서의 정보를 보관하는 객체입니다.
 from langchain_core.documents import Document
 
+# 직접 정의한 로그 유틸리티를 가져옵니다.
 from src.utils.logger import get_logger
 
 logger = get_logger(__name__)

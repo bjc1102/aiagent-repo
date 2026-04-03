@@ -3,11 +3,15 @@
 텍스트를 적절한 크기로 분할하며, Table 보존 로직을 포함합니다.
 """
 
+# List: 타입 정의를 명확히 하기 위해 사용하는 파이썬 기본 유틸리티 모듈입니다.
 from typing import List
 
+# RecursiveCharacterTextSplitter: 주어진 텍스트를 논리적인 구조(문단, 문장 등)로 파악하여 잘라주는 LangChain 도구입니다.
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+# Document: 잘려진 텍스트(청크)와 이의 원본 위치 등의 메타데이터를 담아두기 위한 구조체입니다.
 from langchain_core.documents import Document
 
+# 설정값 및 로거 등을 가져옵니다.
 from src.config.settings import CHUNK_SIZE, CHUNK_OVERLAP
 from src.utils.logger import get_logger
 
