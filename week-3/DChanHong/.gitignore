@@ -1,0 +1,29 @@
+# 가상환경
+venv/
+.venv/
+env/
+
+# 환경 변수
+.env
+
+# FAISS 인덱스 저장소
+storage/
+
+# 로그
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

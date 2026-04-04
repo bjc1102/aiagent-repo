@@ -1,0 +1,55 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+  "prompt_profile": "chain_of_thought",
+  "generation_defaults": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_tokens": 1024,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "seed": null
+  },
+  "system_prompt": "## 참조 데이터\n04 65세 이상 틀니 및 치과 임플란트 본인부담률\n\n| 구분 | 틀니 | 임플란트 |\n|---|---|---|\n| 1종 | 5% | 10% |\n| 2종 | 15% | 20% |\n\n※ 본인부담 보상제·상한제 해당되지 않음. 2종장애인의 경우 장애인진료비 지원 없음\n\n05 추나요법 본인부담률\n\n| 구분 | 복잡추나 | 단순추나, 특수추나 |\n|---|---|---|\n| | 1종 | 2종 | 1종 | 2종 |\n| 디스크, 협착증 | 30% | 40% | 30% | 40% |\n| 디스크, 협착증 외 | 80% | 80% | 30% | 40% |\n\n06 의료급여 2종수급권자 본인부담률\n\n◎ 치아 홈메우기\n\n| 구분 | 본인부담률 |\n|---|---|\n| **입원** | 16세 이상 ~ 18세 이하 | 5% |\n| | 6세 이상 ~ 15세 이하 | 3% |\n| | 6세 미만 | 무료 |\n| **외래** | 18세 이하 | 병원급 이상 5% |\n\n◎ 분만 및 임신부\n\n| 구분 | 본인부담률 |\n|---|---|\n| **입원** | 자연분만 | 무료 |\n| | 제왕절개분만 | 무료 |\n| | 고위험 임신부 | 5% |\n| **외래** | 임신부(유산·사산 포함) | 병원급 이상 5% |\n\n◎ 15세 이하 아동\n\n| 구분 | 본인부담률 |\n|---|---|\n| **입원** | 6세 미만 | 무료 |\n| | 6세 이상 ~ 15세 이하 | 3% |\n| **외래** | 1세 미만 | 제1차의료급여기관 | 무료 |\n| | | 제2·3차의료급여기관 | 5% |\n| | 1세 미만 만성질환자 | 제2·3차의료급여기관 | 무료 |\n| | 5세까지의 조산아·저체중출생아 | 병원급 이상 5% |\n\n◎ 정신질환 외래진료\n\n| 구분 | 본인부담률 |\n|---|---|\n| 조현병 | 병원급 이상 5% |\n| 조현병 외 정신질환 | 병원급 이상 10% |\n| 장기지속형 주사제\\* | 5% |\n\n\\* 1·2종 모두 해당, 외래본인부담면제자 제외\n\n◎ 치매질환 입원 및 병원급 이상 외래진료 : 5%\n\n◎ CT, MRI, PET 등\n\n| 구분 | 본인부담률 |\n|---|---|\n| 임신부(유산·사산 포함) | 제1차의료급여기관 | 5% |\n| 5세까지의 조산아 및 저체중 출생아 | 제1차의료급여기관 | |\n| 치매 질환자 | 제1차의료급여기관 | |\n| 1세 미만 만성질환자 | 제2차의료급여기관 | |\n| 조현병 등 정신질환자 | 제2·3차의료급여기관 | 15% |\n\n---\n당신은 의료급여 본인부담률 질문에 답하는 보조 도구입니다.\n답하기 전에 반드시 다음을 `reason` 필드에 단계별로 서술하세요.\n1) 질문에서 수급권 종별·연령·질환·의료기관·시술 등 조건을 추출\n2) 참조 데이터에서 후보 규칙이 2개 이상 보이면, 가장 구체적인 표/행을 하나만 선택\n3) 검사/시술명이 직접 주어지면 그 검사·시술 전용 표를 일반 외래/입원 규정보다 우선 적용\n4) 선택한 표의 섹션명과 행 조건이 질문의 조건과 어떻게 일치하는지 적음\n5) 비율 또는 금액 산식을 적용\n6) 계산 문제면 최종 숫자를 한 번 더 검산한 뒤 `answer` 확정\n\n추가 규칙:\n- `CT, MRI, PET 등`, `추나요법`, `틀니/임플란트`처럼 항목명이 직접 나오면 해당 전용 표를 우선합니다.\n- 일반 규칙과 특수 검사/시술 규칙이 동시에 보이면, 더 구체적인 특수 규칙을 선택합니다.\n- 참조 데이터에 없는 비율을 임의로 만들지 말고, 다른 행의 수치를 그대로 옮겨 추측하지 마세요.\n- `reason`에는 반드시 \"선택한 섹션/행\", \"적용 비율\", \"계산식\"을 포함하세요.\n- `reason`은 너무 길게 쓰지 말고, 3~4개의 짧은 단계로만 요약하세요.\n\n`answer`에는 결과만 간결히 적습니다.\n\n반드시 아래 JSON 형식으로만 응답하세요. JSON 바깥에 설명 문장을 붙이지 마세요.\n{\n  \"answer\": \"최종 답만 간결하게 (예: 5%, 무료, 210,000원)\",\n  \"reason\": \"참조 데이터의 어느 규칙을 적용했는지 짧게 요약\"\n}",
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "copayment_response",
+      "schema": {
+        "additionalProperties": false,
+        "description": "과제 측정용 구조화 출력 (TASK.md 권장 형식).",
+        "properties": {
+          "answer": {
+            "description": "본인부담률 또는 본인부담금 등 최종 답만 간결하게",
+            "title": "Answer",
+            "type": "string"
+          },
+          "reason": {
+            "description": "참조 데이터 근거 또는 단계별 추론 요약",
+            "title": "Reason",
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "reason"
+        ],
+        "title": "CopaymentResponse",
+        "type": "object"
+      }
+    }
+  },
+  "reasoning_effort": "low",
+  "reasoning_effort_enabled": true,
+  "run_overrides": {
+    "max_tokens": 1536
+  },
+  "eval_exclude_ids": [],
+  "self_consistency_samples": 1,
+  "reference_markdown_path": "/Users/root1/Desktop/aiagent-repo/week-2/DChanHong/extracted-reference.md",
+  "reference_source": {
+    "type": "markdown_file",
+    "path": "/Users/root1/Desktop/aiagent-repo/week-2/DChanHong/extracted-reference.md"
+  },
+  "run_label": "cot-flash-lite-v2"
+}
