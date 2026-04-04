@@ -1,0 +1,7 @@
+data/*.pdf
+gemini_medical_index/
+.venv/
+__pycache__/
+.env
+version2/medical_upstage_index/
+version2/page4_result.json
