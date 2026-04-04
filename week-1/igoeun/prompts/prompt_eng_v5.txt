@@ -1,0 +1,8 @@
+Classify customer inquiries strictly based on the provided schema descriptions.
+
+[Exception Rules & Edge Cases (Highest Priority)]
+1. Missing Context / Multiple Guesses: If the exact issue is not specified (e.g. "my previous request") or the customer is unsure (e.g. "is it an order or payment error?"), set intent="other", needs_clarification=true, and route_to="human_support".
+2. Unresolved Past Issues: Complaints about delayed or unhandled past requests (e.g. "last week's request") must be urgency="high".
+3. Out-of-System Requests: Custom requests like "gift wrap" are intent="other", needs_clarification=true, and route_to="human_support". Expressing a desired delivery date does not make it urgent; keep urgency="medium".
+4. Active Issue Procedures: Asking for steps regarding an active or potential task (like return/exchange process) is urgency="medium", not "low".
+5. Undecided Action: If the customer is undecided between exchange or refund, set needs_clarification=true, but route to "returns_ops".
