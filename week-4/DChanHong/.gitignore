@@ -1,0 +1,11 @@
+.env
+.env.*
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+
+# Logs and Storage
+logs/
+storage/
+*.log
