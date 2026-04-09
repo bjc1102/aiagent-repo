@@ -1,0 +1,18 @@
+{
+  "model": "gemini-2.5-flash",
+  "request_count": 30,
+  "self_consistency_multiplier": 1,
+  "requests_with_usage": 30,
+  "totals": {
+    "prompt_tokens": 30175,
+    "completion_tokens": 2094,
+    "total_tokens": 39579,
+    "elapsed_ms": 74541.87000000001
+  },
+  "averages_per_request": {
+    "prompt_tokens": 1005.83,
+    "completion_tokens": 69.8,
+    "total_tokens": 1319.3,
+    "elapsed_ms": 2484.73
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "prompt_profile": "few_shot",
+  "total_items": 30,
+  "evaluated_items": 27,
+  "correct": 26,
+  "accuracy": 0.963,
+  "eval_exclude_ids": [
+    "q12",
+    "q15",
+    "q26"
+  ],
+  "self_consistency_samples": 1
+}
