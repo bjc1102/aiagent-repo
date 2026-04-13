@@ -8,3 +8,4 @@ langchain-community==0.2.6
 chromadb==0.5.3
 pdfplumber==0.11.1
 python-dotenv==1.0.1
+langchain-openai==0.1.9

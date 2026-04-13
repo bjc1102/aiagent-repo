@@ -3,11 +3,13 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
+    OPENAI_API_KEY: str = ""
+    
     EMBEDDING_MODEL: str = "text-embedding-3-small"
     LLM_MODEL: str = "gemini-3-flash-preview"
     
-    # PDF Data path
-    DATA_PATH: str = "../../data"
+    # PDF Data path (DChanHong 폴더 기준 상대 경로)
+    DATA_PATH: str = "../data"
     # ChromaDB storage path
     STORAGE_PATH: str = "./storage"
     
