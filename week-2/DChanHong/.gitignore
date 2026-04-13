@@ -1,12 +1,8 @@
-.env
-.env.*
 __pycache__/
 *.py[cod]
-*$py.class
+.venv/
+venv/
+.env
 .DS_Store
-
-# Logs and Storage
-logs/
-storage/
-*.log
-
+.idea/
+.vscode/
