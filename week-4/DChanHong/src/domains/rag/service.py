@@ -3,8 +3,8 @@ from typing import List, Optional
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.schema import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
 
 from src.core.config import settings
 from src.utils.pdf_parser import pdf_parser
@@ -57,35 +57,25 @@ class RAGService:
 
         # ---------------------------------------------------------------------
         # 1. 임베딩 모델 초기화
-        # "임베딩"이란? 텍스트를 숫자 벡터로 변환하는 것
-        # 예: "고양이" -> [0.12, -0.34, 0.56, ...] (1536차원 벡터)
-        # 의미가 비슷한 텍스트는 비슷한 벡터를 가짐
-        # -> "고양이"와 "강아지"의 벡터는 가깝고, "자동차"와는 멀다
-        #
-        # self.변수명 = 값
-        # -> self에 변수를 저장하면 이 객체의 다른 메서드에서도 접근 가능
-        # -> 예: self.embeddings를 __init__에서 만들면,
-        #         _init_vector_store()에서도 self.embeddings로 접근 가능
-        # ---------------------------------------------------------------------
-        self.embeddings = OpenAIEmbeddings(
-            model=settings.EMBEDDING_MODEL,       # "text-embedding-3-small"
-            api_key=settings.OPENAI_API_KEY        # .env에서 불러온 API 키
-        )
+        try:
+            self.embeddings = OpenAIEmbeddings(
+                model=settings.EMBEDDING_MODEL,       # "text-embedding-3-small"
+                openai_api_key=settings.OPENAI_API_KEY # .env에서 불러온 API 키
+            )
+        except Exception as e:
+            print(f"Warning: Failed to initialize OpenAIEmbeddings: {e}")
+            self.embeddings = None
 
-        # ---------------------------------------------------------------------
-        # 2. LLM (Large Language Model) 초기화
-        # 검색된 문서를 바탕으로 사용자 질문에 답변을 생성하는 AI 모델
-        #
-        # temperature=0 이란?
-        # -> 0에 가까울수록 항상 같은(확정적인) 답변을 생성
-        # -> 1에 가까울수록 매번 다른(창의적인) 답변을 생성
-        # -> RAG에서는 정확한 답변이 중요하므로 0으로 설정
-        # ---------------------------------------------------------------------
-        self.llm = ChatGoogleGenerativeAI(
-            model=settings.LLM_MODEL,              # "gemini-3-flash-preview"
-            google_api_key=settings.GEMINI_API_KEY, # .env에서 불러온 API 키
-            temperature=0
-        )
+        # 2. LLM 초기화
+        try:
+            self.llm = ChatGoogleGenerativeAI(
+                model=settings.LLM_MODEL,              # "gemini-1.5-flash"
+                google_api_key=settings.GEMINI_API_KEY, # .env에서 불러온 API 키
+                temperature=0
+            )
+        except Exception as e:
+            print(f"Warning: Failed to initialize ChatGoogleGenerativeAI: {e}")
+            self.llm = None
 
         # ---------------------------------------------------------------------
         # 3. 벡터 스토어 초기화

@@ -9,3 +9,4 @@ chromadb
 pdfplumber
 python-dotenv
 langchain-openai
+langchain-core 

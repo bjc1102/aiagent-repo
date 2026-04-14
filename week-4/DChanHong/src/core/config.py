@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-# week-4/.env 경로를 계산
-ENV_PATH = Path(__file__).resolve().parents[3] / ".env"
+# DChanHong/.env 경로를 계산 (src/core/config.py 기준 parents[2])
+ENV_PATH = Path(__file__).resolve().parents[2] / ".env"
 
 class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""

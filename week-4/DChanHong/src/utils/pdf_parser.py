@@ -1,7 +1,7 @@
 import pdfplumber
 import pandas as pd
 from typing import List, Dict, Any
-from langchain.schema import Document
+from langchain_core.documents import Document
 import os
 import re
 
