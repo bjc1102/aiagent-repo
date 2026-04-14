@@ -2,8 +2,9 @@ import os
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-# DChanHong/.env 경로를 계산 (src/core/config.py 기준 parents[2])
-ENV_PATH = Path(__file__).resolve().parents[2] / ".env"
+# 현재 파일(config.py)에서 2단계 위로 가면 DChanHong 폴더임
+BASE_DIR = Path(__file__).resolve().parents[2]
+ENV_PATH = BASE_DIR / ".env"
 
 class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
@@ -13,10 +14,31 @@ class Settings(BaseSettings):
     LLM_MODEL: str = "gemini-3-flash-preview"
 
     # PDF Data path (DChanHong 폴더 기준 상대 경로)
-    DATA_PATH: str = "../data"
+    DATA_PATH: str = "data"
     # ChromaDB storage path
     STORAGE_PATH: str = "./storage"
 
-    model_config = SettingsConfigDict(env_file=str(ENV_PATH), extra="ignore")
+    # env_file을 여러 경로 후보로 지정하여 더 견고하게 함
+    model_config = SettingsConfigDict(
+        env_file=(str(ENV_PATH), ".env"), 
+        extra="ignore"
+    )
 
 settings = Settings()
+
+# 디버그용 출력: .env 경로 및 키 확인
+print(f"DEBUG: BASE_DIR: {BASE_DIR}")
+print(f"DEBUG: Using .env file at: {ENV_PATH}")
+if os.path.exists(ENV_PATH):
+    print(f"DEBUG: .env file found at ENV_PATH.")
+elif os.path.exists(".env"):
+    print(f"DEBUG: .env file found in Current Working Directory.")
+else:
+    print(f"DEBUG: .env file NOT found anywhere!")
+
+def mask_key(key):
+    if not key: return "None"
+    return f"{key[:7]}...{key[-4:]}"
+
+print(f"DEBUG: GEMINI_API_KEY: {mask_key(settings.GEMINI_API_KEY)}")
+print(f"DEBUG: OPENAI_API_KEY: {mask_key(settings.OPENAI_API_KEY)}")

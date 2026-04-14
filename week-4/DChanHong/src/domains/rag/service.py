@@ -112,19 +112,18 @@ class RAGService:
     async def run_indexing(self) -> dict:
         """
         data 폴더의 모든 PDF를 읽어서 벡터DB에 저장(인덱싱)합니다.
-
-        [async란?]
-        비동기 함수를 선언하는 키워드입니다.
-        - 일반 함수: def foo()      -> 호출: foo()
-        - 비동기 함수: async def foo() -> 호출: await foo()
-
-        비동기의 핵심: 오래 걸리는 작업(파일 읽기, API 호출 등)을
-        "기다리는 동안" 다른 작업을 처리할 수 있게 해줌.
-        FastAPI가 비동기를 사용하므로 여기서도 async를 씀.
-
-        [전체 흐름]
-        PDF 파일 찾기 → PDF 파싱(텍스트+표 추출) → 청킹(분할) → 벡터DB 저장
+        기존 데이터를 삭제하고 새로 저장합니다.
         """
+        # 0단계: 기존 벡터 데이터 삭제 (초기화)
+        try:
+            if self.vector_store:
+                # 기존 컬렉션 삭제
+                self.vector_store.delete_collection()
+                # 다시 초기화하여 깨끗한 상태로 만듦
+                self._init_vector_store()
+                print("Existing vector storage cleared.")
+        except Exception as e:
+            print(f"Warning: Failed to clear existing storage: {e}")
 
         # ---------------------------------------------------------------------
         # 1단계: data 폴더 경로 확인
@@ -304,11 +303,90 @@ class RAGService:
         response = await self.llm.ainvoke(prompt)
 
         # QueryResponse 객체를 만들어서 리턴
-        # 삼항 연산자: A if 조건 else B -> 조건이 True면 A, False면 B
+        # response.content가 리스트인 경우를 대비해 문자열로 변환
+        answer_text = response.content
+        if isinstance(answer_text, list):
+            # 리스트 형태인 경우 텍스트 부분만 추출하거나 조인
+            answer_text = "".join([part.get("text", "") if isinstance(part, dict) else str(part) for part in answer_text])
+
         return QueryResponse(
-            answer=response.content,
+            answer=str(answer_text),
             sources=source_docs if request.include_sources else None
         )
+
+    async def run_evaluation(self, version: str) -> dict:
+        """
+        골든 데이터셋을 읽어 전체 질문에 대해 RAG 답변을 생성하고 결과를 파일로 저장합니다.
+        
+        [저장 경로] data/{version}/{index}/evaluation_results.jsonl
+        """
+        import json
+        from .schemas import EvaluationResult
+
+        input_file = os.path.join("data", "golden_dataset.jsonl")
+        base_output_dir = os.path.join("data", version)
+        
+        # 1. 기본 출력 디렉토리 생성 (예: data/basic)
+        if not os.path.exists(base_output_dir):
+            os.makedirs(base_output_dir)
+
+        # 2. 다음 인덱스 찾기 (0, 1, 2...)
+        index = 0
+        while os.path.exists(os.path.join(base_output_dir, str(index))):
+            index += 1
+        
+        output_dir = os.path.join(base_output_dir, str(index))
+        os.makedirs(output_dir)
+        output_file = os.path.join(output_dir, "evaluation_results.jsonl")
+
+        # 3. 골든 데이터셋 확인
+        if not os.path.exists(input_file):
+            return {"error": f"Golden dataset not found at {input_file}"}
+
+        with open(input_file, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+
+        total = len(lines)
+        processed = 0
+
+        for line in lines:
+            try:
+                data = json.loads(line)
+                question = data['question']
+                
+                # RAG 답변 생성 (여기서는 기본 get_answer 호출)
+                request = QueryRequest(question=question, include_sources=False)
+                response = await self.get_answer(request)
+                
+                # 결과 딕셔너리 생성 (Pydantic 객체 메서드 충돌 방지 위해 직접 딕셔너리 구성)
+                eval_result = {
+                    "id": data['id'],
+                    "question": question,
+                    "expected_answer": data['expected_answer'],
+                    "llm_answer": response.answer,
+                    "difficulty": data['difficulty'],
+                    "source_year": data['source_year']
+                }
+                
+                # 파일에 저장 (json.dumps 사용)
+                with open(output_file, 'a', encoding='utf-8') as out_f:
+                    out_f.write(json.dumps(eval_result, ensure_ascii=False) + '\n')
+                
+                processed += 1
+                print(f"[{processed}/{total}] Evaluated: {question[:20]}...")
+            except Exception as e:
+                print(f"Error evaluating question {data.get('id', 'unknown')}: {e}")
+                # 에러 발생 시에도 계속 진행하려면 continue, 아니면 에러 발생
+                continue
+
+        return {
+            "status": "success",
+            "endpoint": version,
+            "index": index,
+            "total": total,
+            "processed": processed,
+            "output_file": output_file
+        }
 
 
 # =============================================================================
