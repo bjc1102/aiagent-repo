@@ -1,30 +1,30 @@
-{"id": 0, "question": "2025년 의료급여 1종 수급권자가 1차 의료급여기관(의원) 외래 진료 시 본인부담금은 얼마인가요?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2025"}
-{"id": 1, "question": "2026년 의료급여 2종 수급권자가 3차 의료급여기관(상급종합병원) 외래 진료 시 본인부담률은 어떻게 되나요?", "expected_answer": "15%", "difficulty": "easy", "source_year": "2026"}
-{"id": 2, "question": "의료급여 1종 수급권자의 입원 본인부담금은 2025년 기준 얼마인가요?", "expected_answer": "무료", "difficulty": "easy", "source_year": "2025"}
-{"id": 3, "question": "2026년부터 항정신병 장기지속형 주사제의 외래 본인부담률은 몇 퍼센트로 인하되나요?", "expected_answer": "2%", "difficulty": "medium", "source_year": "2026"}
-{"id": 4, "question": "2025년 대비 2026년에 달라진 항정신병 장기지속형 주사제의 본인부담률 차이는?", "expected_answer": "2025년에는 5%였으나, 2026년부터는 2%로 완화되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
-{"id": 5, "question": "2026년부터 신설되는 외래진료 적정관리 제도에 따라 연간 몇 회를 초과하면 본인부담률 30%가 적용되나요?", "expected_answer": "연간 365회 초과 시 적용됩니다.", "difficulty": "medium", "source_year": "2026"}
-{"id": 6, "question": "2025년 기준으로 조산아 및 저체중 출생아의 의료급여 지원 기간은 출생일로부터 몇 년인가요?", "expected_answer": "5년", "difficulty": "medium", "source_year": "2025"}
+{"id": 0, "question": "2026년 기준으로 근로능력이 있는 가구원이 포함된 가구가 의료급여를 신청할 때 부여받는 수급권 종별과 그 판정 기준은?", "expected_answer": "의료급여 2종, 기준은 근로능력이 있는 세대원 유무입니다.", "difficulty": "medium", "source_year": "2026"}
+{"id": 1, "question": "올해(2026년) 개정된 제도에 따라 1종 수급권자가 상급종합병원 외래 이용 시 지불해야 할 본인부담금의 구성 항목을 모두 나열하세요.", "expected_answer": "방문당 2,000원 + (CT/MRI/PET 촬영 시) 5%", "difficulty": "hard", "source_year": "2026"}
+{"id": 2, "question": "2025년과 2026년 모두 공통적으로 적용되는, 1종 수급권자가 입원 진료를 받을 때 본인부담금이 면제되는 원칙적인 이유는 무엇인가요?", "expected_answer": "1종 수급권자는 입원 시 본인부담금이 전액 면제(무료)이기 때문입니다.", "difficulty": "easy", "source_year": "2025"}
+{"id": 3, "question": "정신과 외래 진료 시 항정신병 장기지속형 주사제를 처방받을 경우, 2025년 대비 2026년에 환자가 실제로 체감하는 본인부담률 변화폭은 몇 퍼센트 포인트인가요?", "expected_answer": "3% 포인트 (2025년 5% -> 2026년 2%)", "difficulty": "cross-year", "source_year": "2026"}
+{"id": 4, "question": "2026년부터 신설된 '외래진료 적정관리 제도'에 따라, 동일 질환으로 연간 몇 회 이상 외래를 방문하면 패널티(본인부담률 상향)가 적용되는지 계산 과정을 포함해 설명하세요.", "expected_answer": "연간 365회 초과 시 적용되며, 초과분부터 본인부담률 30%가 적용됩니다.", "difficulty": "hard", "source_year": "2026"}
+{"id": 5, "question": "2025년 자료를 참고하여, 조산아 및 저체중 출생아가 만 5세가 되는 시점에 의료급여 지원이 종료되는 구체적인 시점은?", "expected_answer": "출생일로부터 5년이 되는 날까지입니다.", "difficulty": "medium", "source_year": "2025"}
+{"id": 6, "question": "2026년에 확대된 조산아 지원 정책에 따라, 2021년 1월에 태어난 아이가 받을 수 있는 총 지원 기간은 개월 수로 환산하면 얼마인가요?", "expected_answer": "64개월 (5년 4개월)", "difficulty": "hard", "source_year": "2026"}
 {"id": 7, "question": "2026년에 확대되는 조산아 의료급여 지원 기간은 출생일로부터 총 몇 개월인가요?", "expected_answer": "5년 4개월(64개월)", "difficulty": "medium", "source_year": "2026"}
-{"id": 8, "question": "조산아 지원 기간에 대해 2025년과 2026년의 기준 차이를 설명하세요.", "expected_answer": "2025년까지는 출생일로부터 5년이었으나, 2026년부터는 5년 4개월로 기간이 확대되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
-{"id": 9, "question": "2025년 국가건강검진 후 고혈압이나 당뇨병 외에 추가로 확진검사 시 본인부담이 면제되는 질환은?", "expected_answer": "결핵, 우울증, 조기정신증", "difficulty": "hard", "source_year": "2025"}
-{"id": 10, "question": "2026년부터 국가건강검진 후 확진검사 대상에 새롭게 추가되어 본인부담 면제를 받는 질환은 무엇인가요?", "expected_answer": "이상지질혈증", "difficulty": "medium", "source_year": "2026"}
-{"id": 11, "question": "2025년과 2026년의 본인부담금 초과 금액 환급 산정 기간 단위는 어떻게 달라지나요?", "expected_answer": "2025년에는 30일 단위였으나, 2026년부터는 월 단위로 변경됩니다.", "difficulty": "cross-year", "source_year": "2026"}
-{"id": 12, "question": "의료급여 2종 수급권자의 입원 식대 본인부담률은 2025년 기준 몇 퍼센트인가요?", "expected_answer": "20%", "difficulty": "easy", "source_year": "2025"}
-{"id": 13, "question": "2026년 기준, 응급의료관리료 본인부담 100%가 적용되는 경증 응급환자의 KTAS 등급 기준은?", "expected_answer": "KTAS 4등급(경증응급환자) 및 5등급(비응급환자)", "difficulty": "hard", "source_year": "2026"}
-{"id": 14, "question": "2025년 대비 2026년 응급의료관리료 본인부담 기준의 주요 변경 사항은 무엇인가요?", "expected_answer": "2025년에는 응급증상 여부로 판단했으나, 2026년부터는 KTAS(중증도 분류) 4, 5등급을 기준으로 100% 본인부담을 적용하도록 구체화되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
-{"id": 15, "question": "의료급여 1종 수급권자가 상급종합병원 외래 진료 시 2025년에 부담하는 금액은?", "expected_answer": "2,000원", "difficulty": "easy", "source_year": "2025"}
-{"id": 16, "question": "2025년 기준, 65세 이상 수급권자의 틀니 본인부담률은 1종과 2종 각각 몇 퍼센트인가요?", "expected_answer": "1종 5%, 2종 15%", "difficulty": "medium", "source_year": "2025"}
+{"id": 8, "question": "2025년과 2026년의 조산아 지원 정책을 비교했을 때, '지원 대상 연령' 자체에 변화가 있는지 여부와 그 이유를 설명하세요.", "expected_answer": "연령 기준은 5세로 동일하게 언급될 수 있으나 실질적인 지원 기간이 5년에서 5년 4개월로 확대되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
+{"id": 9, "question": "2025년 국가건강검진 결과에 따른 확진검사비 지원 대상 질환 중, 정신건강과 관련된 질환 2가지를 명시하세요.", "expected_answer": "우울증, 조기정신증", "difficulty": "hard", "source_year": "2025"}
+{"id": 10, "question": "2026년 신규 정책 중, 심혈관 질환 예방을 위해 건강검진 후 확진검사비 지원 대상에 새롭게 포함된 질환은?", "expected_answer": "이상지질혈증", "difficulty": "medium", "source_year": "2026"}
+{"id": 11, "question": "본인부담금 환급 제도와 관련하여 2025년의 '30일간' 기준이 2026년에 '월 단위'로 변경됨으로써 행정적으로 달라지는 점은 무엇인가요?", "expected_answer": "기존 30일 합산 방식에서 해당 월(1일~말일) 합산 방식으로 변경되어 산정 주기가 명확해졌습니다.", "difficulty": "cross-year", "source_year": "2026"}
+{"id": 12, "question": "2025년 기준, 2종 수급권자가 입원했을 때 '식대'에 대해서는 본인부담금이 면제되나요, 아니면 일정 비율을 부담하나요? 정확한 비율을 쓰세요.", "expected_answer": "20%를 본인이 부담합니다.", "difficulty": "medium", "source_year": "2025"}
+{"id": 13, "question": "2026년부터 응급실 방문 시 KTAS 4~5등급에 해당하는 경증 환자가 응급의료관리료 100%를 부담하게 되는 기준을 '중증도 분류' 관점에서 설명하세요.", "expected_answer": "비응급(5등급) 및 경증응급(4등급) 환자는 응급실 이용 시 응급의료관리료 전액을 본인이 부담해야 합니다.", "difficulty": "hard", "source_year": "2026"}
+{"id": 14, "question": "경증 응급환자의 본인부담 기준이 2025년 '응급증상 해당 여부'에서 2026년 'KTAS 등급'으로 변경된 것의 실무적 차이는 무엇인가요?", "expected_answer": "주관적인 증상 판단보다 객관적인 중증도 분류 체계(KTAS)를 통해 100% 본인부담 대상을 더 명확히 규정하게 되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
+{"id": 15, "question": "1종 수급권자가 2차 의료급여기관(병원)에서 진료를 받고 약국에서 처방약을 조제했을 때, 2025년 기준으로 총 지불해야 하는 최소 본인부담금은 얼마인가요?", "expected_answer": "1,500원 (병원 1,000원 + 약국 500원)", "difficulty": "hard", "source_year": "2025"}
+{"id": 16, "question": "65세 이상 노인이 틀니(치과) 진료를 받을 때, 1종과 2종 수급권자의 본인부담률 차이는 몇 퍼센트인가요? (2025년 기준)", "expected_answer": "10% 차이 (1종 5%, 2종 15%)", "difficulty": "medium", "source_year": "2025"}
 {"id": 17, "question": "임신부의 경우 병원급 이상 외래 진료 시 본인부담률은 2026년 기준 몇 퍼센트인가요?", "expected_answer": "5%", "difficulty": "medium", "source_year": "2026"}
-{"id": 18, "question": "2026년부터 정신과 폐쇄병동 입원 시 정액수가에 추가되는 가산율은 몇 퍼센트인가요?", "expected_answer": "16% (2025년 7월 12%에서 2026년 1월 16%로 인상)", "difficulty": "hard", "source_year": "2026"}
-{"id": 19, "question": "정신과 폐쇄병동 입원 가산율의 2025년 하반기와 2026년 기준 차이는 무엇인가요?", "expected_answer": "2025년 7월부터는 12% 가산이었으나, 2026년 1월부터는 16% 가산으로 인상되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
-{"id": 20, "question": "15세 이하 아동의 입원 본인부담률은 2025년 2종 수급권자 기준으로 몇 퍼센트인가요?", "expected_answer": "6세 미만은 무료, 6세 이상 15세 이하는 3%", "difficulty": "hard", "source_year": "2025"}
-{"id": 21, "question": "2025년 기준, 의료급여의뢰서 없이 2차 의료기관을 이용할 수 있는 예외 대상 3가지를 말하세요.", "expected_answer": "응급환자, 분만, 15세 이하 아동, 등록 장애인 등", "difficulty": "medium", "source_year": "2025"}
-{"id": 22, "question": "선택의료급여기관 이용자가 다른 기관 이용 시 발급받아야 하는 서류의 명칭은 무엇인가요?", "expected_answer": "의료급여의뢰서", "difficulty": "easy", "source_year": "2026"}
-{"id": 23, "question": "2026년 기준, 2종 수급권자가 의원급에서 외래 진료 시 본인부담금은 얼마인가요?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2026"}
-{"id": 24, "question": "2025년 2종 수급권자의 치아홈메우기 본인부담률은 6세 이상 15세 이하 기준 몇 퍼센트인가요?", "expected_answer": "3%", "difficulty": "hard", "source_year": "2025"}
+{"id": 18, "question": "2026년 1월부터 적용되는 정신과 폐쇄병동 입원료 가산율이 2025년 상반기 대비 최종적으로 몇 퍼센트 인상되었는지 쓰세요.", "expected_answer": "4% 포인트 인상 (12% -> 16%)", "difficulty": "hard", "source_year": "2026"}
+{"id": 19, "question": "폐쇄병동 가산율의 단계적 인상 과정을 2025년 7월과 2026년 1월 기점으로 구분하여 설명하세요.", "expected_answer": "2025년 7월 12%로 1차 인상되었고, 2026년 1월 16%로 2차 인상되었습니다.", "difficulty": "cross-year", "source_year": "2026"}
+{"id": 20, "question": "10세 아동(2종 수급권자)이 입원 진료를 받았을 때, 2025년 지침에 따르면 본인부담률은 성인(10%)과 어떻게 다른가요?", "expected_answer": "15세 이하 아동은 3%를 적용받아 성인보다 낮습니다.", "difficulty": "hard", "source_year": "2025"}
+{"id": 21, "question": "의료급여의뢰서 없이도 예외적으로 상급종합병원(3차)을 바로 이용할 수 있는 경우 중, '장애인'과 관련된 구체적인 요건은? (2025년 기준)", "expected_answer": "장애인복지법에 따라 등록된 장애인이 해당됩니다.", "difficulty": "medium", "source_year": "2025"}
+{"id": 22, "question": "지정된 선택의료급여기관이 아닌 다른 의료기관을 이용하고자 할 때, 반드시 지참해야 하는 서류의 명칭과 발급 주체는?", "expected_answer": "의료급여의뢰서, 선택의료급여기관에서 발급받아야 합니다.", "difficulty": "medium", "source_year": "2026"}
+{"id": 23, "question": "2026년 현재, 2종 수급권자가 동네 의원(1차 기관)에서 외래 진료를 받을 때 발생하는 기본 본인부담금 액수는?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2026"}
+{"id": 24, "question": "어린이 치아홈메우기 서비스의 본인부담률 3%가 적용되는 대상 연령대의 상한은 몇 세까지인가요? (2025년 기준)", "expected_answer": "15세 이하까지입니다.", "difficulty": "hard", "source_year": "2025"}
 {"id": 25, "question": "2026년 의료급여 수급권자 구분에 따른 1종과 2종의 결정적 차이는 무엇인가요?", "expected_answer": "근로능력 유무 (근로무능력 가구는 1종, 근로능력자가 있는 가구는 2종)", "difficulty": "medium", "source_year": "2026"}
-{"id": 26, "question": "의료급여 1종 수급권자가 2026년 CT 촬영을 할 경우 본인부담률은 얼마인가요?", "expected_answer": "5%", "difficulty": "easy", "source_year": "2026"}
-{"id": 27, "question": "2025년과 2026년 통틀어, 의료급여의뢰서의 유효기간은 발급일로부터 몇 일(공휴일 제외)인가요?", "expected_answer": "7일", "difficulty": "easy", "source_year": "2025"}
-{"id": 28, "question": "2026년부터 정신질환 외래 진료 시 '정신요법료' 산정 기준은 어떤 기준으로 변경되나요?", "expected_answer": "건강보험과 동일하게 산정하도록 급여기준이 완화됩니다.", "difficulty": "hard", "source_year": "2026"}
-{"id": 29, "question": "2025년과 2026년에 공통적으로 적용되는 입원 본인부담 면제 대상 아동의 나이 기준은?", "expected_answer": "6세 미만", "difficulty": "medium", "source_year": "2025"}
+{"id": 26, "question": "1종 수급권자가 2026년 대학병원에서 MRI 촬영을 했을 때, 단순 외래 본인부담금(2,000원) 외에 추가로 부담해야 하는 금액의 산정 방식은?", "expected_answer": "MRI 촬영 비용의 5%를 별도로 부담합니다.", "difficulty": "medium", "source_year": "2026"}
+{"id": 27, "question": "의료급여의뢰서의 유효기간이 '7일'이라는 규정에서, 기간 산정 시 제외되는 날짜의 기준은 무엇인가요?", "expected_answer": "공휴일은 제외하고 산정합니다.", "difficulty": "medium", "source_year": "2025"}
+{"id": 28, "question": "2026년부터 정신질환자의 외래 진료 접근성을 높이기 위해 '정신요법료' 산정 방식을 어떤 제도와 동일하게 맞추었나요?", "expected_answer": "건강보험 산정 기준과 동일하게 맞추었습니다.", "difficulty": "hard", "source_year": "2026"}
+{"id": 29, "question": "입원 본인부담금이 전액 면제되는 '아동'의 기준 연령은 2025년과 2026년 모두 몇 세 미만으로 동일한가요?", "expected_answer": "6세 미만", "difficulty": "medium", "source_year": "2025"}

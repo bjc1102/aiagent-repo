@@ -1,10 +1,17 @@
 import os
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from dotenv import load_dotenv
 
 # 현재 파일(config.py)에서 2단계 위로 가면 DChanHong 폴더임
 BASE_DIR = Path(__file__).resolve().parents[2]
 ENV_PATH = BASE_DIR / ".env"
+
+# .env 파일이 있으면 시스템 환경 변수보다 우선하여 로드 (override=True)
+if ENV_PATH.exists():
+    load_dotenv(dotenv_path=ENV_PATH, override=True)
+else:
+    load_dotenv(override=True)
 
 class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
