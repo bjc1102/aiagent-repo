@@ -16,6 +16,7 @@ else:
 class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
     OPENAI_API_KEY: str = ""
+    COHERE_API_KEY: str = ""
 
     EMBEDDING_MODEL: str = "text-embedding-3-small"
     LLM_MODEL: str = "gemini-3-flash-preview"
@@ -49,3 +50,4 @@ def mask_key(key):
 
 print(f"DEBUG: GEMINI_API_KEY: {mask_key(settings.GEMINI_API_KEY)}")
 print(f"DEBUG: OPENAI_API_KEY: {mask_key(settings.OPENAI_API_KEY)}")
+print(f"DEBUG: COHERE_API_KEY: {mask_key(settings.COHERE_API_KEY)}")

@@ -26,6 +26,17 @@ async def query_medical_aid_hybrid(request: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@router.post("/rerank-query", response_model=QueryResponse)
+async def query_medical_aid_rerank(request: QueryRequest):
+    """
+    하이브리드 검색 + Cohere Rerank 기반 답변을 받습니다.
+    """
+    try:
+        response = await rag_service.get_reranked_answer(request)
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @router.post("/basic")
 async def run_basic_evaluation():
     """
@@ -48,6 +59,20 @@ async def run_hybrid_evaluation():
     """
     try:
         result = await rag_service.run_evaluation("hybrid")
+        if "error" in result:
+            raise HTTPException(status_code=404, detail=result["error"])
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/rerank")
+async def run_rerank_evaluation():
+    """
+    Rerank RAG 엔진으로 골든 데이터셋 전체를 평가합니다.
+    결과는 data/rerank/{index} 폴더에 저장됩니다.
+    """
+    try:
+        result = await rag_service.run_evaluation("rerank")
         if "error" in result:
             raise HTTPException(status_code=404, detail=result["error"])
         return result

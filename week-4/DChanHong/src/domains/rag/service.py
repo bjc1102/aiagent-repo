@@ -1,5 +1,6 @@
 import os
 import json
+import cohere
 from typing import List, Optional
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import OpenAIEmbeddings
@@ -30,6 +31,9 @@ class RAGService:
     
     [Hybrid Search]
     기존 벡터 검색(Dense)과 키워드 검색(Sparse, BM25)을 결합하여 검색 품질을 높입니다.
+    
+    [Rerank]
+    Cohere Rerank를 사용하여 검색된 문서의 순위를 재조정합니다.
     """
 
     def __init__(self):
@@ -54,7 +58,14 @@ class RAGService:
             print(f"Warning: Failed to initialize ChatGoogleGenerativeAI: {e}")
             self.llm = None
 
-        # 3. 벡터 스토어 및 BM25 초기화
+        # 3. Cohere Rerank 초기화
+        try:
+            self.cohere_client = cohere.ClientV2(api_key=settings.COHERE_API_KEY)
+        except Exception as e:
+            print(f"Warning: Failed to initialize Cohere Client: {e}")
+            self.cohere_client = None
+
+        # 4. 벡터 스토어 및 BM25 초기화
         self.vector_store = None
         self.bm25 = None
         self.bm25_docs = []  # BM25 인덱싱에 사용된 원본 Document 리스트
@@ -201,6 +212,49 @@ class RAGService:
 
         return await self._generate_answer_from_docs(request, final_docs)
 
+    async def get_reranked_answer(self, request: QueryRequest) -> QueryResponse:
+        """하이브리드 검색 후 Cohere Rerank를 적용한 답변 생성"""
+        if not self.vector_store or not self.bm25 or not self.cohere_client:
+            # 설정이 미비하면 하이브리드 답변으로 폴백
+            print("Rerank: Fallback to hybrid search due to missing component.")
+            return await self.get_hybrid_answer(request)
+
+        # 1. 하이브리드 후보군 추출 (Top 40)
+        vector_results = self.vector_store.similarity_search(request.question, k=20)
+        tokenized_query = korean_tokenizer(request.question)
+        bm25_results = self.bm25.get_top_n(tokenized_query, self.bm25_docs, n=20)
+        
+        # 중복 제거 (내용 기준)
+        seen_contents = set()
+        candidates = []
+        for doc in (vector_results + list(bm25_results)):
+            if doc.page_content not in seen_contents:
+                candidates.append(doc)
+                seen_contents.add(doc.page_content)
+
+        # 2. Cohere Rerank 적용
+        try:
+            doc_texts = [doc.page_content for doc in candidates]
+            response = self.cohere_client.rerank(
+                model="rerank-multilingual-v3.0",
+                query=request.question,
+                documents=doc_texts,
+                top_n=10
+            )
+            
+            # 3. 재순위화된 결과 매핑
+            final_docs = []
+            for result in response.results:
+                final_docs.append(candidates[result.index])
+            
+            print(f"Rerank: Successfully reranked {len(candidates)} docs to top 10.")
+        except Exception as e:
+            print(f"Warning: Rerank failed: {e}")
+            # Rerank 실패 시 하이브리드 RRF 결과 사용
+            return await self.get_hybrid_answer(request)
+
+        return await self._generate_answer_from_docs(request, final_docs)
+
     async def _generate_answer_from_docs(self, request: QueryRequest, docs: List[Document]) -> QueryResponse:
         """검색된 문서들로부터 LLM 답변을 생성하는 공통 로직"""
         context_parts = []
@@ -238,7 +292,7 @@ class RAGService:
         )
 
     async def run_evaluation(self, version: str) -> dict:
-        """골든 데이터셋 평가 로직 (하이브리드 대응)"""
+        """골든 데이터셋 평가 로직 (하이브리드 및 Rerank 대응)"""
         input_file = os.path.join("data", "golden_dataset.jsonl")
         base_output_dir = os.path.join("data", version)
         
@@ -270,7 +324,9 @@ class RAGService:
                 request = QueryRequest(question=question, include_sources=False)
                 
                 # version에 따른 검색 방식 선택
-                if version == "hybrid":
+                if version == "rerank":
+                    response = await self.get_reranked_answer(request)
+                elif version == "hybrid":
                     response = await self.get_hybrid_answer(request)
                 else:
                     response = await self.get_answer(request)

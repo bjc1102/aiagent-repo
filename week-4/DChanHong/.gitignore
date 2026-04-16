@@ -8,4 +8,10 @@ __pycache__/
 # Logs and Storage
 logs/
 storage/
+**/storage/
 *.log
+
+# Project specific
+.venv/
+node_modules/
+.pytest_cache/
