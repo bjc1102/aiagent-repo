@@ -3,23 +3,8 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 
-def set_vectorDB(file_path, year, embeddings):
-    loader = PyPDFLoader(file_path)
-    raw_documents = loader.load()
+def set_faiss(chunks, embeddings):
 
-    # Text Splitter 설정
-    # 본인부담률 표는 내용이 조밀하므로 chunk_size를 너무 작지 않게 설정
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=800,
-        chunk_overlap=100,
-        length_function=len,
-        separators=["\n\n", "\n", " ", ""]
-    )
-    
-    chunks = text_splitter.split_documents(raw_documents)
-
-    for chunk in chunks:
-        chunk.metadata["source_year"] = year
         
     vector_db = FAISS.from_documents(chunks, embeddings)
     vector_db.save_local("faiss_medical_index")
@@ -28,16 +13,16 @@ def set_vectorDB(file_path, year, embeddings):
 
 
     # : 검색 품질 확인 (Top-K=3)
-def evaluate_basic_search(dataset, db, k):
+def evaluate_basic_search(vector_db, golden_dataset, k):
     success_count = 0
     results_report = []
 
-    for item in dataset:
+    for item in golden_dataset:
         query = item["question"]
         evidence = item["evidence_text"]
         
         # 검색 수행
-        retrieved_docs = db.similarity_search(query, k=k)
+        retrieved_docs = vector_db.similarity_search(query, k=k)
         
         # print(retrieved_docs)
 
@@ -53,9 +38,10 @@ def evaluate_basic_search(dataset, db, k):
             "id": item["id"],
             "difficulty": item["difficulty"],
             "status": status,
-            "top_chunk": retrieved_docs[0].page_content[:30].replace("\n", " ") + "..."
+            "source_year": retrieved_docs[0].metadata.get('source_year'),
+            "top_chunk": retrieved_docs[0].page_content.replace("\n", " ") + "..."
         }
-        print(result)
+
         results_report.append(result)
 
-    return results_report, (success_count / len(dataset)) * 100
+    return results_report, (success_count / len(golden_dataset)) * 100

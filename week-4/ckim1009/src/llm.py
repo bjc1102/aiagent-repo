@@ -1,8 +1,10 @@
 from pydantic import BaseModel, ValidationError, Field
 import json
 
-SYSTEM_PROMPT = """#당신은 의료급여 본인부담률 질문에 정확히 답해야합니다.
-#아래에 정리한 의료급여 정보만을 참조하여 답해야합니다.
+SYSTEM_PROMPT = """### 당신은 의료급여 본인부담률 질문에 정확히 답해야합니다.
+### 각 컨텍스트에는 출처 년도가 표시되어 있습니다. 질문이 특정 년도를 묻는 경우 해당 년도의 정보만 사용하세요.
+### 컨텍스트에 없는 내용은 "정보를 찾을 수 없습니다"라고 답하세요.
+### 아래에 정리한 의료급여 정보만을 참조하여 답해야합니다.
 
 {md_content}
 """
@@ -35,7 +37,8 @@ def eval_rag_pipeline(client, golden_dataset):
 
     total = len(golden_dataset)
     for i, item in enumerate(golden_dataset):
-        if i<19:
+        # if i<18:
+        if i != 19:
             continue
 
 
@@ -65,7 +68,7 @@ def eval_rag_pipeline(client, golden_dataset):
                 exact_match_count += 1
             
             # 최종 결과 저장 (json.dump 사용)
-            with open(f'output/output.jsonl', "a", encoding="utf-8") as f:
+            with open(f'output/llm_output/output.jsonl', "a", encoding="utf-8") as f:
                 f.write(json.dumps(parsed_dict, ensure_ascii=False) + '\n')
 
         except json.JSONDecodeError:

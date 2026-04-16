@@ -18,8 +18,6 @@ import os
 import json
 
 
-
-
 class CrossEncoderReranker(BaseDocumentCompressor):
     top_n: int = 3
     _model: CrossEncoder = PrivateAttr()
@@ -72,11 +70,14 @@ def get_advanced_retriever(chunks, vector_db, selected_year):
     bm25_retriever = BM25Retriever.from_documents(chunks)
     bm25_retriever.k = 10
 
+
     # 3) Hybrid Search (Ensemble)
     ensemble_retriever = EnsembleRetriever(
         retrievers=[vector_retriever, bm25_retriever],
         weights=[0.5, 0.5] # 벡터와 키워드 비중 조절
     )
+
+
 
     # 4) Re-ranking (Cohere)
     # COHERE_API_KEY가 환경변수에 설정되어 있어야 합니다.
