@@ -1,0 +1,127 @@
+{
+  "priority_order": [
+    "item_specific",
+    "age",
+    "disease",
+    "basic"
+  ],
+  "entities": {
+    "beneficiary_type": ["1종", "2종"],
+    "institution": {
+      "primary": "제1차의료급여기관",
+      "secondary": "제2차의료급여기관",
+      "tertiary": "제3차의료급여기관",
+      "hospital_or_above": "병원급 이상"
+    }
+  },
+  "basic_rules": {
+    "1종": {
+      "inpatient": "무료",
+      "outpatient": {
+        "primary": "1,000원",
+        "secondary": "1,500원",
+        "tertiary": "2,000원"
+      },
+      "pharmacy": "500원",
+      "ct_mri_pet": "5%"
+    },
+    "2종": {
+      "inpatient": "10%",
+      "outpatient": {
+        "primary": "1,000원",
+        "secondary": "15%",
+        "tertiary": "15%"
+      },
+      "pharmacy": "500원",
+      "ct_mri_pet": "15%"
+    }
+  },
+  "age_rules": {
+    "under_1": {
+      "outpatient": {
+        "primary": "무료",
+        "secondary_or_tertiary": "5%"
+      }
+    },
+    "under_1_chronic_secondary": "무료",
+    "under_6_inpatient": "무료",
+    "age_6_to_15_inpatient": "3%"
+  },
+  "disease_rules": {
+    "mental": {
+      "schizophrenia": {
+        "outpatient_hospital_or_above": "5%"
+      },
+      "other": {
+        "outpatient_hospital_or_above": "10%"
+      }
+    },
+    "dementia": {
+      "inpatient": "5%",
+      "outpatient_hospital_or_above": "5%"
+    }
+  },
+  "item_rules": {
+    "dental_sealant": {
+      "2종": {
+        "under_6": "무료",
+        "age_6_to_15": "3%",
+        "age_16_to_18": "5%"
+      }
+    },
+    "ct_mri_pet": {
+      "2종": {
+        "default": "15%",
+        "pregnant_primary": "5%",
+        "premature_under5_primary": "5%",
+        "dementia_primary": "5%",
+        "under_1_chronic_secondary": "무료",
+        "mental_secondary_tertiary": "15%"
+      }
+    },
+    "denture_implant": {
+      "1종": {
+        "denture": "5%",
+        "implant": "10%"
+      },
+      "2종": {
+        "denture": "15%",
+        "implant": "20%"
+      }
+    },
+    "chuna": {
+      "complex": {
+        "disc_or_stenosis": {
+          "1종": "30%",
+          "2종": "40%"
+        },
+        "others": {
+          "1종": "80%",
+          "2종": "80%"
+        }
+      },
+      "simple": {
+        "disc_or_stenosis": {
+          "1종": "30%",
+          "2종": "40%"
+        },
+        "others": {
+          "1종": "80%",
+          "2종": "80%"
+        }
+      }
+    }
+  },
+  "exemption_rules": {
+    "type1": [
+      "18세 미만",
+      "임산부",
+      "행려환자"
+    ],
+    "type2": [
+      "자연분만",
+      "제왕절개",
+      "6세 미만 입원"
+    ]
+  }
+}
