@@ -1,0 +1,30 @@
+[
+    {"question": "2025년 의료급여 1종 수급권자의 외래 본인부담금(의원)은 얼마인가요?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2025"},
+    {"question": "2025년 의료급여 1종 수급권자의 외래 본인부담금(상급종합병원)은 얼마인가요?", "expected_answer": "2,000원", "difficulty": "easy", "source_year": "2025"},
+    {"question": "2025년 의료급여 2종 수급권자의 입원 본인부담률은 얼마인가요?", "expected_answer": "10%", "difficulty": "easy", "source_year": "2025"},
+    {"question": "2025년 의료급여 2종 수급권자의 외래 본인부담률(병원, 종합병원)은 얼마인가요?", "expected_answer": "15%", "difficulty": "easy", "source_year": "2025"},
+    {"question": "2025년 65세 이상 1종 수급권자의 틀니 본인부담률은 얼마인가요?", "expected_answer": "5%", "difficulty": "medium", "source_year": "2025"},
+    {"question": "2025년 잠복결핵 치료 관련 외래진료 시 본인부담금은 어떻게 되나요?", "expected_answer": "본인부담 면제", "difficulty": "medium", "source_year": "2025"},
+    {"question": "2025년 의료급여 입원 식대 본인부담률은 얼마인가요?", "expected_answer": "20% (1, 2종 공통)", "difficulty": "medium", "source_year": "2025"},
+    {"question": "2025년 상급종합병원의 2인실 입원료 본인부담률은 얼마인가요?", "expected_answer": "50%", "difficulty": "medium", "source_year": "2025"},
+    {"question": "2025년 의료급여 본인부담금 면제 대상자 중 18세 미만인 자에 대한 규정은 무엇인가요?", "expected_answer": "18세 미만인 자는 본인부담금 면제 대상자입니다.", "difficulty": "hard", "source_year": "2025"},
+    {"question": "2025년 의료급여 정신질환 외래진료 시 장기지속형 주사제의 본인부담률은 얼마인가요?", "expected_answer": "5%", "difficulty": "hard", "source_year": "2025"},
+    
+    {"question": "2026년 의료급여 1종 수급권자의 외래 본인부담금(의원)은 얼마인가요?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2026"},
+    {"question": "2026년 의료급여 1종 수급권자의 외래 본인부담금(상급종합병원)은 얼마인가요?", "expected_answer": "2,000원", "difficulty": "easy", "source_year": "2026"},
+    {"question": "2026년 의료급여 2종 수급권자의 입원 본인부담률은 얼마인가요?", "expected_answer": "10%", "difficulty": "easy", "source_year": "2026"},
+    {"question": "2026년 의료급여 2종 수급권자의 외래 본인부담률(병원, 종합병원)은 얼마인가요?", "expected_answer": "15%", "difficulty": "easy", "source_year": "2026"},
+    {"question": "2026년 65세 이상 1종 수급권자의 틀니 본인부담률은 얼마인가요?", "expected_answer": "5%", "difficulty": "medium", "source_year": "2026"},
+    {"question": "2026년 잠복결핵 치료 관련 외래진료 시 본인부담금은 어떻게 되나요?", "expected_answer": "본인부담 면제", "difficulty": "medium", "source_year": "2026"},
+    {"question": "2026년 의료급여 입원 식대 본인부담률은 얼마인가요?", "expected_answer": "20% (1, 2종 공통)", "difficulty": "medium", "source_year": "2026"},
+    {"question": "2026년 상급종합병원의 2인실 입원료 본인부담률은 얼마인가요?", "expected_answer": "50%", "difficulty": "medium", "source_year": "2026"},
+    {"question": "2026년 의료급여 본인부담금 면제 대상자 중 18세 미만인 자에 대한 규정은 무엇인가요?", "expected_answer": "18세 미만인 자는 본인부담금 면제 대상자입니다.", "difficulty": "hard", "source_year": "2026"},
+    {"question": "2026년 의료급여 정신질환 외래진료 시 장기지속형 주사제의 본인부담률은 얼마인가요?", "expected_answer": "2%", "difficulty": "hard", "source_year": "2026"},
+
+    {"question": "2025년 대비 2026년 의료급여 1종 수급권자의 외래 본인부담금(의원)의 변화는?", "expected_answer": "2025년과 2026년 모두 1,000원으로 변화가 없습니다.", "difficulty": "cross-year", "source_year": "2025+2026"},
+    {"question": "2025년 대비 2026년 의료급여 정신질환 외래진료 시 장기지속형 주사제의 본인부담률 변화는?", "expected_answer": "2025년 5%에서 2026년 2%로 완화되었습니다.", "difficulty": "cross-year", "source_year": "2025+2026"},
+    {"question": "2025년과 2026년 의료급여 2종 수급권자의 입원 본인부담률 차이는 무엇인가요?", "expected_answer": "2025년과 2026년 모두 10%로 변화가 없습니다.", "difficulty": "cross-year", "source_year": "2025+2026"},
+    {"question": "2025년과 2026년 의료급여 입원 식대 본인부담률의 변화는 무엇인가요?", "expected_answer": "2025년과 2026년 모두 1, 2종 공통 20%로 변화가 없습니다.", "difficulty": "cross-year", "source_year": "2025+2026"},
+    {"question": "2025년 국가건강검진 후 확진검사 대상 질환에 우울증·조기정신증이 포함되었는지 여부와 2026년에 추가된 질환은 무엇인가요?", "expected_answer": "2025년에 우울증·조기정신증이 추가되었고, 2026년에는 당뇨병 질환 확진을 위한 검사 항목 추가 및 이상지질혈증 질환이 추가되었습니다.", "difficulty": "cross-year", "source_year": "2025+2026"},
+    {"question": "2025년과 2026년 노숙인진료시설 지정에 관한 고시의 유효기간 변경사항은?", "expected_answer": "2025년 고시는 유효기간이 2024.3.22.~2025.3.21.이었으나, 2026년 고시에서는 유효기간이 3년 연장되어 2025.3.22.~2028.3.21.으로 변경되었습니다.", "difficulty": "cross-year", "source_year": "2025+2026"}
+]
