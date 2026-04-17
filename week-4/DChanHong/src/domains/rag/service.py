@@ -219,7 +219,7 @@ class RAGService:
             print("Rerank: Fallback to hybrid search due to missing component.")
             return await self.get_hybrid_answer(request)
 
-        # 1. 하이브리드 후보군 추출 (Top 40)
+        # 1. 하이브리드 후보군 추출 (Best: Dense 20 + Sparse 20)
         vector_results = self.vector_store.similarity_search(request.question, k=20)
         tokenized_query = korean_tokenizer(request.question)
         bm25_results = self.bm25.get_top_n(tokenized_query, self.bm25_docs, n=20)
@@ -232,7 +232,7 @@ class RAGService:
                 candidates.append(doc)
                 seen_contents.add(doc.page_content)
 
-        # 2. Cohere Rerank 적용
+        # 2. Cohere Rerank 적용 (Best: Top 10)
         try:
             doc_texts = [doc.page_content for doc in candidates]
             response = self.cohere_client.rerank(
