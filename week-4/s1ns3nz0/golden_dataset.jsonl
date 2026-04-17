@@ -1,0 +1,60 @@
+# Golden Dataset Design Rationale (이 파일의 설계 의도)
+#
+# WHY this is a "Golden Dataset":
+#   A golden dataset contains questions with KNOWN correct answers, manually verified
+#   against the source documents. It acts as a ground truth to objectively measure
+#   how well our RAG system performs. Without it, we'd have no way to know if
+#   the system's answers are correct.
+#
+# HOW questions were designed:
+#   1. We read both PDFs (2025, 2026) and identified specific facts from tables and text
+#   2. Each question has ONE unambiguous expected_answer that can be verified
+#   3. Questions are tagged with source_year so we can measure "year confusion"
+#      (did the system retrieve from the correct year?)
+#
+# DIFFICULTY levels:
+#   - easy:       Single fact lookup from a table (e.g., "1종 외래 의원 = 1,000원")
+#   - medium:     Requires combining 2+ conditions or finding info in body text
+#   - hard:       Complex conditions or information buried in less obvious sections
+#   - cross-year: Requires retrieving from BOTH 2025 and 2026 to compare differences
+#                 This is the hardest category because the system must pull correct
+#                 info from each year without mixing them up
+#
+# WHY include cross-year questions?
+#   The two PDFs are ~90% identical in structure and wording. The system WILL confuse
+#   years. Cross-year questions explicitly test this weakness. Key differences found:
+#     - 장기지속형 주사제 본인부담률: 5% (2025) → 2% (2026)
+#     - 노숙인진료시설 유효기간: 1년 (2025) → 3년 (2026)
+#     - 외래 365회 초과 본인부담률 30%: only in 2026
+#     - 본인부담금 환급 산정기간: 30일 (2025) → 월단위 (2026)
+#     - 조산아 지원 기간: 5년 (2025) → 5년 4개월 (2026)
+#     - 응급의료관리료 기준: 응급증상 아닌 경우 (2025) → KTAS 4·5 (2026)
+#
+# --- 2025년 questions (10) ---
+{"question": "2025년 1종 수급권자가 의원(1차)에서 외래 진료를 받으면 본인부담금은?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2025"}
+{"question": "2025년 2종 수급권자가 종합병원(2차)에서 입원하면 본인부담률은?", "expected_answer": "10%", "difficulty": "easy", "source_year": "2025"}
+{"question": "2025년 1종 수급권자의 입원 본인부담률은?", "expected_answer": "무료", "difficulty": "easy", "source_year": "2025"}
+{"question": "2025년 65세 이상 1종 수급권자의 틀니 본인부담률은?", "expected_answer": "5%", "difficulty": "easy", "source_year": "2025"}
+{"question": "2025년 입원 식대 본인부담률은 1종·2종의 경우 얼마인가?", "expected_answer": "20%", "difficulty": "easy", "source_year": "2025"}
+{"question": "2025년 1종 수급권자의 디스크 환자가 복잡추나를 받을 경우 본인부담률은?", "expected_answer": "30%", "difficulty": "medium", "source_year": "2025"}
+{"question": "2025년 장기지속형 주사제의 본인부담률은 몇 %인가?", "expected_answer": "5%", "difficulty": "medium", "source_year": "2025"}
+{"question": "2025년 6세 미만 아동이 입원하면 본인부담률은?", "expected_answer": "무료", "difficulty": "medium", "source_year": "2025"}
+{"question": "2025년 노숙인진료시설 지정 유효기간은 얼마인가?", "expected_answer": "1년 연장 (2024.3.22~2025.3.21)", "difficulty": "medium", "source_year": "2025"}
+{"question": "2025년 상급종합병원 2인실 입원료 본인부담률은?", "expected_answer": "50%", "difficulty": "medium", "source_year": "2025"}
+# --- 2026년 questions (10) ---
+{"question": "2026년 1종 수급권자가 의원(1차)에서 외래 진료를 받으면 본인부담금은?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2026"}
+{"question": "2026년 2종 수급권자가 약국에서 약을 받으면 본인부담금은?", "expected_answer": "500원", "difficulty": "easy", "source_year": "2026"}
+{"question": "2026년 65세 이상 2종 수급권자의 임플란트 본인부담률은?", "expected_answer": "20%", "difficulty": "easy", "source_year": "2026"}
+{"question": "2026년 2종 수급권자의 CT, MRI, PET 등 본인부담률은?", "expected_answer": "15%", "difficulty": "easy", "source_year": "2026"}
+{"question": "2026년 2종 수급권자의 디스크 외 질환에 대한 복잡추나 본인부담률은?", "expected_answer": "80%", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년 장기지속형 주사제의 본인부담률은 몇 %인가?", "expected_answer": "2%", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년 노숙인진료시설 지정 유효기간은 얼마인가?", "expected_answer": "3년 연장 (2025.3.22~2028.3.21)", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년 외래진료 365회 초과 시 본인부담률은?", "expected_answer": "30%", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년 의료급여 조산아 지원 기간은?", "expected_answer": "5년 4개월", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년 응급의료관리료 100분의100 본인부담 대상은?", "expected_answer": "경증응급환자(KTAS 4)·비응급환자(KTAS 5)", "difficulty": "hard", "source_year": "2026"}
+# --- Cross-year questions (4) ---
+# These require retrieving from BOTH years and comparing — the hardest test for RAG
+{"question": "2025년과 2026년 장기지속형 주사제 본인부담률은 어떻게 다른가?", "expected_answer": "2025년 5%에서 2026년 2%로 인하", "difficulty": "cross-year", "source_year": "2025+2026"}
+{"question": "2025년과 2026년 노숙인진료시설 유효기간은 어떻게 다른가?", "expected_answer": "2025년은 1년 연장(~2025.3.21), 2026년은 3년 연장(~2028.3.21)", "difficulty": "cross-year", "source_year": "2025+2026"}
+{"question": "2025년 대비 2026년에 새로 도입된 외래진료 횟수 초과 본인부담 기준은?", "expected_answer": "연간 외래 365회 초과 시 본인부담률 30% 적용", "difficulty": "cross-year", "source_year": "2025+2026"}
+{"question": "의료급여 본인부담금 환급 산정기간이 2025년과 2026년에 어떻게 달라졌는가?", "expected_answer": "30일에서 월단위로 변경", "difficulty": "cross-year", "source_year": "2025+2026"}
