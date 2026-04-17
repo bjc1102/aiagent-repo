@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import time
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -191,10 +192,20 @@ def run_advanced_rag_evaluation():
         retrieved_years = list(set([d.metadata.get("source_year") for d in docs]))
         context = format_docs(docs)
 
-        # 답변 생성
-        generated_answer = chain.invoke(
-            {"context": context, "question": question}
-        ).content.strip()
+        # 답변 생성 (503 등 일시적 서버 오류 시 exponential backoff 재시도)
+        for attempt in range(5):
+            try:
+                generated_answer = chain.invoke(
+                    {"context": context, "question": question}
+                ).content.strip()
+                break
+            except Exception as e:
+                if attempt < 4 and ("503" in str(e) or "UNAVAILABLE" in str(e) or "429" in str(e)):
+                    wait = 2 ** attempt * 5  # 5, 10, 20, 40초
+                    print(f"   ⚠️  API 오류 (attempt {attempt+1}/5), {wait}초 후 재시도... ({e})")
+                    time.sleep(wait)
+                else:
+                    raise
 
         results.append({
             "id": q_id,
