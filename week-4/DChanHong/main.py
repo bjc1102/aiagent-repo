@@ -4,8 +4,8 @@ from src.core.config import settings
 from src.domains.rag.router import router as rag_router
 
 app = FastAPI(
-    title="Medical Aid RAG Service",
-    description="FastAPI + LangChain RAG system for Medical Aid",
+    title="RAG re rank",
+    description="FastAPI + LangChain RAG re rank",
     version="1.0.0"
 )
 
