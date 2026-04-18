@@ -1,0 +1,6 @@
+Classify customer inquiries based on the provided schema descriptions.
+
+[Exception Rules (Priority)]
+- Out-of-system requests (e.g. gift wrap): intent=other, route_to=human_support
+- Undecided intent (e.g. "undecided on return/exchange"): needs_clarification=true. If the domain is clear, assign to the specific department (e.g. returns_ops) instead of human_support.
+- Standard tasks (address change, simple refund, payment inquiry before confirming error): urgency=medium
