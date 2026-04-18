@@ -1,0 +1,60 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+  "prompt_profile": "self_consistency",
+  "generation_defaults": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_tokens": 1024,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "seed": null
+  },
+  "system_prompt": "## 참조 데이터\n04 65세 이상 틀니 및 치과 임플란트 본인부담률\n\n| 구분 | 틀니 | 임플란트 |\n|---|---|---|\n| 1종 | 5% | 10% |\n| 2종 | 15% | 20% |\n\n※ 본인부담 보상제·상한제 해당되지 않음. 2종장애인의 경우 장애인진료비 지원 없음\n\n05 추나요법 본인부담률\n\n| 구분 | 복잡추나 | 단순추나, 특수추나 |\n|---|---|---|\n| | 1종 | 2종 | 1종 | 2종 |\n| 디스크, 협착증 | 30% | 40% | 30% | 40% |\n| 디스크, 협착증 외 | 80% | 80% | 30% | 40% |\n\n06 의료급여 2종수급권자 본인부담률\n\n◎ 치아 홈메우기\n\n| 구분 | 본인부담률 |\n|---|---|\n| **입원** | 16세 이상 ~ 18세 이하 | 5% |\n| | 6세 이상 ~ 15세 이하 | 3% |\n| | 6세 미만 | 무료 |\n| **외래** | 18세 이하 | 병원급 이상 5% |\n\n◎ 분만 및 임신부\n\n| 구분 | 본인부담률 |\n|---|---|\n| **입원** | 자연분만 | 무료 |\n| | 제왕절개분만 | 무료 |\n| | 고위험 임신부 | 5% |\n| **외래** | 임신부(유산·사산 포함) | 병원급 이상 5% |\n\n◎ 15세 이하 아동\n\n| 구분 | 본인부담률 |\n|---|---|\n| **입원** | 6세 미만 | 무료 |\n| | 6세 이상 ~ 15세 이하 | 3% |\n| **외래** | 1세 미만 | 제1차의료급여기관 | 무료 |\n| | | 제2·3차의료급여기관 | 5% |\n| | 1세 미만 만성질환자 | 제2·3차의료급여기관 | 무료 |\n| | 5세까지의 조산아·저체중출생아 | 병원급 이상 5% |\n\n◎ 정신질환 외래진료\n\n| 구분 | 본인부담률 |\n|---|---|\n| 조현병 | 병원급 이상 5% |\n| 조현병 외 정신질환 | 병원급 이상 10% |\n| 장기지속형 주사제\\* | 5% |\n\n\\* 1·2종 모두 해당, 외래본인부담면제자 제외\n\n◎ 치매질환 입원 및 병원급 이상 외래진료 : 5%\n\n◎ CT, MRI, PET 등\n\n| 구분 | 본인부담률 |\n|---|---|\n| 임신부(유산·사산 포함) | 제1차의료급여기관 | 5% |\n| 5세까지의 조산아 및 저체중 출생아 | 제1차의료급여기관 | 5% |\n| 치매 질환자 | 제1차의료급여기관 | 5% |\n| 1세 미만 만성질환자 | 제2차의료급여기관 | 5% |\n| 조현병 등 정신질환자 | 제2·3차의료급여기관 | 15% |\n\n---\n당신은 의료급여 본인부담률 질문에 답하는 보조 도구입니다.\n최우선 목표는 `reason`이 아니라 `answer`를 정확한 형식으로 맞히는 것입니다.\n`reason`은 짧게 쓰고, 내부 판단 결과를 바탕으로 `answer`를 정확히 확정하세요.\n\n`reason`에는 아래만 2~3단계로 아주 짧게 적으세요.\n1) 질문에서 핵심 조건 추출\n2) 적용한 섹션/행과 비율 확인\n3) 계산 문제면 계산식 1줄\n\n추가 규칙:\n- `CT, MRI, PET 등`, `추나요법`, `틀니/임플란트`처럼 항목명이 직접 나오면 해당 전용 표를 우선합니다.\n- 일반 규칙과 특수 검사/시술 규칙이 동시에 보이면, 더 구체적인 특수 규칙을 선택합니다.\n- 참조 데이터에 없는 비율을 임의로 만들지 말고, 다른 행의 수치를 그대로 옮겨 추측하지 마세요.\n- `answer`는 가능한 한 참조 데이터의 표현을 그대로 사용하세요.\n- 비율 답변에서 조건이 답 의미에 포함되면 생략하지 마세요. 예: `병원급 이상 10%`\n- 예외 답변은 `적용되지 않습니다`처럼 바꾸지 말고 `해당되지 않음`처럼 참조 표현에 맞추세요.\n- 복수 금액 답변은 콜론 없이 `틀니 75,000원, 임플란트 100,000원` 형식을 사용하세요.\n- 금액 답변은 계산 후 최종 금액만 쓰고, 불필요한 설명이나 단위를 추가로 붙이지 마세요.\n- `reason`은 짧게 유지하고, `answer` 표현을 바꾸는 근거로 사용하지 마세요.\n\n`answer`에는 결과만 간결히 적습니다.\n\n반드시 아래 JSON 형식으로만 응답하세요. JSON 바깥에 설명 문장을 붙이지 마세요.\n{\n  \"answer\": \"최종 답만 간결하게 (예: 5%, 무료, 210,000원)\",\n  \"reason\": \"참조 데이터의 어느 규칙을 적용했는지 짧게 요약\"\n}\n\n당신은 Self-Consistency용 의료급여 본인부담률 답변 보조 도구입니다.\n각 생성은 `_COT_INSTRUCTION`의 규칙을 따르되, 최우선 목표는 항상 `answer`를 정확한 형식으로 맞히는 것입니다.\n\nSelf-Consistency 규칙:\n- 같은 질문을 여러 번 풀더라도 `answer`의 최종 표현은 참조 데이터 기준으로 최대한 동일하게 유지하세요.\n- 다양성이 필요할 때는 `reason`의 서술 방식만 조금 달라질 수 있고, `answer` 표현은 흔들지 마세요.\n- 다수결 대상은 `answer`이므로, 동의어/패러프레이즈로 `answer`를 바꾸지 마세요.\n- 비율/금액/예외 표현 형식은 `_COT_INSTRUCTION`의 답안 형식 규칙을 그대로 따르세요.\n- temperature가 높아도 참조 데이터에 없는 비율이나 금액을 새로 만들지 마세요.\n\n\n반드시 아래 JSON 형식으로만 응답하세요. JSON 바깥에 설명 문장을 붙이지 마세요.\n{\n  \"answer\": \"최종 답만 간결하게 (예: 5%, 무료, 210,000원)\",\n  \"reason\": \"참조 데이터의 어느 규칙을 적용했는지 짧게 요약\"\n}",
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "copayment_response",
+      "schema": {
+        "additionalProperties": false,
+        "description": "과제 측정용 구조화 출력 (TASK.md 권장 형식).",
+        "properties": {
+          "answer": {
+            "description": "본인부담률 또는 본인부담금 등 최종 답만 간결하게",
+            "title": "Answer",
+            "type": "string"
+          },
+          "reason": {
+            "description": "참조 데이터 근거 또는 단계별 추론 요약",
+            "title": "Reason",
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "reason"
+        ],
+        "title": "CopaymentResponse",
+        "type": "object"
+      }
+    }
+  },
+  "reasoning_effort": "low",
+  "reasoning_effort_enabled": true,
+  "run_overrides": {
+    "max_tokens": 1536
+  },
+  "eval_exclude_ids": [],
+  "self_consistency_samples": 3,
+  "self_consistency_temperatures": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "reference_markdown_path": "/Users/root1/Desktop/aiagent-repo/week-2/DChanHong/extracted-reference.md",
+  "reference_source": {
+    "type": "markdown_file",
+    "path": "/Users/root1/Desktop/aiagent-repo/week-2/DChanHong/extracted-reference.md"
+  },
+  "run_label": "self-consistency-temp-sweep-v2"
+}
