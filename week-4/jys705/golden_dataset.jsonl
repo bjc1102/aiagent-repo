@@ -1,0 +1,20 @@
+{"question": "2025년 기준, 의료급여 1종 수급권자의 의원급 외래 본인부담금은 얼마인가요?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2025"}
+{"question": "2026년 기준, 의료급여 1종 수급권자의 의원급 외래 본인부담금은 얼마인가요?", "expected_answer": "1,000원", "difficulty": "easy", "source_year": "2026"}
+{"question": "2025년 기준, 정신질환 외래진료 시 장기지속형 주사제의 본인부담률은 몇 %인가요?", "expected_answer": "5%", "difficulty": "medium", "source_year": "2025"}
+{"question": "2026년 기준, 정신질환 외래진료 시 장기지속형 주사제의 본인부담률은 몇 %인가요?", "expected_answer": "2%", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년부터 적용되는 규정에 따라, 연간 외래 진료 횟수가 365회를 초과할 경우 본인부담률은 어떻게 되나요?", "expected_answer": "30%", "difficulty": "hard", "source_year": "2026"}
+{"question": "2025년 기준, 조산아 및 저체중 출생아가 병원급 이상 외래진료 시 본인부담률은 몇 %인가요?", "expected_answer": "5%", "difficulty": "medium", "source_year": "2025"}
+{"question": "2026년에 확대된 조산아 및 저체중 출생아의 의료급여 지원 기간은 총 얼마인가요?", "expected_answer": "5년 4개월", "difficulty": "hard", "source_year": "2026"}
+{"question": "2025년 국가건강검진 후 확진검사비 면제 대상에 포함된 정신질환 의심 증상은 무엇인가요?", "expected_answer": "우울증, 조기정신증", "difficulty": "medium", "source_year": "2025"}
+{"question": "2026년 건강검진 후 확진검사 면제 대상에 새롭게 추가된 질환 의심 항목은 무엇인가요?", "expected_answer": "이상지질혈증", "difficulty": "hard", "source_year": "2026"}
+{"question": "2025년 기준, 노숙인 진료시설 지정의 유효기간은 언제까지로 명시되어 있나요?", "expected_answer": "2025년 3월 21일", "difficulty": "easy", "source_year": "2025"}
+{"question": "2026년 개정판에 따르면, 노숙인 진료시설 지정 유효기간은 몇 년까지 연장되었나요?", "expected_answer": "2028년 3월 21일", "difficulty": "medium", "source_year": "2026"}
+{"question": "2026년부터 경증응급환자(KTAS 4)가 응급실 이용 시 본인부담금 산정 기준이 어떻게 바뀌나요?", "expected_answer": "100분의 100 본인부담 대상으로 변경", "difficulty": "hard", "source_year": "2026"}
+{"question": "2025년 대비 2026년에 정신질환 장기지속형 주사제의 본인부담률은 얼마나 인하되었나요?", "expected_answer": "5%에서 2%로 3%p 인하되었습니다.", "difficulty": "cross-year", "source_year": "2025+2026"}
+{"question": "2025년과 2026년의 의료급여 본인부담금 환급 산정기간의 차이는 무엇인가요?", "expected_answer": "2026년부터 30일 월단위로 변경되었습니다.", "difficulty": "cross-year", "source_year": "2025+2026"}
+{"question": "2025년 2종 수급권자 아동의 입원 식대 본인부담률은?", "expected_answer": "20%", "difficulty": "easy", "source_year": "2025"}
+{"question": "2026년 기준, 65세 이상 1종 수급권자의 임플란트 본인부담률은?", "expected_answer": "10%", "difficulty": "easy", "source_year": "2026"}
+{"question": "2025년 제2차 의료급여기관에서 외래 진료 시 2종 수급권자의 본인부담률은?", "expected_answer": "15%", "difficulty": "easy", "source_year": "2025"}
+{"question": "2026년 의료급여 2인실 입원료 본인부담률(상급종합병원 기준)은?", "expected_answer": "50%", "difficulty": "easy", "source_year": "2026"}
+{"question": "2025년 기준 잠복결핵 치료 관련 진료의 본인부담금은?", "expected_answer": "면제(무료)", "difficulty": "easy", "source_year": "2025"}
+{"question": "2025년과 2026년의 노숙인 진료시설 지정 유효기간을 각각 답하세요.", "expected_answer": "2025년은 2025년 3월 21일까지, 2026년은 2028년 3월 21일까지입니다.", "difficulty": "cross-year", "source_year": "2025+2026"}
