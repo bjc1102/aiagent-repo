@@ -13,8 +13,8 @@ from sentence_transformers import CrossEncoder
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 GOLDEN_DATASET_PATH = os.path.join(BASE_DIR, "golden_dataset.jsonl")
-FAISS_INDEX_PATH = os.path.join(BASE_DIR, "faiss_index")
-OUTPUT_FILE = os.path.join(BASE_DIR, "advanced_rag_no_filter_results.txt")
+FAISS_INDEX_PATH = os.path.join(BASE_DIR, "faiss_index_c1000_p3000")
+OUTPUT_FILE = os.path.join(BASE_DIR, "advanced_rag_c1000_p3000_results.txt")
 
 MD_FILES = {
     "2025": os.path.join(BASE_DIR, "../data/2025 알기 쉬운 의료급여제도.pdf_by_PaddleOCR-VL-1.5.md"),
@@ -45,8 +45,8 @@ RAG_PROMPT = PromptTemplate(
 
 
 def load_child_docs():
-    parent_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=100)
-    child_splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
+    parent_splitter = RecursiveCharacterTextSplitter(chunk_size=3000, chunk_overlap=150)
+    child_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=80)
 
     all_child_docs = []
     for year, file_path in MD_FILES.items():
@@ -178,7 +178,7 @@ def main():
             output += f"LLM 답변: {llm_answer}\n"
             output += f"정답 여부: {'o' if is_correct else 'x'}\n"
             output += f"년도 검색 정확도: {'✓ 올바른 년도' if year_ok else f'✗ 년도 오류 (검색된 년도: {retrieved_years})'}\n"
-            output += "\n[Re-ranking 후 최종 청크 (년도 필터링 없음)]\n"
+            output += "\n[Re-ranking 후 최종 청크 (c1000_p3000, 년도 필터링 없음)]\n"
             for i, doc in enumerate(reranked_docs, start=1):
                 year = doc.metadata.get("source_year", "?")
                 output += f"  Top{i} [year={year}] {doc.page_content[:100].replace(chr(10), ' ')}\n"
@@ -187,7 +187,8 @@ def main():
             out.write(output)
 
         summary = "\n========================\n"
-        summary += f"[Advanced RAG (년도 필터링 없음) 결과 요약]\n"
+        summary += f"[Advanced RAG (c1000_p3000, 년도 필터링 없음) 결과 요약]\n"
+        summary += f"Child chunk_size=1000, overlap=80 / Parent chunk_size=3000, overlap=150\n"
         summary += f"BM25 k={BM25_K}, Vector k={VECTOR_K}, 가중치 vector:{VECTOR_WEIGHT} / BM25:{BM25_WEIGHT}\n"
         summary += f"Re-ranker: BAAI/bge-reranker-v2-m3, top_n={RERANK_TOP_N}\n"
         summary += f"년도 pre-filtering: 없음\n"

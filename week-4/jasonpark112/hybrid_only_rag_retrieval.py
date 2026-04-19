@@ -166,7 +166,7 @@ def main():
             output += f"질문: {question}\n"
             output += f"정답: {expected}\n"
             output += f"LLM 답변: {llm_answer}\n"
-            output += f"정답 여부: {'✓ 정답' if is_correct else '✗ 오답'}\n"
+            output += f"정답 여부: {'o' if is_correct else 'x'}\n"
             output += f"년도 검색 정확도: {'✓ 올바른 년도' if year_ok else f'✗ 년도 오류 (검색된 년도: {retrieved_years})'}\n"
             output += "\n[Hybrid Search 최종 청크 (Re-ranking 없음)]\n"
             for i, doc in enumerate(final_docs, start=1):
