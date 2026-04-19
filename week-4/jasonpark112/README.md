@@ -125,7 +125,8 @@ metadata = {
 |------|--------|
 | BM25 Retriever k | 5 |
 | Vector Retriever k | 5 |
-| Ensemble 가중치 (vector : BM25) | 0.5 : 0.5 |
+| Ensemble 방식 | RRF (Reciprocal Rank Fusion) |
+| RRF 가중치 (vector : BM25) | 0.5 : 0.5 |
 | Re-ranker 모델 | BAAI/bge-reranker-v2-m3 |
 | Re-ranking 후 최종 Top-K | 3 |
 | 메타데이터 필터링 | 적용 (cross-year 제외) |
@@ -184,12 +185,14 @@ metadata = {
 
 ### 기법별 기여도
 
+Hybrid Search는 점수 직접 합산이 아닌 RRF(Reciprocal Rank Fusion) 방식으로 두 retriever의 순위를 합산한다. 공식: `score = Σ weight_i / (rank_i + 60)` (k=60 default)
+
 | 방식 | 정답률 | 년도 정확도 (평균) |
 |------|--------|-----------------|
 | Basic RAG (벡터만) | 40% | 59.7% |
-| + Hybrid Search only (필터·리랭킹 없음) | 30% | 51.4% |
-| + Hybrid Search + Re-ranking (no filter) | 45% | 58.0% |
-| + Hybrid Search + Re-ranking + 년도 pre-filtering | 30% | 100% |
+| + Hybrid Search only, RRF (필터·리랭킹 없음) | 30% | 51.4% |
+| + Hybrid Search RRF + Re-ranking (no filter) | 45% | 58.0% |
+| + Hybrid Search RRF + Re-ranking + 년도 pre-filtering | 30% | 100% |
 
 
 ### 문항별 변화 분석
@@ -242,13 +245,55 @@ metadata = {
 ## 이론 과제
 
 ### Q1. Hybrid Search란 무엇이며 왜 효과적인가?
+Hybrid Search는 키워드 기반 검색(BM25/TF-IDF)과 의미론적 벡터 검색(Dense Retrieval)을 결합한 검색 방식입니다. 
 
+| 방식 | 원리 | 강점 | 약점 |
+|------|------|------|------|
+| **키워드 검색 (Sparse)** | 단어 빈도 기반 매칭 | 정확한 용어, 고유명사에 강함 | 의미적 유사성 파악 불가 |
+| **벡터 검색 (Dense)** | 임베딩 공간 유사도 | 의미·맥락 이해에 강함 | 특정 단어 매칭에 약함 |
+| **Hybrid** | 두 점수를 RRF 등으로 결합 | 둘의 장점을 모두 활용 | 가중치 튜닝 필요 |
+ 
+두 점수를 합칠 때는 주로 **RRF(Reciprocal Rank Fusion)** 를 사용합니다.
+
+```
+최종 점수 = α × 키워드_점수 + (1-α) × 벡터_점수
+```
 
 
 ### Q2. Re-ranking은 왜 필요하며 Cross-encoder와 Bi-encoder의 차이는?
+1차 검색(Retrieval)은 속도를 위해 근사치로 동작하기 때문에, 상위 결과가 항상 관련성 높은 문서는 아닐 수 있습니다. Re-reranking은 1차로 뽑은 후보군(Top-K)을 더 정밀하게 재정렬하는 2단계 과정입니다.
 
+| | **Bi-encoder** | **Cross-encoder** |
+|---|---|---|
+| **동작** | 쿼리·문서를 각각 인코딩 후 유사도 계산 | 쿼리+문서를 함께 넣어 관련성 점수 출력 (딥러닝 알고리즘) |
+| **속도** | 빠름 (사전 임베딩 가능) | 느림 (쌍마다 추론 필요) |
+| **정확도** | 보통 | 높음 |
+| **역할** | 1차 검색 (수백만 문서 대상) | Re-ranking (수십 후보 대상) |
 
 
 ### Q3. 메타데이터 필터링과 컨텍스트 압축의 차이 및 활용 상황은?
 
+### 메타데이터 필터링
+- 검색 이전에 조건을 걸어 대상 문서 자체를 줄이는 방식입니다.
 
+```
+def filter_by_year(docs, source_year):
+    filtered = [d for d in docs if d.metadata.get("source_year", "") == source_year]
+    return filtered if filtered else docs
+
+```
+실제로 사용한 함수입니다.
+
+**활용 상황 :** 날짜, 카테고리, 출처, 작성자 등으로 범위를 좁힐 수 있을 때 사용합니다.
+
+### 컨텍스트 압축 (Contextual Compression)
+- 문서를 가져온 이후에 쿼리와 관련 없는 내용을 제거해 핵심만 남기는 방식입니다.
+
+```
+[원본 청크: 500 tokens]  →  [압축 후: 120 tokens, 핵심 내용만]
+```
+
+**활용 상황 :** 청크가 크거나 노이즈가 많아 LLM 컨텍스트 낭비가 심할 때 사용합니다.
+
+
+ 
