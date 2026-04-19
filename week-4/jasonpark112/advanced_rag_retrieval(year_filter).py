@@ -1,21 +1,30 @@
 import json
 import os
 from langchain_community.document_loaders import TextLoader
+# md 파일을 텍스트로 읽어오는 로더
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+# 문서를 청크로 나누는 스플리터
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+# 텍스트 -> 벡터로 변환, GPT 모델 호출
 from langchain_community.vectorstores import FAISS
+# 벡터 유사도 검색 인덱스
 from langchain_community.retrievers import BM25Retriever
+# 키워드 기반 검색
 from langchain_classic.retrievers import EnsembleRetriever
+# hybrid search + rrf 내장
 from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from sentence_transformers import CrossEncoder
+# Re-ranking 용 모델
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
+# 현재 이 파일이 있는 폴더 경로
 GOLDEN_DATASET_PATH = os.path.join(BASE_DIR, "golden_dataset.jsonl")
+# 평가용 질문 + 정답 데이터 (.jsonl 형식)
 FAISS_INDEX_PATH = os.path.join(BASE_DIR, "faiss_index")
+# 미리 만들어준 벡터 인덱스 저장 위치
 OUTPUT_FILE = os.path.join(BASE_DIR, "advanced_rag_yes_filter_results.txt")
-
+# 평가 결과를 저장할 텍스트 파일
 MD_FILES = {
     "2025": os.path.join(BASE_DIR, "../data/2025 알기 쉬운 의료급여제도.pdf_by_PaddleOCR-VL-1.5.md"),
     "2026": os.path.join(BASE_DIR, "../data/2026 알기 쉬운 의료급여제도.pdf_by_PaddleOCR-VL-1.5.md"),
@@ -23,10 +32,17 @@ MD_FILES = {
 
 # Hybrid Search 설정
 VECTOR_K = 5
+# 벡터 검색 상위 몇 개
 BM25_K = 5
+# BM25 검색 상위 몇 개
 VECTOR_WEIGHT = 0.5
+# 벡터 검색 RRF 가중치
 BM25_WEIGHT = 0.5
-RERANK_TOP_N = 3   # Re-ranking 후 LLM에 전달할 최종 청크 수
+# BM25 검색 RRF 가중치
+RERANK_TOP_N = 3   
+# Re-ranking 후 LLM에 전달할 최종 청크 수
+
+#  정리하자면 벡터, BM25 각각 5개씩 검색 -> RRF로 합산 -> CrossEncoder로 재정렬 후 최종 3개만 LLM에 전달
 
 RAG_PROMPT = PromptTemplate(
     input_variables=["context", "question"],
@@ -74,7 +90,9 @@ def load_child_docs():
                 )
     print(f"BM25용 child 청크 로드 완료: {len(all_child_docs)}개")
     return all_child_docs
-
+# 2025, 2026 문서 각각 루프
+# 각 Parent Child로 나눌 때 parent_content를 메타데이터에 저장 
+# 나중에 검색은 Child로 하지만, LLM엔 Parent를 넘기기 위해서
 
 def build_context(docs):
     """parent_content 기반 컨텍스트 구성 (중복 parent 제거)"""
@@ -88,6 +106,10 @@ def build_context(docs):
             seen_parents.add(parent_id)
             context_parts.append(f"[출처 년도: {source_year}]\n{parent_content}")
     return "\n\n---\n\n".join(context_parts)
+# Re-ranking Child 문서들을 받아서 seen_parents set으로 중복 Parent 제거
+# LLM에는 Child가 아닌 Parent 전체 내용을 컨텍스트로 전달
+# 각 컨텍스트 앞에 출처 년도 태그 붙임
+
 
 
 def rerank(question, docs, top_n):
@@ -97,6 +119,10 @@ def rerank(question, docs, top_n):
     scores = model.predict(pairs)
     ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
     return [doc for _, doc in ranked[:top_n]]
+# CrossEncoder -> 질문과 문서를 쌍으로 넣어서 관련도 점수 계산
+# pairs -> [(질문, 문서1내용), (질문, 문서2내용)]
+# scores -> 각 쌍의 관련도 점수 리스트
+# 점수 높은 순으로 정렬 후 상위 3개만 반환
 
 
 def filter_by_year(docs, source_year):
@@ -105,16 +131,19 @@ def filter_by_year(docs, source_year):
         return docs
     filtered = [d for d in docs if d.metadata.get("source_year", "") == source_year]
     return filtered if filtered else docs
+# 메타데이터 필터
 
 
 def check_year_accuracy(docs, source_year):
     retrieved_years = [doc.metadata.get("source_year", "") for doc in docs]
     correct = any(y == source_year for y in retrieved_years)
     return correct, retrieved_years
+# Re-ranking 된 문서들 중 올바른 년도가 있는지 확인
 
 
 def check_answer(llm_answer, expected_answer):
     return expected_answer.strip() in llm_answer.strip()
+# LLM 답변에 정답 문자열이 포함되는지 확인 (단순 포함 여부)
 
 
 def load_golden_dataset(path):
@@ -135,22 +164,26 @@ def main():
         allow_dangerous_deserialization=True
     )
     vector_retriever = vectorstore.as_retriever(search_kwargs={"k": VECTOR_K})
+    # 미리 만들어둔 FAISS 인덱스를 불러옴. 매번 새로 임베딩 안 해도 됨
 
     # 2. BM25 인덱스 구성 (메모리 기반, 매 실행 시 재구성)
     print("BM25 인덱스 구성 중...")
     child_docs = load_child_docs()
     bm25_retriever = BM25Retriever.from_documents(child_docs)
     bm25_retriever.k = BM25_K
+    # 매 실행마다 child_docs로 BM25 인덱스를 메모리에서 새로 구성 (저장 안함) 
 
     # 3. EnsembleRetriever (Hybrid Search)
     ensemble_retriever = EnsembleRetriever(
         retrievers=[vector_retriever, bm25_retriever],
         weights=[VECTOR_WEIGHT, BM25_WEIGHT]
     )
+    # 두 retriever를 묶어서 hybrid + rrf 완성
 
     # 4. LLM
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     chain = RAG_PROMPT | llm
+    # temperature=0 -> 창의성 없이 일관된 답변 생성 | 연산자로 프롬프트 -> LLM 체인 연결
 
     golden_data = load_golden_dataset(GOLDEN_DATASET_PATH)
     total = len(golden_data)
@@ -167,8 +200,9 @@ def main():
 
             # 5. Hybrid Search
             hybrid_docs = ensemble_retriever.invoke(question)
+            # 여기서 실질적으로 rff 계산
 
-            # 5-1. 년도 pre-filtering
+            # 5-1. 년도 pre-filtering (메타데이터 필터)
             hybrid_docs = filter_by_year(hybrid_docs, source_year)
 
             # 6. Re-ranking
@@ -196,7 +230,7 @@ def main():
             output += f"질문: {question}\n"
             output += f"정답: {expected}\n"
             output += f"LLM 답변: {llm_answer}\n"
-            output += f"정답 여부: {'✓ 정답' if is_correct else '✗ 오답'}\n"
+            output += f"정답 여부: {'o' if is_correct else 'x'}\n"
             output += f"년도 검색 정확도: {'✓ 올바른 년도' if year_ok else f'✗ 년도 오류 (검색된 년도: {retrieved_years})'}\n"
             output += "\n[Re-ranking 후 최종 청크]\n"
             for i, doc in enumerate(reranked_docs, start=1):
