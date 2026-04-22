@@ -1,0 +1,7 @@
+.venv
+/venv
+/myenv
+/chroma_db_split
+/chroma_db_page_level
+.env
+__pycache__/
