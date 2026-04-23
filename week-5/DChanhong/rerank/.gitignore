@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+
+# Logs and Storage
+logs/
+storage/
+**/storage/
+*.log
+
+# Project specific
+.venv/
+node_modules/
+.pytest_cache/
