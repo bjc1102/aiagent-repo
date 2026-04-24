@@ -1,0 +1,16 @@
+﻿id,difficulty,source_year,manual_4w_basic,ragas_answer_correctness_basic,manual_4w_advanced,ragas_answer_correctness_advanced,basic_advanced_change,year_correct_basic,year_correct_advanced
+q01,easy,2025,incorrect,0.0,correct,1.0,1.0,False,True
+q02,easy,2026,incorrect,0.1062,correct,1.0,0.8938,False,True
+q03,medium,2025,correct,1.0,correct,1.0,0.0,True,True
+q04,easy,2026,correct,1.0,correct,1.0,0.0,False,True
+q05,easy,2025,correct,1.0,correct,1.0,0.0,True,True
+q06,medium,2026,correct,1.0,correct,1.0,0.0,False,True
+q07,cross-year,2025+2026,correct,1.0,correct,1.0,0.0,True,True
+q08,hard,2026,correct,1.0,correct,1.0,0.0,False,True
+q09,medium,2026,correct,1.0,correct,1.0,0.0,True,True
+q10,medium,2025,correct,1.0,correct,1.0,0.0,True,True
+q11,medium,2026,correct,1.0,correct,1.0,0.0,True,True
+q12,hard,2025,correct,1.0,correct,1.0,0.0,False,True
+q13,medium,2025,correct,1.0,correct,1.0,0.0,False,True
+q14,hard,2026,correct,1.0,correct,1.0,0.0,True,True
+q15,cross-year,2025+2026,correct,1.0,correct,1.0,0.0,True,True

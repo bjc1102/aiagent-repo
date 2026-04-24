@@ -1,0 +1,6 @@
+﻿metric,basic,advanced,delta
+context_recall,0.8667,1.0,0.1333
+context_precision,0.6639,0.7873,0.1234
+faithfulness,0.6442,0.8755,0.2313
+answer_relevancy,0.7214,0.7826,0.0612
+answer_correctness,0.8737,1.0,0.1263

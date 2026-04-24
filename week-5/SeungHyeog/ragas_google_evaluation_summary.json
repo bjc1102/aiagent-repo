@@ -1,0 +1,40 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "embedding_model": "gemini-embedding-001",
+  "samples": {
+    "basic": 15,
+    "advanced": 15
+  },
+  "metric_means": [
+    {
+      "metric": "Context Recall",
+      "basic": 0.6,
+      "advanced": 0.8667,
+      "delta": 0.2667
+    },
+    {
+      "metric": "Context Precision",
+      "basic": 0.5778,
+      "advanced": 0.7,
+      "delta": 0.1222
+    },
+    {
+      "metric": "Faithfulness",
+      "basic": 0.6311,
+      "advanced": 0.8511,
+      "delta": 0.22
+    },
+    {
+      "metric": "Answer Relevancy",
+      "basic": 0.7698,
+      "advanced": 0.9049,
+      "delta": 0.1351
+    },
+    {
+      "metric": "Answer Correctness",
+      "basic": 0.8887,
+      "advanced": 1.0,
+      "delta": 0.1113
+    }
+  ]
+}
