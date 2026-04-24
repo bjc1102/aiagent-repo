@@ -1,41 +1,41 @@
 {
-  "judge_llm": "gemini-2.5-flash",
+  "judge_llm": "gpt-4.1-mini",
   "embedding_model": "models/gemini-embedding-001",
-  "num_samples": 5,
-  "limit_applied": 5,
+  "num_samples": 20,
+  "limit_applied": null,
   "basic": {
-    "context_recall": 0.3,
-    "llm_context_precision_with_reference": 0.6999999999666666,
-    "faithfulness": 0.255,
-    "answer_relevancy": 0.6765363753657676,
-    "answer_correctness": 0.7165329277302098
+    "context_recall": 0.85,
+    "llm_context_precision_with_reference": 0.8666666666183331,
+    "faithfulness": 0.5085714285714286,
+    "answer_relevancy": 0.6919642132164172,
+    "answer_correctness": 0.6959685458289746
   },
   "basic_coverage": {
-    "context_recall": 5,
-    "llm_context_precision_with_reference": 5,
-    "faithfulness": 5,
-    "answer_relevancy": 5,
-    "answer_correctness": 5
+    "context_recall": 20,
+    "llm_context_precision_with_reference": 20,
+    "faithfulness": 20,
+    "answer_relevancy": 20,
+    "answer_correctness": 20
   },
   "advanced": {
-    "context_recall": 0.8,
-    "llm_context_precision_with_reference": 0.8666666665999999,
-    "faithfulness": 0.3633333333333334,
-    "answer_relevancy": 0.8774315215586311,
-    "answer_correctness": 0.8824051746090851
+    "context_recall": 0.85,
+    "llm_context_precision_with_reference": 0.84166666661625,
+    "faithfulness": 0.5762806637806638,
+    "answer_relevancy": 0.7252561677178836,
+    "answer_correctness": 0.7514445996914272
   },
   "advanced_coverage": {
-    "context_recall": 5,
-    "llm_context_precision_with_reference": 5,
-    "faithfulness": 5,
-    "answer_relevancy": 5,
-    "answer_correctness": 5
+    "context_recall": 20,
+    "llm_context_precision_with_reference": 20,
+    "faithfulness": 20,
+    "answer_relevancy": 20,
+    "answer_correctness": 20
   },
   "delta": {
-    "context_recall": 0.5,
-    "llm_context_precision_with_reference": 0.1666666666333333,
-    "faithfulness": 0.10833333333333339,
-    "answer_relevancy": 0.20089514619286353,
-    "answer_correctness": 0.16587224687887525
+    "context_recall": 0.0,
+    "llm_context_precision_with_reference": -0.025000000002083134,
+    "faithfulness": 0.06770923520923522,
+    "answer_relevancy": 0.03329195450146638,
+    "answer_correctness": 0.05547605386245258
   }
 }

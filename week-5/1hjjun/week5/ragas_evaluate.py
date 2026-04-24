@@ -5,8 +5,7 @@
   - ../week3/RAGresult.json  (Basic RAG 실행 결과)
   - ../week4/advanced_result.json (Advanced RAG 실행 결과)
 
-판정자(Judge LLM): Gemini 2.5 Flash (무료 티어 사용 가능, 빠른 응답)
-  ※ 원래 Claude Sonnet 4.5 → GPT-4o → Gemini 2.5 Pro 순 시도했으나 모두 비용·타임아웃 이슈.
+판정자(Judge LLM): OpenAI gpt-4.1-mini (생성용 Gemini와 다른 model family)
 임베딩: Google gemini-embedding-001 (4주차 재사용)
 
 샘플 제한: 환경변수 RAGAS_LIMIT 로 첫 N문항만 평가 (비용 절감).
@@ -48,15 +47,15 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # =============================================================================
-# Judge LLM: Gemini 2.5 Flash
+# Judge LLM: OpenAI gpt-4.1-mini
 # =============================================================================
 def build_judge_llm():
-    gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY", "")
-    if not gemini_key or gemini_key == "your_api_key_here":
-        sys.exit("❌ GEMINI_API_KEY 필요 (.env 확인)")
-    from langchain_google_genai import ChatGoogleGenerativeAI
-    return ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+    openai_key = os.getenv("OPENAI_API_KEY", "")
+    if not openai_key or openai_key == "your_api_key_here":
+        sys.exit("❌ OPENAI_API_KEY 필요 (.env 확인)")
+    from langchain_openai import ChatOpenAI
+    return ChatOpenAI(
+        model="gpt-4.1-mini",
         temperature=0,
         timeout=120,
         max_retries=2,
@@ -177,7 +176,7 @@ def main():
     # 2) Judge LLM + 임베딩
     judge = build_judge_llm()
     emb = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
-    print(f"🧑‍⚖️ Judge LLM: Gemini 2.5 Flash")
+    print(f"🧑‍⚖️ Judge LLM: OpenAI gpt-4.1-mini")
 
     # 3) EvaluationDataset 구성
     basic_ds = build_eval_dataset(golden, basic_results)
@@ -189,7 +188,7 @@ def main():
 
     # 5) 요약 저장
     summary = {
-        "judge_llm": "gemini-2.5-flash",
+        "judge_llm": "gpt-4.1-mini",
         "embedding_model": "models/gemini-embedding-001",
         "num_samples": len(basic_results),
         "limit_applied": limit,
