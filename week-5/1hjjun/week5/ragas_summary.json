@@ -1,0 +1,41 @@
+{
+  "judge_llm": "gemini-2.5-flash",
+  "embedding_model": "models/gemini-embedding-001",
+  "num_samples": 5,
+  "limit_applied": 5,
+  "basic": {
+    "context_recall": 0.3,
+    "llm_context_precision_with_reference": 0.6999999999666666,
+    "faithfulness": 0.255,
+    "answer_relevancy": 0.6765363753657676,
+    "answer_correctness": 0.7165329277302098
+  },
+  "basic_coverage": {
+    "context_recall": 5,
+    "llm_context_precision_with_reference": 5,
+    "faithfulness": 5,
+    "answer_relevancy": 5,
+    "answer_correctness": 5
+  },
+  "advanced": {
+    "context_recall": 0.8,
+    "llm_context_precision_with_reference": 0.8666666665999999,
+    "faithfulness": 0.3633333333333334,
+    "answer_relevancy": 0.8774315215586311,
+    "answer_correctness": 0.8824051746090851
+  },
+  "advanced_coverage": {
+    "context_recall": 5,
+    "llm_context_precision_with_reference": 5,
+    "faithfulness": 5,
+    "answer_relevancy": 5,
+    "answer_correctness": 5
+  },
+  "delta": {
+    "context_recall": 0.5,
+    "llm_context_precision_with_reference": 0.1666666666333333,
+    "faithfulness": 0.10833333333333339,
+    "answer_relevancy": 0.20089514619286353,
+    "answer_correctness": 0.16587224687887525
+  }
+}

@@ -1,0 +1,36 @@
+# 환경변수 (API 키 포함)
+.env
+.env.local
+*.env
+
+# FAISS 인덱스 (대용량, 재생성 가능)
+medical_advanced_index/
+*.faiss
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 평가 결과 (선택적 제외 — 필요 시 주석 처리)
+# LLMresult.json
+# RAGresult.json
+# advanced_result.json
+# *_ragas_scores.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
