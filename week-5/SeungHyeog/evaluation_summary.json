@@ -1,0 +1,42 @@
+{
+  "note": "Offline deterministic Ragas-style evaluation. Replace with real ragas.evaluate when ragas and evaluator API keys are available.",
+  "counts": {
+    "samples": 15,
+    "basic_manual_correct": 13,
+    "advanced_manual_correct": 15,
+    "basic_year_correct": 8,
+    "advanced_year_correct": 15
+  },
+  "metric_means": [
+    {
+      "metric": "context_recall",
+      "basic": 0.8667,
+      "advanced": 1.0,
+      "delta": 0.1333
+    },
+    {
+      "metric": "context_precision",
+      "basic": 0.6639,
+      "advanced": 0.7873,
+      "delta": 0.1234
+    },
+    {
+      "metric": "faithfulness",
+      "basic": 0.6442,
+      "advanced": 0.8755,
+      "delta": 0.2313
+    },
+    {
+      "metric": "answer_relevancy",
+      "basic": 0.7214,
+      "advanced": 0.7826,
+      "delta": 0.0612
+    },
+    {
+      "metric": "answer_correctness",
+      "basic": 0.8737,
+      "advanced": 1.0,
+      "delta": 0.1263
+    }
+  ]
+}
