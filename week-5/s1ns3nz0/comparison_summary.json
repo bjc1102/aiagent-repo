@@ -1,0 +1,32 @@
+{
+  "evaluator_model": "claude-sonnet-4-5",
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "n_samples": 17,
+  "metrics": {
+    "context_recall": {
+      "basic_mean": 0.6176470588235294,
+      "advanced_mean": 0.7941176470588235,
+      "delta": 0.17647058823529405
+    },
+    "llm_context_precision_with_reference": {
+      "basic_mean": 0.46102941173541057,
+      "advanced_mean": 0.740441176426636,
+      "delta": 0.2794117646912254
+    },
+    "faithfulness": {
+      "basic_mean": 0.7182072829131653,
+      "advanced_mean": 0.7833333333333333,
+      "delta": 0.06512605042016806
+    },
+    "answer_relevancy": {
+      "basic_mean": 0.7009634736188634,
+      "advanced_mean": 0.8964305706555475,
+      "delta": 0.1954670970366842
+    },
+    "answer_correctness": {
+      "basic_mean": 0.6168603753561053,
+      "advanced_mean": 0.8027865836670489,
+      "delta": 0.18592620831094364
+    }
+  }
+}
