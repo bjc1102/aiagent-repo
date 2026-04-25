@@ -43,7 +43,7 @@ KEYWORDS_BY_ID = {
     "q10": ["조산아", "5년"],                       # 비교용: 양 연도
     "q11": ["이상지질혈증", "면제"],                # 2026 확진검사
     "q12": ["이상지질혈증", "면제"],                # 2025 (미적용)
-    "q13": ["폐쇄병동", "12%"],                     # 2025/2026 비교
+    "q13": ["폐쇄병동"],                             # 2025/2026 비교 (양 연도 모두 매칭)
     "q14": ["환급", "월단위"],                      # 2026 산정기간
     "q15": ["치아 홈메우기", "5%"],                 # 2025 16~18세
     "q16": ["치아 홈메우기", "3%"],                 # 2026 6~15세
@@ -57,8 +57,8 @@ KEYWORDS_BY_ID = {
 CROSS_YEAR_IDS = {"q10", "q13", "q18"}
 
 
-def find_contexts(q_id, source_year, keywords):
-    """키워드로 관련 청크를 찾음."""
+def find_contexts(q_id, source_year, keywords, top_n=2):
+    """키워드로 관련 청크를 찾음. 작은 청크라 top_n=2로 답 근거 확보율 향상."""
     target_years = ["2025", "2026"] if q_id in CROSS_YEAR_IDS else source_year.split(", ")
     candidates = []
     for y in target_years:
@@ -66,20 +66,20 @@ def find_contexts(q_id, source_year, keywords):
             score = sum(1 for kw in keywords if kw in d.page_content)
             if score > 0:
                 candidates.append((score, y, d))
-    # 매칭 점수 내림차순
     candidates.sort(key=lambda x: -x[0])
-    # cross-year는 각 연도별 최상위 1개씩, 단일 연도는 상위 1~2개
+
     if q_id in CROSS_YEAR_IDS:
-        picked = {}
+        # 각 연도별 top_n개씩 (혹은 가능한 만큼)
+        per_year = {y: [] for y in target_years}
         for score, y, d in candidates:
-            if y not in picked:
-                picked[y] = d
-            if len(picked) == len(target_years):
-                break
-        return list(picked.values())
+            if len(per_year[y]) < top_n:
+                per_year[y].append(d)
+        result = []
+        for y in target_years:
+            result.extend(per_year[y])
+        return result
     else:
-        # 최상위 1개만
-        return [candidates[0][2]] if candidates else []
+        return [d for _, _, d in candidates[:top_n]]
 
 
 # --- 변환 실행 ---
