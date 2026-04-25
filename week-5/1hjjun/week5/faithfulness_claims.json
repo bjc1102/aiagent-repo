@@ -1,0 +1,1506 @@
+{
+  "basic": [
+    {
+      "id": "q01",
+      "score": 0.5,
+      "n_total_claims": 8,
+      "n_supported": 4,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "The 2026 medical benefit system applies to the situation.",
+          "reason": "The context includes multiple references to the '2026 알기 쉬운 의료급여제도' (2026 Easy-to-understand Medical Benefit System), indicating that the information is relevant to the 2026 system.",
+          "verdict": 1
+        },
+        {
+          "statement": "A person diagnosed with schizophrenia is classified as a type 2 medical benefit recipient.",
+          "reason": "The context mentions '조현병 등 정신질환자' (schizophrenia and other mental illness patients) under '제2·3차의료급여기관' (type 2 and 3 medical benefit institutions), but it does not explicitly state that schizophrenia patients are classified as type 2 recipients; it only specifies the medical institution level, not the classification of the recipient.",
+          "verdict": 0
+        },
+        {
+          "statement": "A type 2 medical benefit recipient who receives a long-acting antipsychotic injection at an outpatient clinic has a copayment rate of 2%.",
+          "reason": "The context states that the long-acting antipsychotic injection copayment rate is 2% for both type 1 and type 2 recipients, excluding outpatient copayment exemption cases. This directly supports the statement.",
+          "verdict": 1
+        },
+        {
+          "statement": "The injection cost was 200,000 won.",
+          "reason": "The context does not provide any information about the actual cost of the injection or any specific monetary amounts related to injections.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for the injection cost of 200,000 won is calculated as 200,000 won multiplied by 2%.",
+          "reason": "While the context provides the copayment rate (2%) for long-acting antipsychotic injections, it does not explicitly state the formula for calculating the copayment amount based on the injection cost.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount is 4,000 won.",
+          "reason": "There is no information in the context about the actual injection cost or the resulting copayment amount, so this calculation cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "In 2025, the copayment rate for long-acting antipsychotic injections was 5%.",
+          "reason": "The context includes a mention of '2025 알기 쉬운 의료급여제도' (2025 Easy-to-understand Medical Benefit System) and states that the copayment rate for long-acting antipsychotic injections was 5% for both type 1 and 2 recipients, which supports the statement.",
+          "verdict": 1
+        },
+        {
+          "statement": "In 2026, the copayment rate for long-acting antipsychotic injections was reduced to 2%.",
+          "reason": "The context shows that in the 2026 system, the copayment rate for long-acting antipsychotic injections is 2%, which is a reduction from the 5% rate in 2025, directly supporting the statement.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "score": 0.111,
+      "n_total_claims": 9,
+      "n_supported": 1,
+      "n_unsupported": 8,
+      "claims": [
+        {
+          "statement": "The father received a long-acting antipsychotic injection at a hospital outpatient clinic in 2025 due to schizophrenia.",
+          "reason": "The context mentions long-acting injectable antipsychotics with a copayment rate but does not provide any information about a specific person (the father) receiving treatment in 2025 or the reason for treatment.",
+          "verdict": 0
+        },
+        {
+          "statement": "According to the 2025 data, the copayment rate for long-acting injectable antipsychotics for mental illness outpatient treatment for Medical Aid Type 2 beneficiaries was 5%.",
+          "reason": "The context states that long-acting injectable antipsychotics for both Type 1 and Type 2 beneficiaries (excluding outpatient copayment exempt persons) have a copayment rate of 5%, but it does not specify the year 2025 explicitly.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment rate of 5% applied to both Medical Aid Type 1 and Type 2 beneficiaries.",
+          "reason": "The context states that the long-acting injectable antipsychotic injection copayment rate is 5% for both Type 1 and Type 2 beneficiaries, excluding outpatient copayment exempt persons.",
+          "verdict": 1
+        },
+        {
+          "statement": "The injection cost was 200,000 won.",
+          "reason": "There is no information in the context about the cost of the injection or any monetary amount related to the injection cost.",
+          "verdict": 0
+        },
+        {
+          "statement": "The father's copayment amount for the injection cost of 200,000 won was calculated as 200,000 won multiplied by 5%.",
+          "reason": "Since the cost of 200,000 won is not mentioned in the context, and the father is not mentioned, this calculation cannot be inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The father's copayment amount was 10,000 won.",
+          "reason": "There is no information about the father's copayment amount or any calculation related to it in the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "According to the 2026 data, the copayment rate for long-acting injectable antipsychotics changed to 2%.",
+          "reason": "The context mentions a 2% copayment rate for long-acting injectable antipsychotics but does not specify that this rate applies starting in 2026 or that it represents a change from a previous rate.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment rate was 5% in 2025.",
+          "reason": "The context does not specify any year such as 2025 for the 5% copayment rate; it only states the rate without a date.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment rate was reduced to 2% in 2026.",
+          "reason": "The context does not provide any information about a reduction or change in copayment rates in 2026.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "score": 0.111,
+      "n_total_claims": 9,
+      "n_supported": 1,
+      "n_unsupported": 8,
+      "claims": [
+        {
+          "statement": "The information is based on the year 2025.",
+          "reason": "The context includes a page labeled '10 · 2025 알기 쉬운 의료급여제도', indicating that some information is from the year 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "The mother is 72 years old.",
+          "reason": "There is no information in the context about the age of any individual, including the mother.",
+          "verdict": 0
+        },
+        {
+          "statement": "The mother is a type 2 medical aid beneficiary.",
+          "reason": "The context does not mention any specific individual or their beneficiary type, including the mother.",
+          "verdict": 0
+        },
+        {
+          "statement": "The mother received registered denture treatment.",
+          "reason": "The context does not provide any information about the mother or any individual receiving registered denture treatment.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket rate for the mother in the case of registered denture treatment is 15%.",
+          "reason": "The context states that for registered denture treatment, the out-of-pocket rate is 15% for type 2 beneficiaries, but since the mother's beneficiary type is not given, this cannot be directly inferred for the mother.",
+          "verdict": 0
+        },
+        {
+          "statement": "The treatment cost is 1,200,000 won.",
+          "reason": "There is no mention of any treatment cost or amount in the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket amount for the mother is calculated by multiplying 1,200,000 won by 15%.",
+          "reason": "Since neither the treatment cost nor the mother's beneficiary type is given, this calculation cannot be directly inferred from the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation results in 180,000 won.",
+          "reason": "No calculation or result is provided in the context, and the previous calculation is not supported by the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "The mother's out-of-pocket amount is 180,000 won.",
+          "reason": "There is no information about the mother's out-of-pocket amount in the context.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "score": 0.333,
+      "n_total_claims": 6,
+      "n_supported": 2,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "The information is based on the year 2026.",
+          "reason": "The context contains multiple references to the year 2026, such as '30 · 2026 알기 쉬운 의료급여제도' and '8 · 2026 알기 쉬운 의료급여제도', indicating the information is from or related to the year 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket rate for registered implant procedures for type 1 medical aid recipients aged 65 or older is 10%.",
+          "reason": "The context explicitly states that for 65 years or older recipients, the out-of-pocket rate for registered implants is 10% for type 1 recipients.",
+          "verdict": 1
+        },
+        {
+          "statement": "The procedure cost is 1,500,000 won.",
+          "reason": "There is no mention of any specific procedure cost or the amount 1,500,000 won in the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket amount for the procedure cost of 1,500,000 won is calculated by multiplying 1,500,000 won by 10%.",
+          "reason": "Since the procedure cost of 1,500,000 won is not mentioned in the context, the calculation based on that amount cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket amount is 150,000 won.",
+          "reason": "The context does not provide any specific out-of-pocket amount or calculation results, so this exact figure cannot be inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket amount for the father is 150,000 won.",
+          "reason": "There is no information about any individual, including a father, or their out-of-pocket amounts in the context.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "score": 0.25,
+      "n_total_claims": 4,
+      "n_supported": 1,
+      "n_unsupported": 3,
+      "claims": [
+        {
+          "statement": "According to the 2025 data, the self-pay rate for type 2 medical aid beneficiaries who receive complex chuna treatment for a disc or stenosis is 40%.",
+          "reason": "The context explicitly states that for 2종 (type 2) beneficiaries, the self-pay rate for 복잡추나 (complex chuna) treatment for 디스크, 협착증 (disc or stenosis) is 40%. The mention of 2025 aligns with the document date references.",
+          "verdict": 1
+        },
+        {
+          "statement": "The self-pay amount for the treatment cost of 180,000 won is calculated as follows.",
+          "reason": "The context does not provide any example or formula for calculating the self-pay amount based on treatment cost. It only lists self-pay rates, not calculation methods or examples.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation is 180,000 won multiplied by 40 percent, which equals 72,000 won.",
+          "reason": "The context does not include any calculation examples or mention multiplying treatment cost by self-pay rate to get the amount. This is an inferred calculation, not directly stated.",
+          "verdict": 0
+        },
+        {
+          "statement": "The self-pay amount for the user is 72,000 won.",
+          "reason": "Since the calculation itself is not provided or confirmed in the context, the resulting self-pay amount of 72,000 won cannot be directly inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "score": 0.2,
+      "n_total_claims": 5,
+      "n_supported": 1,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "According to the 2026 medical benefit system, the self-pay rate is 5% for a high-risk pregnant woman who is a type 2 medical benefit recipient when the woman receives inpatient treatment.",
+          "reason": "The context explicitly states that for type 2 medical benefit recipients, the self-pay rate for high-risk pregnant women receiving inpatient treatment is 5%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The total medical expense is 1,200,000 won.",
+          "reason": "The context does not provide any information about the total medical expense amount.",
+          "verdict": 0
+        },
+        {
+          "statement": "The self-pay amount for the wife is calculated by multiplying 1,200,000 won by 5%.",
+          "reason": "Since the total medical expense of 1,200,000 won is not mentioned in the context, the calculation based on this amount cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation results in 60,000 won.",
+          "reason": "Because the total medical expense and the calculation are not provided or mentioned in the context, this result cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The wife must pay a self-pay amount of 60,000 won.",
+          "reason": "There is no information in the context about the wife or her specific payment obligations, so this cannot be directly inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "score": 0.333,
+      "n_total_claims": 3,
+      "n_supported": 1,
+      "n_unsupported": 2,
+      "claims": [
+        {
+          "statement": "According to the 2026 data, the co-payment amount for Medical Aid Type 2 beneficiaries who receive outpatient treatment at hospital-level medical institutions due to chronic diseases is 1,000 Korean won.",
+          "reason": "The context explicitly states that for chronic disease patients, outpatient treatment at hospital-level medical institutions requires a co-payment of 1,000 won for Medical Aid Type 2 beneficiaries.",
+          "verdict": 1
+        },
+        {
+          "statement": "The information that the patient has received outpatient treatment 370 times so far does not affect the application of the co-payment rate.",
+          "reason": "The context does not mention any information about the number of outpatient treatments affecting the co-payment rate, so this cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "This information cannot be found in the 2026 context.",
+          "reason": "The context contains detailed information about co-payment rates and conditions for Medical Aid beneficiaries in 2026, so the statement claiming the information is not found is incorrect.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "score": 0.667,
+      "n_total_claims": 6,
+      "n_supported": 4,
+      "n_unsupported": 2,
+      "claims": [
+        {
+          "statement": "The data from the year 2026 indicates that the emergency medical management fee is covered by medical benefits only when treatment is provided for KTAS grades 1 to 3 according to the Korean Triage and Acuity Scale (KTAS).",
+          "reason": "The context explicitly states that emergency medical management fees are covered by medical benefits when treatment is provided for KTAS grades 1 to 3, and the document is dated 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "Medical benefits support the copayment only if the treatment corresponds to KTAS grades 1 to 3.",
+          "reason": "The context states that medical benefits apply and support the copayment only for KTAS grades 1 to 3 emergency treatments.",
+          "verdict": 1
+        },
+        {
+          "statement": "A medical benefits recipient visited the emergency room in March 2026.",
+          "reason": "The context does not provide any information about a specific medical benefits recipient visiting the emergency room in March 2026.",
+          "verdict": 0
+        },
+        {
+          "statement": "The medical benefits recipient was classified as KTAS grade 4, which is a mild emergency patient.",
+          "reason": "The context does not mention any specific recipient or classification as KTAS grade 4; only KTAS grades 1 to 3 are discussed in relation to coverage.",
+          "verdict": 0
+        },
+        {
+          "statement": "Medical benefits do not apply to the emergency medical management fee for KTAS grade 4 patients.",
+          "reason": "The context implies that medical benefits apply only to KTAS grades 1 to 3, so by exclusion, KTAS grade 4 patients are not covered for emergency medical management fees.",
+          "verdict": 1
+        },
+        {
+          "statement": "The medical benefits recipient must bear the full cost of the emergency medical management fee.",
+          "reason": "The context states that if the patient does not have emergency symptoms or equivalent, they must bear the full cost; this applies to recipients not classified as KTAS 1 to 3, implying full cost burden.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "score": 0.667,
+      "n_total_claims": 3,
+      "n_supported": 2,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "The period for medical aid support for premature infants was expanded starting from January 1, 2026.",
+          "reason": "The context explicitly states that the support period for premature infants was expanded from 5 years to 5 years and 4 months, effective from January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The child was born in February 2026.",
+          "reason": "The context does not provide any information about the birth date of any child, including February 2026.",
+          "verdict": 0
+        },
+        {
+          "statement": "The child can receive medical aid support for 5 years and 4 months from the date of birth.",
+          "reason": "The context states that the medical aid support period for premature infants was expanded to 5 years and 4 months from the date of birth.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "score": 1.0,
+      "n_total_claims": 7,
+      "n_supported": 7,
+      "n_unsupported": 0,
+      "claims": [
+        {
+          "statement": "The support expiration dates for the two cases are different.",
+          "reason": "The context states that the support period for premature babies is extended from 5 years to 5 years and 4 months starting January 1, 2026, implying different support expiration periods before and after this date.",
+          "verdict": 1
+        },
+        {
+          "statement": "The premature baby born in April 2025 was born before January 1, 2026.",
+          "reason": "April 2025 is clearly before January 1, 2026, as per the calendar year.",
+          "verdict": 1
+        },
+        {
+          "statement": "The premature baby born in April 2025 receives medical benefit support for 5 years from the date of birth according to the existing regulations.",
+          "reason": "The context indicates that before January 1, 2026, the support period was 5 years, and the extension to 5 years and 4 months applies from January 1, 2026 onward.",
+          "verdict": 1
+        },
+        {
+          "statement": "The support end date for the premature baby born in April 2025 is April 2030.",
+          "reason": "If the baby was born in April 2025 and the support period is 5 years, the support would end in April 2030.",
+          "verdict": 1
+        },
+        {
+          "statement": "The premature baby born in April 2026 receives medical benefit support for 5 years and 4 months from the date of birth according to the revised regulations effective from January 1, 2026.",
+          "reason": "The context states that from January 1, 2026, the support period is extended to 5 years and 4 months, so a baby born in April 2026 would receive support for that duration.",
+          "verdict": 1
+        },
+        {
+          "statement": "The support end date for the premature baby born in April 2026 is August 2031.",
+          "reason": "Adding 5 years and 4 months to April 2026 results in August 2031, consistent with the extended support period.",
+          "verdict": 1
+        },
+        {
+          "statement": "The customized medical benefit support period for premature babies was extended from 5 years to 5 years and 4 months from January 1, 2026.",
+          "reason": "The context explicitly states that the support period for premature babies was extended from 5 years to 5 years and 4 months starting January 1, 2026.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "score": 0.75,
+      "n_total_claims": 8,
+      "n_supported": 6,
+      "n_unsupported": 2,
+      "claims": [
+        {
+          "statement": "The date is January 20, 2026.",
+          "reason": "The context mentions dates such as '26. 1.6.' (January 6, 2026) and '26. 1. 1.' (January 1, 2026), but does not mention January 20, 2026 specifically.",
+          "verdict": 0
+        },
+        {
+          "statement": "The national health screening result shows a suspected diagnosis of dyslipidemia.",
+          "reason": "The context explicitly lists 이상지질혈증 (dyslipidemia) among the diseases suspected from the national health screening results.",
+          "verdict": 1
+        },
+        {
+          "statement": "If a person wants to receive a confirmatory test based on the national health screening result on January 20, 2026, the following applies.",
+          "reason": "The context provides rules about confirmatory tests after national health screening results but does not specify any special rules or conditions specifically for January 20, 2026.",
+          "verdict": 0
+        },
+        {
+          "statement": "The confirmatory test institution is primarily the primary medical care institution at the clinic level.",
+          "reason": "The context states that persons suspected of certain diseases after general health screening must receive confirmatory tests at the primary medical care institution (clinic level) in principle.",
+          "verdict": 1
+        },
+        {
+          "statement": "A person must receive the confirmatory test at the primary medical care institution at the clinic level in principle.",
+          "reason": "The context explicitly states that medical aid recipients suspected of diseases must receive confirmatory tests at the primary medical care institution (clinic level) as a general rule.",
+          "verdict": 1
+        },
+        {
+          "statement": "However, if a person falls under the exception to medical care procedures according to Article 3 of the Enforcement Rules of the Medical Care Assistance Act, the person can receive the confirmatory test at secondary or tertiary medical care institutions.",
+          "reason": "The context clearly states that exceptions under Article 3 of the Enforcement Rules allow confirmatory tests at secondary or tertiary medical care institutions.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense is based on changes implemented from January 1, 2026.",
+          "reason": "The context mentions that changes regarding out-of-pocket expense exemptions for additional outpatient treatment and tests due to suspected dyslipidemia were implemented starting January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "According to the changes implemented from January 1, 2026, out-of-pocket expenses are exempted for additional outpatient treatment and tests conducted due to suspected dyslipidemia from the national health screening result.",
+          "reason": "The context explicitly states that from January 1, 2026, additional outpatient treatment and tests for suspected dyslipidemia are exempted from out-of-pocket expenses.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "score": 0.8,
+      "n_total_claims": 5,
+      "n_supported": 4,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "In August 2025, the exemption benefit for the co-payment of confirmatory tests for suspected dyslipidemia was not applicable.",
+          "reason": "The context states that the exemption benefit for suspected dyslipidemia confirmatory tests was implemented starting January 1, 2026, so in August 2025 it was not yet applicable.",
+          "verdict": 1
+        },
+        {
+          "statement": "The exemption benefit for the co-payment of confirmatory tests after the national health screening applied from January 1, 2025.",
+          "reason": "The context explicitly mentions that from January 1, 2025, the exemption benefit for co-payment of confirmatory tests after national health screening was applied.",
+          "verdict": 1
+        },
+        {
+          "statement": "The exemption benefit applied only to hypertension, diabetes, tuberculosis, depression, and early psychosis diseases starting January 1, 2025.",
+          "reason": "The context states that from January 1, 2025, the exemption benefit applied to hypertension, diabetes, tuberculosis, and also added depression and early psychosis as suspected diseases, but does not say it applied only to these diseases, so the exclusivity ('only') cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The exemption benefit for the co-payment of confirmatory tests for suspected dyslipidemia was implemented from January 1, 2026.",
+          "reason": "The context clearly states that the exemption benefit for suspected dyslipidemia confirmatory tests was added starting January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The exemption benefit for suspected dyslipidemia did not apply in August 2025.",
+          "reason": "Since the exemption benefit for suspected dyslipidemia started on January 1, 2026, it did not apply in August 2025.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "score": 0.5,
+      "n_total_claims": 2,
+      "n_supported": 1,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "In the second half of 2025, a 12% additional rate was applied to the fixed amount for psychiatric closed ward hospitalization.",
+          "reason": "The context states that on '26. 1. 1.' (January 1, 2026), the fixed amount for psychiatric closed ward hospitalization was increased from 12% to 16%. There is no mention of a 12% additional rate being applied specifically in the second half of 2025.",
+          "verdict": 0
+        },
+        {
+          "statement": "From January 1, 2026, the additional rate for the fixed amount for psychiatric closed ward hospitalization increased from 12% to 16%.",
+          "reason": "The context explicitly states that from '26. 1. 1.' (January 1, 2026), the fixed amount for psychiatric closed ward hospitalization increased from 12% to 16%.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "score": 1.0,
+      "n_total_claims": 3,
+      "n_supported": 3,
+      "n_unsupported": 0,
+      "claims": [
+        {
+          "statement": "From January 1, 2026, the calculation period for medical benefit excess out-of-pocket refund has changed.",
+          "reason": "The context explicitly states that from January 1, 2026, the calculation period for refunding excess out-of-pocket medical benefit payments changed from 30 days to monthly units.",
+          "verdict": 1
+        },
+        {
+          "statement": "Until 2025, the excess out-of-pocket refund was calculated in 30-day units.",
+          "reason": "The context mentions that the calculation period was changed from 30 days to monthly units starting January 1, 2026, implying that before this date (i.e., until 2025), the calculation was done in 30-day units.",
+          "verdict": 1
+        },
+        {
+          "statement": "From 2026, the calculation period for the excess out-of-pocket refund has changed to monthly units.",
+          "reason": "The context clearly states that starting January 1, 2026, the calculation period for excess out-of-pocket refund was changed to monthly units.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "score": 0.333,
+      "n_total_claims": 6,
+      "n_supported": 2,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "According to the 2025 data, if a child aged 16 or older and 18 or younger who is a medical aid type 2 beneficiary receives dental sealant treatment, a 5% copayment rate applies to the relevant medical expense.",
+          "reason": "The context explicitly states that for children aged 16 to 18 who are medical aid type 2 beneficiaries, a 5% copayment rate applies only to the dental sealant treatment cost.",
+          "verdict": 1
+        },
+        {
+          "statement": "The child in question is 17 years old.",
+          "reason": "The context does not provide any specific age of the child; it only gives general rules for age groups. Therefore, the exact age 17 cannot be inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The dental sealant treatment cost for the 17-year-old child is 100,000 won.",
+          "reason": "The context does not mention any specific cost amount for dental sealant treatment or for any child.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for the dental sealant treatment cost of 100,000 won is calculated as 100,000 won multiplied by 5%.",
+          "reason": "While the context states the copayment rate is 5% for dental sealant treatment for children aged 16-18, it does not explicitly state the calculation method for copayment amounts. However, it is a reasonable direct inference that copayment is calculated by multiplying the cost by the copayment rate.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment amount is 5,000 won.",
+          "reason": "The context does not provide any specific cost or resulting copayment amount; the figure 5,000 won is derived from an assumed calculation and is not explicitly stated.",
+          "verdict": 0
+        },
+        {
+          "statement": "The child must pay a copayment of 5,000 won.",
+          "reason": "Since the exact cost and resulting copayment amount are not given in the context, the statement about the child paying 5,000 won cannot be directly inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "score": 0.25,
+      "n_total_claims": 8,
+      "n_supported": 2,
+      "n_unsupported": 6,
+      "claims": [
+        {
+          "statement": "The 2026 medical benefit system applies to the case.",
+          "reason": "The context includes references to the 2026 medical benefit system and discusses copayment rates for children under this system, so it can be inferred that the 2026 system applies.",
+          "verdict": 1
+        },
+        {
+          "statement": "The patient is an 8-year-old child who is a type 2 medical benefit recipient.",
+          "reason": "The context mentions medical benefit recipients aged 6 to 15 and specifies copayment rates for type 2 recipients, but does not explicitly state the patient's age or type of benefit recipient.",
+          "verdict": 0
+        },
+        {
+          "statement": "The 8-year-old child was hospitalized and received dental sealant treatment.",
+          "reason": "The context discusses dental sealant treatment for children under 18 during hospitalization but does not explicitly state that an 8-year-old child was hospitalized and received this treatment.",
+          "verdict": 0
+        },
+        {
+          "statement": "The patient is subject to a 3% copayment rate according to the 2026 medical benefit system.",
+          "reason": "The context states that children aged 6 to 15 have a 3% copayment rate for inpatient treatment including dental sealant under the medical benefit system, so this can be inferred if the patient is in that age group.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment amount for the treatment cost of 150,000 won is calculated as follows.",
+          "reason": "The context does not provide any example or formula explicitly calculating copayment amounts for a specific treatment cost such as 150,000 won.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation is 150,000 won multiplied by 3%.",
+          "reason": "The context does not explicitly show or mention this calculation or the use of 150,000 won as a treatment cost example.",
+          "verdict": 0
+        },
+        {
+          "statement": "The result of the calculation is 4,500 won.",
+          "reason": "There is no explicit calculation or result of 4,500 won mentioned in the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for the 8-year-old child is 4,500 won.",
+          "reason": "The context does not provide any explicit copayment amount for an 8-year-old child or mention 4,500 won as a copayment.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "score": 0.4,
+      "n_total_claims": 5,
+      "n_supported": 2,
+      "n_unsupported": 3,
+      "claims": [
+        {
+          "statement": "The 2025 context specifies the co-payment rates for tests such as CT, MRI, and PET.",
+          "reason": "The context includes sections labeled with years including 2025 and explicitly mentions co-payment rates for CT, MRI, PET tests under various beneficiary categories.",
+          "verdict": 1
+        },
+        {
+          "statement": "The co-payment rates apply only to specific groups such as pregnant women, premature infants and low birth weight infants, dementia patients, chronic disease patients under one year old, and patients with mental illnesses such as schizophrenia.",
+          "reason": "The context lists co-payment rates for CT, MRI, PET tests specifically for groups including pregnant women, premature and low birth weight infants, dementia patients, chronic disease patients under one year old, and mental illness patients such as schizophrenia, but does not state that these rates apply only to these groups, so exclusivity cannot be inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The husband received an MRI test for back pain.",
+          "reason": "There is no information in the context about any individual, including a husband, receiving an MRI test or any medical procedure.",
+          "verdict": 0
+        },
+        {
+          "statement": "The husband does not belong to the specific groups mentioned above.",
+          "reason": "The context does not provide any personal information about any individual or their group membership, so this cannot be inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "Therefore, the 2025 context does not provide information about the co-payment rate applicable when the husband, who is a Type 2 medical aid beneficiary, received an MRI test for back pain at a general hospital.",
+          "reason": "The context provides co-payment rates for Type 2 medical aid beneficiaries for CT, MRI, PET tests but does not mention any individual cases or specify rates for back pain MRI tests at general hospitals for a husband, so specific applicability cannot be confirmed.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "score": 0.818,
+      "n_total_claims": 11,
+      "n_supported": 9,
+      "n_unsupported": 2,
+      "claims": [
+        {
+          "statement": "The person is a type 2 medical aid beneficiary who receives long-acting injectable medication for schizophrenia.",
+          "reason": "The context mentions long-acting injectable medication for schizophrenia applicable to both type 1 and type 2 medical aid beneficiaries, but does not specify the person’s beneficiary type or confirm that the person receives such medication.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for a type 2 medical aid beneficiary receiving long-acting injectable medication for schizophrenia is as follows.",
+          "reason": "The context provides copayment rates for long-acting injectable medication but does not explicitly state the copayment amount for a type 2 beneficiary; it only gives percentages, not specific amounts.",
+          "verdict": 0
+        },
+        {
+          "statement": "According to the 2025 data, the copayment rate for long-acting injectable medication during outpatient treatment for mental illness is 5%.",
+          "reason": "The context states that before 2026, the copayment rate for long-acting injectable medication was 5%, as indicated by the line '항정신병 장기지속형주사제 본인부담률 5→2% 완화' effective from 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "When the person received a 300,000 won injection in September 2025, the copayment amount was 300,000 won multiplied by 5%.",
+          "reason": "Since the copayment rate was 5% before 2026, it can be directly inferred that the copayment amount for a 300,000 won injection in September 2025 would be 300,000 won times 5%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment amount for the 300,000 won injection in September 2025 was 15,000 won.",
+          "reason": "Multiplying 300,000 won by 5% results in 15,000 won, so this amount can be directly calculated from the given copayment rate and injection cost.",
+          "verdict": 1
+        },
+        {
+          "statement": "According to the 2026 data, from October 1, 2025, the copayment rate for antipsychotic long-acting injectable medication during outpatient treatment for mental illness was reduced from 5% to 2%.",
+          "reason": "The context states that from '25. 10. 1.' the copayment rate for long-acting injectable antipsychotic medication was reduced from 5% to 2%, which corresponds to October 1, 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "When the person received a 300,000 won injection in March 2026, the copayment amount was 300,000 won multiplied by 2%.",
+          "reason": "Since the copayment rate was reduced to 2% starting from October 1, 2025, it can be directly inferred that the copayment amount for a 300,000 won injection in March 2026 would be 300,000 won times 2%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment amount for the 300,000 won injection in March 2026 was 6,000 won.",
+          "reason": "Multiplying 300,000 won by 2% results in 6,000 won, so this amount can be directly calculated from the given copayment rate and injection cost.",
+          "verdict": 1
+        },
+        {
+          "statement": "The difference between the copayment amounts at the two time points is the copayment amount in September 2025 minus the copayment amount in March 2026.",
+          "reason": "The difference in copayment amounts logically corresponds to the earlier amount minus the later amount, which is consistent with the statement.",
+          "verdict": 1
+        },
+        {
+          "statement": "The difference between the copayment amounts at the two time points is 9,000 won.",
+          "reason": "The difference between 15,000 won (September 2025) and 6,000 won (March 2026) is 9,000 won, which can be directly calculated.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment rate was reduced starting in 2026, which caused the difference in copayment amounts.",
+          "reason": "The context states the copayment rate was reduced from 5% to 2% starting October 1, 2025 (effectively 2026 data), which explains the difference in copayment amounts.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "score": 1.0,
+      "n_total_claims": 4,
+      "n_supported": 4,
+      "n_unsupported": 0,
+      "claims": [
+        {
+          "statement": "The validity period of the designation for homeless medical facilities was until March 21, 2025, according to previous information.",
+          "reason": "The context states that the validity period was from 2024.3.22 to 2025.3.21, which confirms that the previous validity period ended on March 21, 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "The validity period of the designation for homeless medical facilities has been changed from the previous information.",
+          "reason": "The context shows that the validity period was extended from 1 year (2024.3.22~2025.3.21) to 3 years (2025.3.22~2028.3.21), indicating a change from the previous information.",
+          "verdict": 1
+        },
+        {
+          "statement": "From March 22, 2025, the validity period of the designation for homeless medical facilities was extended by 3 years.",
+          "reason": "The context explicitly states that from '25.3.22, the validity period was extended for 3 years until '28.3.21.",
+          "verdict": 1
+        },
+        {
+          "statement": "As of June 2026, the validity period of the designation for homeless medical facilities is from March 22, 2025 to March 21, 2028.",
+          "reason": "The context indicates the validity period from 2025.3.22 to 2028.3.21, so as of June 2026, this period is still valid.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "score": 0.667,
+      "n_total_claims": 9,
+      "n_supported": 6,
+      "n_unsupported": 3,
+      "claims": [
+        {
+          "statement": "The 2026 medical benefit system specifies the patient co-payment for type 2 medical benefit recipients.",
+          "reason": "The context includes multiple references to the 2026 medical benefit system and specifies patient co-payment rates for type 2 recipients in various treatments.",
+          "verdict": 1
+        },
+        {
+          "statement": "The patient co-payment rate for type 2 recipients receiving complex chuna treatment for lumbar disc stenosis is 40% according to the 2026 chuna therapy co-payment rate.",
+          "reason": "The context explicitly states that for type 2 recipients, the co-payment rate for complex chuna treatment for disc and stenosis is 40%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The patient co-payment for the treatment cost of 250,000 won is 250,000 won multiplied by 40%, which equals 100,000 won.",
+          "reason": "While the context provides the co-payment rate of 40%, it does not provide any example calculation or mention a treatment cost of 250,000 won or the resulting co-payment amount.",
+          "verdict": 0
+        },
+        {
+          "statement": "The 2026 data specifies patient co-payment rates for tests such as CT, MRI, and PET only for specific groups.",
+          "reason": "The context lists CT, MRI, PET co-payment rates and associates them with specific groups such as pregnant women, premature infants, dementia patients, chronic disease patients, and mental illness patients, implying specificity.",
+          "verdict": 1
+        },
+        {
+          "statement": "The specific groups include pregnant women, premature or low birth weight infants, dementia patients, chronic disease patients under 1 year old, and patients with mental illnesses such as schizophrenia.",
+          "reason": "The context explicitly mentions these groups in relation to CT, MRI, PET co-payment rates.",
+          "verdict": 1
+        },
+        {
+          "statement": "There is no general patient co-payment rate information for PET tests for type 2 recipients with lumbar disc stenosis in the provided context.",
+          "reason": "The context does not mention PET test co-payment rates specifically for type 2 recipients with lumbar disc stenosis; it only mentions PET rates for certain groups unrelated to lumbar disc stenosis.",
+          "verdict": 1
+        },
+        {
+          "statement": "Therefore, it is difficult to calculate the exact total patient co-payment for the two items.",
+          "reason": "The context does not provide sufficient information about costs or combined calculations, so the exact total co-payment cannot be directly inferred.",
+          "verdict": 1
+        },
+        {
+          "statement": "The patient co-payment for complex chuna treatment is 100,000 won.",
+          "reason": "The context provides percentage rates but does not specify any fixed co-payment amounts such as 100,000 won for complex chuna treatment.",
+          "verdict": 0
+        },
+        {
+          "statement": "The patient co-payment information for the PET test is not available in the provided context.",
+          "reason": "The context provides co-payment rates for PET tests but only for specific groups, not a general PET test co-payment rate; thus, some information is available.",
+          "verdict": 0
+        }
+      ]
+    }
+  ],
+  "advanced": [
+    {
+      "id": "q01",
+      "score": 0.833,
+      "n_total_claims": 6,
+      "n_supported": 5,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "As of April 15, 2026, a person diagnosed with schizophrenia who is a type 2 medical aid beneficiary receives long-acting antipsychotic injections at an outpatient hospital.",
+          "reason": "The context mentions long-acting antipsychotic injections for schizophrenia patients with type 1 and 2 medical aid beneficiaries at outpatient settings, but does not specify the exact date April 15, 2026 or explicitly state that such patients receive injections at outpatient hospitals on that date.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket rate for a type 2 medical aid beneficiary diagnosed with schizophrenia receiving long-acting antipsychotic injections at an outpatient hospital is 2%.",
+          "reason": "The context explicitly states that the out-of-pocket rate for long-acting antipsychotic injections for both type 1 and 2 medical aid beneficiaries, excluding outpatient cost exemption cases, is 2%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The source of this information is the 2026 document, page 10 titled 'Outpatient treatment for mental illness' and page 12 titled 'October 1, 2025, outpatient treatment for mental illness, reduction of out-of-pocket rate for long-acting antipsychotic injections from 5% to 2%'.",
+          "reason": "The context includes references to pages 10 and 12 of a 2026 document discussing outpatient treatment for mental illness and the reduction of out-of-pocket rates for long-acting antipsychotic injections effective October 1, 2025, matching the statement's description.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket cost for an injection costing 200,000 won is calculated as 200,000 won multiplied by 2%.",
+          "reason": "The context provides the out-of-pocket rate as 2% for the injection but does not explicitly state the calculation method for a 200,000 won injection cost; however, it is a direct mathematical inference from the given rate.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket cost for the injection is 4,000 won.",
+          "reason": "Given the 2% out-of-pocket rate and an injection cost of 200,000 won, the cost is 200,000 * 0.02 = 4,000 won, which is a direct calculation based on the context's rate.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket cost paid by the person is 4,000 won.",
+          "reason": "Since the out-of-pocket cost is calculated as 4,000 won, it follows that the person pays this amount, directly inferred from the context and calculation.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "score": 0.375,
+      "n_total_claims": 8,
+      "n_supported": 3,
+      "n_unsupported": 5,
+      "claims": [
+        {
+          "statement": "The father received a long-acting antipsychotic injection on June 10, 2025.",
+          "reason": "The context does not mention any individual or specific date related to receiving a long-acting antipsychotic injection.",
+          "verdict": 0
+        },
+        {
+          "statement": "The long-acting antipsychotic injection was administered at an outpatient hospital visit.",
+          "reason": "The context mentions outpatient copayment rates for long-acting antipsychotic injections but does not specify any administration details or setting for a particular case.",
+          "verdict": 0
+        },
+        {
+          "statement": "The cost of the injection was 200,000 Korean won.",
+          "reason": "The context does not provide any information about the cost of the injection or any monetary amount related to it.",
+          "verdict": 0
+        },
+        {
+          "statement": "The applicable copayment rate at that time must be confirmed.",
+          "reason": "The context includes information about copayment rates and changes effective on specific dates, implying that the exact applicable rate depends on the date and must be confirmed.",
+          "verdict": 1
+        },
+        {
+          "statement": "According to the provided context, from October 1, 2025, the copayment rate for long-acting antipsychotic injections during outpatient mental illness treatment was reduced from 5% to 2%.",
+          "reason": "The context explicitly states that from '25. 10. 1.' (October 1, 2025), the copayment rate for long-acting antipsychotic injections was reduced from 5% to 2%.",
+          "verdict": 1
+        },
+        {
+          "statement": "On June 10, 2025, the copayment rate before the reduction, which was 5%, was applied.",
+          "reason": "The context shows the reduction took effect on October 1, 2025, so before that date, including June 10, 2025, the previous rate of 5% applied.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment amount paid by the father can be calculated by multiplying 200,000 Korean won by 5%.",
+          "reason": "Since the context does not provide the cost of the injection (200,000 Korean won) or any individual payment details, this calculation cannot be directly inferred, although the method is logically correct if the cost were known.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount paid by the father was 10,000 Korean won.",
+          "reason": "There is no information in the context about the actual payment amount or the father's payment, so this cannot be inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "score": 0.2,
+      "n_total_claims": 5,
+      "n_supported": 1,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "According to the information for the year 2025, the co-payment rate for a person aged 65 or older who is a type 2 medical aid beneficiary and received registered denture treatment is 15 percent.",
+          "reason": "The context explicitly states that for those aged 65 or older, type 2 beneficiaries have a 15% co-payment rate for registered dentures.",
+          "verdict": 1
+        },
+        {
+          "statement": "The co-payment amount for the mother is calculated as follows.",
+          "reason": "The context does not provide any information about a mother or how her co-payment amount is calculated.",
+          "verdict": 0
+        },
+        {
+          "statement": "The treatment cost is 1,200,000 won multiplied by 15 percent.",
+          "reason": "The context does not mention any specific treatment cost or calculation involving 1,200,000 won and 15%.",
+          "verdict": 0
+        },
+        {
+          "statement": "The co-payment amount is 180,000 won.",
+          "reason": "There is no information in the context about any specific co-payment amount of 180,000 won.",
+          "verdict": 0
+        },
+        {
+          "statement": "The mother's co-payment amount is 180,000 won.",
+          "reason": "The context does not mention any mother or her co-payment amount, including 180,000 won.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "score": 0.25,
+      "n_total_claims": 4,
+      "n_supported": 1,
+      "n_unsupported": 3,
+      "claims": [
+        {
+          "statement": "According to the information for the year 2026, the out-of-pocket rate for a registered implant procedure for a medical aid beneficiary of type 1 who is 65 years old or older is 10%.",
+          "reason": "The context explicitly states that for 65 years or older medical aid beneficiaries, the out-of-pocket rate for registered implants is 10% for type 1 beneficiaries.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket amount for the procedure cost of 1,500,000 won is calculated as follows.",
+          "reason": "The context does not provide any information or example about calculating the out-of-pocket amount for a specific procedure cost such as 1,500,000 won.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation is 1,500,000 won multiplied by 10%, which equals 150,000 won.",
+          "reason": "The context does not include any calculation examples or mention the multiplication of procedure cost by the out-of-pocket rate to get the amount.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket amount for the father is 150,000 won.",
+          "reason": "There is no mention of any individual such as 'the father' or any specific out-of-pocket amount related to a person in the context.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "score": 0.25,
+      "n_total_claims": 4,
+      "n_supported": 1,
+      "n_unsupported": 3,
+      "claims": [
+        {
+          "statement": "According to the information for the year 2025, the copayment rate for a Type 2 medical aid beneficiary who receives complex chuna treatment for disc and stenosis is 40 percent.",
+          "reason": "The context provides a table for chuna treatment copayment rates, showing that for complex chuna treatment (복잡추나) for disc and stenosis (디스크, 협착증), the copayment rate for 2종 (Type 2) is 40%. The document is dated 2025, confirming the year.",
+          "verdict": 1
+        },
+        {
+          "statement": "The copayment amount for the treatment cost of 180,000 won is calculated as follows.",
+          "reason": "The context does not mention any specific treatment cost or how to calculate copayment amounts. It only provides copayment rates, not calculation examples or instructions.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation is 180,000 won multiplied by 40 percent, which equals 72,000 won.",
+          "reason": "There is no information in the context about performing this calculation or any example involving 180,000 won. The statement is an arithmetic operation not directly supported by the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for the user is 72,000 won.",
+          "reason": "Since the calculation and the cost are not provided or mentioned in the context, the copayment amount of 72,000 won cannot be directly inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "score": 0.2,
+      "n_total_claims": 5,
+      "n_supported": 1,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "According to the information for the year 2026, the copayment rate is 5% for a high-risk pregnant woman who is a Medical Aid Type 2 beneficiary and receives inpatient medical treatment.",
+          "reason": "The context states that for high-risk pregnant women, the inpatient copayment rate is 5%, and the document is from 2026. It also mentions 2종 (Type 2) beneficiaries. Therefore, this statement can be directly inferred.",
+          "verdict": 1
+        },
+        {
+          "statement": "The total inpatient medical fee is 1,200,000 Korean won.",
+          "reason": "The context does not provide any information about the total inpatient medical fee amount, including 1,200,000 Korean won.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for the total inpatient medical fee of 1,200,000 Korean won is calculated as follows.",
+          "reason": "Since the total inpatient medical fee of 1,200,000 Korean won is not mentioned or provided in the context, the calculation of copayment based on this amount cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation is 1,200,000 Korean won multiplied by 5%, which equals 60,000 Korean won.",
+          "reason": "Because the total inpatient medical fee of 1,200,000 Korean won is not given in the context, the calculation based on this amount cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount that the wife must pay is 60,000 Korean won.",
+          "reason": "There is no information about a wife or her copayment amount in the context, nor is the amount 60,000 Korean won mentioned or calculated.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "score": 0.6,
+      "n_total_claims": 5,
+      "n_supported": 3,
+      "n_unsupported": 2,
+      "claims": [
+        {
+          "statement": "2026년 11월 기준으로 올해 외래 진료를 이미 370회 받았다.",
+          "reason": "The context does not provide any information about the exact number of outpatient visits a person has made by November 2026 or any specific individual data.",
+          "verdict": 0
+        },
+        {
+          "statement": "연간 외래 의료급여를 받은 횟수가 365회를 초과했다.",
+          "reason": "The context mentions that if the annual outpatient medical aid visits exceed 365 times, a 30% copayment rate applies, but it does not state that any individual has exceeded this number.",
+          "verdict": 0
+        },
+        {
+          "statement": "2026년 1월 1일부터 시행된 규정이 있다.",
+          "reason": "The context explicitly mentions multiple regulations and changes that are effective from January 1, 2026 ('26. 1. 1. 시행).",
+          "verdict": 1
+        },
+        {
+          "statement": "연간 외래 의료급여를 받은 횟수가 365회를 초과하는 경우 본인부담률은 30%가 적용된다.",
+          "reason": "The context clearly states that when the annual outpatient medical aid visits exceed 365 times, a 30% copayment rate is applied.",
+          "verdict": 1
+        },
+        {
+          "statement": "2026년도 컨텍스트에 따르면 2026년 1월 1일부터 시행된 규정은 연간 외래 의료급여 받은 횟수가 365회 초과 시 본인부담률 30%를 적용한다.",
+          "reason": "The context confirms that from January 1, 2026, the regulation applying a 30% copayment rate when outpatient visits exceed 365 times is in effect.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "score": 0.6,
+      "n_total_claims": 5,
+      "n_supported": 3,
+      "n_unsupported": 2,
+      "claims": [
+        {
+          "statement": "In March 2026, a medical aid beneficiary visited the emergency room.",
+          "reason": "The context does not specify any date in March 2026 or mention a specific medical aid beneficiary visiting the emergency room at that time.",
+          "verdict": 0
+        },
+        {
+          "statement": "The medical aid beneficiary was classified as KTAS level 4, which is a mild emergency patient, according to the Korean emergency patient severity classification.",
+          "reason": "The context mentions KTAS level 4 as a mild emergency patient classification but does not state that any specific medical aid beneficiary was classified as KTAS level 4.",
+          "verdict": 0
+        },
+        {
+          "statement": "In this case, the emergency medical management fee requires 100 percent patient payment.",
+          "reason": "The context states that for non-emergency symptoms or mild emergency patients (KTAS 4), the emergency medical management fee requires 100 percent patient payment.",
+          "verdict": 1
+        },
+        {
+          "statement": "The 100 percent patient payment rule for the emergency medical management fee has been in effect since January 1, 2026.",
+          "reason": "The context explicitly states that the change to 100 percent patient payment for emergency medical management fee is effective from January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The rule change applies because mild emergency patients classified as KTAS level 4 are subject to 100 percent patient payment.",
+          "reason": "The context explains that mild emergency patients (KTAS 4) and non-emergency patients are subject to 100 percent patient payment, which is the reason for the rule change.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "score": 0.667,
+      "n_total_claims": 3,
+      "n_supported": 2,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "The period for medical aid support for premature infants was expanded starting from January 1, 2026.",
+          "reason": "The context explicitly states that the support period for premature infants was expanded from 5 years to 5 years and 4 months, effective from January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The child was born in February 2026.",
+          "reason": "The context does not provide any information about the birth date of any child, including February 2026.",
+          "verdict": 0
+        },
+        {
+          "statement": "The child can receive medical aid support for 5 years and 4 months from the date of birth.",
+          "reason": "The context states that the medical aid support period for premature infants was extended from 5 years to 5 years and 4 months from the date of birth.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "score": 0.875,
+      "n_total_claims": 8,
+      "n_supported": 7,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "The support expiration dates for the two cases are different.",
+          "reason": "The context indicates that the medical aid support period for premature infants is expanded from 5 years to 5 years and 4 months starting January 1, 2026, implying different expiration dates depending on the birth date relative to the revision date.",
+          "verdict": 1
+        },
+        {
+          "statement": "The expanded medical aid support period for premature infants born in April 2025 will be implemented from January 1, 2026.",
+          "reason": "The context states that the expanded support period (5 years to 5 years 4 months) will be implemented from January 1, 2026, which applies to premature infants born before that date, including April 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "The medical aid support period for premature infants born in April 2025 follows the pre-revision standard.",
+          "reason": "Since the expanded support period starts from January 1, 2026, premature infants born in April 2025 will have their support period extended according to the revised standard, not the pre-revision standard.",
+          "verdict": 0
+        },
+        {
+          "statement": "The pre-revision standard applies a support period of five years from the date of birth for premature infants born in April 2025.",
+          "reason": "The context explicitly states that the pre-revision support period was 5 years from birth, which applies before the expansion effective January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The support expiration date for premature infants born in April 2025 is April 2030.",
+          "reason": "Under the pre-revision standard of 5 years support, a premature infant born in April 2025 would have support until April 2030.",
+          "verdict": 1
+        },
+        {
+          "statement": "The revised standard for medical aid support for premature infants born in April 2026 will be implemented from January 1, 2026.",
+          "reason": "The context states the revised standard is effective from January 1, 2026, so it applies to infants born in April 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The revised standard expands the medical aid support period to five years and four months from the date of birth for premature infants born in April 2026.",
+          "reason": "The context explicitly states the expansion from 5 years to 5 years and 4 months for premature infants starting January 1, 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The support expiration date for premature infants born in April 2026 is August 2031.",
+          "reason": "Adding 5 years and 4 months to April 2026 results in August 2031, consistent with the expanded support period stated in the context.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "score": 0.75,
+      "n_total_claims": 4,
+      "n_supported": 3,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "The information is based on the year 2026.",
+          "reason": "The context includes multiple references to the year 2026, such as '2026 알기 쉬운 의료급여제도' and implementation dates like '26. 1. 1.', indicating that the information is indeed based on or relevant to the year 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "If a medical aid beneficiary is suspected of having dyslipidemia based on the national health screening results, the medical aid beneficiary must receive the confirmatory test at a primary medical aid institution of the first level, which is a clinic level.",
+          "reason": "The context explicitly states that if diseases such as 이상지질혈증 (dyslipidemia) are suspected from the general health screening, the medical aid beneficiary must receive confirmatory tests at a 제1차의료급여기관 (primary medical aid institution, clinic level), except for certain exceptions.",
+          "verdict": 1
+        },
+        {
+          "statement": "According to the revised medical aid system implemented from January 1, 2026, additional outpatient examinations and tests conducted due to suspected dyslipidemia are exempt from personal expenses.",
+          "reason": "The context mentions that from '26. 1. 1. 시행' (effective January 1, 2026), additional outpatient examinations and tests for suspected 이상지질혈증 (dyslipidemia) are included in the personal expense exemption under the revised medical aid system.",
+          "verdict": 1
+        },
+        {
+          "statement": "Therefore, if the confirmatory test is received on January 20, 2026, there is no personal expense.",
+          "reason": "While the context states that from January 1, 2026, additional outpatient tests for suspected dyslipidemia are exempt from personal expenses, it does not explicitly mention specific dates such as January 20, 2026, nor does it confirm that all confirmatory tests on that date are free of personal expense. The statement extrapolates beyond the given information.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "score": 0.833,
+      "n_total_claims": 6,
+      "n_supported": 5,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "In August 2025, the exemption benefit for the co-payment of confirmatory tests after the national health screening was not applied to suspected dyslipidemia.",
+          "reason": "The context mentions the application of medical benefits for confirmatory tests after national health screening starting January 1, 2025, for hypertension, diabetes, tuberculosis, depression, and early psychotic disorders, but does not mention dyslipidemia or any exemption benefit related to it in August 2025.",
+          "verdict": 0
+        },
+        {
+          "statement": "According to the regulation implemented on January 1, 2025, medical benefits are applied to additional outpatient treatments and tests for medical aid recipients who received the national health screening.",
+          "reason": "The context explicitly states that from January 1, 2025, medical benefits apply to additional outpatient treatments and tests for medical aid recipients who received the national health screening and require confirmatory tests.",
+          "verdict": 1
+        },
+        {
+          "statement": "The medical benefits apply when the test results indicate the need for confirmatory tests for hypertension, diabetes, or tuberculosis.",
+          "reason": "The context clearly lists hypertension, diabetes, and tuberculosis as diseases for which confirmatory tests after national health screening are covered by medical benefits.",
+          "verdict": 1
+        },
+        {
+          "statement": "The medical benefits also apply when there is suspicion of depression or early psychotic disorders.",
+          "reason": "The context explicitly adds suspicion of depression and early psychotic disorders to the list of conditions eligible for medical benefits for confirmatory tests after national health screening.",
+          "verdict": 1
+        },
+        {
+          "statement": "Dyslipidemia is not included in the list of applicable diseases for the medical benefits.",
+          "reason": "The context does not mention dyslipidemia among the diseases (hypertension, diabetes, tuberculosis, depression, early psychotic disorders) for which medical benefits apply after national health screening.",
+          "verdict": 1
+        },
+        {
+          "statement": "The source of this information is the 2025 context regarding the application of medical benefits for confirmatory tests after national health screening for suspected depression and early psychotic disorders, effective from January 1, 2025.",
+          "reason": "The context explicitly states that the regulation effective January 1, 2025, covers medical benefits for confirmatory tests after national health screening including suspected depression and early psychotic disorders, making it the source of this information.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "score": 1.0,
+      "n_total_claims": 4,
+      "n_supported": 4,
+      "n_unsupported": 0,
+      "claims": [
+        {
+          "statement": "In the second half of 2025, starting from July 1, 2025, a 12% increase was applied to the fixed rate for psychiatric closed ward hospitalization.",
+          "reason": "The context explicitly states that on '25. 7. 1.', a 12% increase was applied to the fixed rate for psychiatric closed ward hospitalization.",
+          "verdict": 1
+        },
+        {
+          "statement": "After January 1, 2026, the increase rate for the fixed rate of psychiatric closed ward hospitalization was raised from 12% to 16%.",
+          "reason": "The context states that on '26. 1. 1.', the fixed rate increase for psychiatric closed ward hospitalization was raised from 12% to 16%.",
+          "verdict": 1
+        },
+        {
+          "statement": "Therefore, the increase rate was 12% in the second half of 2025.",
+          "reason": "Since the 12% increase started on July 1, 2025, and the increase changed to 16% only on January 1, 2026, the increase rate was indeed 12% during the second half of 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "The increase rate changed to 16% starting from January 1, 2026.",
+          "reason": "The context clearly states that from '26. 1. 1.', the increase rate for psychiatric closed ward hospitalization was raised to 16%.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "score": 0.75,
+      "n_total_claims": 4,
+      "n_supported": 3,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "From January 1, 2026, the calculation period for medical benefit excess out-of-pocket refund has changed.",
+          "reason": "The context explicitly states that from January 1, 2026, the calculation period for refunding excess out-of-pocket expenses changed from 30 days to a monthly basis.",
+          "verdict": 1
+        },
+        {
+          "statement": "Until 2025, the calculation period for refunding excess out-of-pocket expenses was based on 30-day units.",
+          "reason": "The context mentions that the calculation period was changed from 30 days to monthly starting January 1, 2026, implying that before this date (i.e., until 2025), the period was 30 days.",
+          "verdict": 1
+        },
+        {
+          "statement": "Until 2025, the refund was applied when the out-of-pocket expenses exceeded a certain amount.",
+          "reason": "The context states that refunds are given when out-of-pocket expenses exceed a certain amount, but does not specify that this policy was only until 2025; it only mentions the calculation period change date, not the refund application period.",
+          "verdict": 0
+        },
+        {
+          "statement": "Currently, in 2026, the calculation period has changed to a monthly basis.",
+          "reason": "The context clearly states that starting January 1, 2026, the calculation period for refunding excess out-of-pocket expenses changed to monthly.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "score": 0.167,
+      "n_total_claims": 6,
+      "n_supported": 1,
+      "n_unsupported": 5,
+      "claims": [
+        {
+          "statement": "According to the information for the year 2025, if a child who is a medical aid type 2 beneficiary and is between 16 years old and 18 years old receives dental sealant treatment during inpatient care, a 5% copayment rate applies only to the dental sealant treatment cost.",
+          "reason": "The context explicitly states that for medical aid type 2 beneficiaries aged 16 to 18, a 5% copayment rate applies only to the dental sealant treatment cost during inpatient care.",
+          "verdict": 1
+        },
+        {
+          "statement": "The child in question is 17 years old.",
+          "reason": "The context does not provide any specific age of any child; it only gives age ranges and copayment rules. Therefore, the exact age 17 cannot be inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The cost of the dental sealant treatment for the 17-year-old child is 100,000 won.",
+          "reason": "The context does not mention any specific cost amount for dental sealant treatment or any individual case costs.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount for the dental sealant treatment cost of 100,000 won is calculated by multiplying 100,000 won by 5%.",
+          "reason": "While the context states the copayment rate is 5% for dental sealant treatment for children aged 16-18, it does not explicitly state how to calculate the copayment amount, though it is a reasonable inference. However, since the task requires direct inference, this calculation method is not explicitly mentioned.",
+          "verdict": 0
+        },
+        {
+          "statement": "The calculation results in a copayment amount of 5,000 won.",
+          "reason": "The context does not provide any calculation or result of copayment amounts; this is a derived arithmetic result not directly stated.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount is 5,000 won.",
+          "reason": "The context does not specify any copayment amount in won or any specific monetary values; thus, this cannot be directly inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "score": 0.2,
+      "n_total_claims": 5,
+      "n_supported": 1,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "According to the information for the year 2026, a child who is a Type 2 Medical Aid beneficiary and is between 6 years old and 15 years old receives a 3% co-payment rate for dental sealant treatment during inpatient care.",
+          "reason": "The context explicitly states that for dental sealant treatment (치아 홈메우기) during inpatient care, children aged 6 to 15 who are Type 2 Medical Aid beneficiaries have a 3% co-payment rate.",
+          "verdict": 1
+        },
+        {
+          "statement": "The child in question is 8 years old.",
+          "reason": "The context does not provide any specific age of any child; the statement about the child being 8 years old cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The dental sealant treatment cost for the 8-year-old child is 150,000 won.",
+          "reason": "There is no information in the context about the cost of dental sealant treatment or any specific monetary amount related to it.",
+          "verdict": 0
+        },
+        {
+          "statement": "The co-payment amount for the dental sealant treatment is calculated by multiplying 150,000 won by 3%.",
+          "reason": "While the co-payment rate of 3% is given for the relevant age group, the context does not mention how the co-payment amount is calculated or any specific cost to apply the rate to.",
+          "verdict": 0
+        },
+        {
+          "statement": "The co-payment amount is 4,500 won.",
+          "reason": "The context does not provide any information about the actual co-payment amount or the cost basis to calculate it; thus, this specific amount cannot be inferred.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "score": 0.2,
+      "n_total_claims": 5,
+      "n_supported": 1,
+      "n_unsupported": 4,
+      "claims": [
+        {
+          "statement": "According to the 2025 medical benefit system, the copayment rate is 15% when a type 2 medical benefit recipient receives tests such as CT, MRI, or PET at a general hospital.",
+          "reason": "The context states that for 2종 (type 2) recipients, the copayment rate for CT, MRI, PET etc. is 15%. It also mentions 병원 (hospital) and 종합병원 (general hospital) under 2차 의료기관, which aligns with the statement.",
+          "verdict": 1
+        },
+        {
+          "statement": "The husband's MRI test cost was 600,000 won.",
+          "reason": "The context does not provide any information about the husband's MRI test cost or any specific individual's medical expenses.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount is calculated by multiplying 600,000 won by 15%.",
+          "reason": "Since the context does not mention the husband's MRI cost or any calculation method explicitly, this calculation cannot be directly inferred.",
+          "verdict": 0
+        },
+        {
+          "statement": "The copayment amount is 90,000 won.",
+          "reason": "Without confirmation of the MRI cost or the calculation, the exact copayment amount cannot be directly inferred from the context.",
+          "verdict": 0
+        },
+        {
+          "statement": "Therefore, the husband paid a copayment of 90,000 won.",
+          "reason": "There is no information about the husband's payment or confirmation of the copayment amount in the context.",
+          "verdict": 0
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "score": 0.889,
+      "n_total_claims": 9,
+      "n_supported": 8,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "The out-of-pocket expense for a 300,000 won injection in September 2025 is 15,000 won.",
+          "reason": "The context states that before January 1, 2026, the out-of-pocket rate for long-acting injectable antipsychotic drugs was 5%. 5% of 300,000 won is 15,000 won, so this can be directly inferred for September 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense for a 300,000 won injection in March 2026 is 6,000 won.",
+          "reason": "The context states that starting January 1, 2026, the out-of-pocket rate for long-acting injectable antipsychotic drugs was reduced to 2%. 2% of 300,000 won is 6,000 won, so this can be directly inferred for March 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The difference in out-of-pocket expenses between the two time points is 9,000 won.",
+          "reason": "The difference between 15,000 won (September 2025) and 6,000 won (March 2026) is 9,000 won, which follows directly from the previous two statements and the context.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket rate for long-acting injectable antipsychotic drugs for type 2 medical aid recipients during outpatient treatment for mental illness was 5% in September 2025.",
+          "reason": "The context explicitly states that the out-of-pocket rate for long-acting injectable antipsychotic drugs was 5% before the reduction effective January 1, 2026, for both type 1 and 2 recipients, excluding outpatient exemption cases.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense in September 2025 was calculated as 300,000 won multiplied by 5%, which equals 15,000 won.",
+          "reason": "This calculation is a direct application of the 5% rate stated in the context for September 2025, confirming the expense as 15,000 won.",
+          "verdict": 1
+        },
+        {
+          "statement": "Starting from October 1, 2025, the out-of-pocket rate for long-acting injectable antipsychotic drugs during outpatient treatment for mental illness was reduced from 5% to 2%.",
+          "reason": "The context states the reduction of the out-of-pocket rate from 5% to 2% for long-acting injectable antipsychotic drugs effective January 1, 2026, not October 1, 2025. Therefore, the date in the statement is incorrect.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket rate in March 2026 was 2%.",
+          "reason": "The context confirms that from January 1, 2026, the out-of-pocket rate for these drugs was reduced to 2%, so this applies to March 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense in March 2026 was calculated as 300,000 won multiplied by 2%, which equals 6,000 won.",
+          "reason": "This calculation directly follows from the 2% rate stated in the context for March 2026, confirming the expense as 6,000 won.",
+          "verdict": 1
+        },
+        {
+          "statement": "The difference in out-of-pocket expenses was calculated as 15,000 won in 2025 minus 6,000 won in 2026, which equals 9,000 won.",
+          "reason": "This is a direct arithmetic calculation based on the previously established out-of-pocket expenses for 2025 and 2026, consistent with the context.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "score": 0.667,
+      "n_total_claims": 3,
+      "n_supported": 2,
+      "n_unsupported": 1,
+      "claims": [
+        {
+          "statement": "According to the previous data, the validity period for the designation of homeless medical facilities was until March 21, 2025.",
+          "reason": "The context states that the validity period was from 2024.3.22 to 2025.3.21, confirming that the validity period ended on March 21, 2025.",
+          "verdict": 1
+        },
+        {
+          "statement": "As of June 2026, the validity period was extended by 3 years starting from March 22, 2025.",
+          "reason": "The context mentions a 3-year extension of the validity period from 2025.3.22 to 2028.3.21, but does not specify that this extension was made as of June 2026. The exact date of extension is not given as June 2026.",
+          "verdict": 0
+        },
+        {
+          "statement": "Therefore, the expiration date for the designation of homeless medical facilities is March 21, 2028.",
+          "reason": "The context explicitly states that the validity period was extended to 2028.3.21, confirming the expiration date as March 21, 2028.",
+          "verdict": 1
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "score": 0.375,
+      "n_total_claims": 8,
+      "n_supported": 3,
+      "n_unsupported": 5,
+      "claims": [
+        {
+          "statement": "The total out-of-pocket expense calculated is based on the 2026 information.",
+          "reason": "The context repeatedly references '2026 알기 쉬운 의료급여제도' (Easy-to-understand Medical Aid System 2026), indicating that the information is from 2026.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense for lumbar disc stenosis complex chuna treatment costing 250,000 won is calculated as follows.",
+          "reason": "The context provides out-of-pocket rates for complex chuna treatment for disc and stenosis but does not explicitly show or mention a calculation for a 250,000 won treatment cost.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket rate for disc and stenosis complex chuna treatment for type 2 medical aid beneficiaries is 40%.",
+          "reason": "The context explicitly states that for disc and stenosis complex chuna treatment, the out-of-pocket rate for 2종 (type 2) beneficiaries is 40%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense for lumbar disc stenosis complex chuna treatment is 250,000 won multiplied by 40 percent, which equals 100,000 won.",
+          "reason": "While the 40% rate is given, the context does not provide any example calculation or mention a 250,000 won cost or resulting 100,000 won expense.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket expense for PET examination at a tertiary hospital costing 400,000 won is calculated as follows.",
+          "reason": "The context provides out-of-pocket rates for PET examinations but does not include any calculation or example involving a 400,000 won cost.",
+          "verdict": 0
+        },
+        {
+          "statement": "The out-of-pocket rate for CT, MRI, PET, and similar examinations for type 2 medical aid beneficiaries is 15%.",
+          "reason": "The context explicitly states that the out-of-pocket rate for CT, MRI, PET, etc., for 2종 (type 2) beneficiaries is 15%.",
+          "verdict": 1
+        },
+        {
+          "statement": "The out-of-pocket expense for PET examination at a tertiary hospital is 400,000 won multiplied by 15 percent, which equals 60,000 won.",
+          "reason": "Although the 15% rate is given, the context does not provide any example calculation or mention a 400,000 won cost or resulting 60,000 won expense.",
+          "verdict": 0
+        },
+        {
+          "statement": "The total out-of-pocket expense for the two items is 100,000 won plus 60,000 won, which equals 160,000 won.",
+          "reason": "The context does not provide any combined calculation or mention these specific amounts or their sum.",
+          "verdict": 0
+        }
+      ]
+    }
+  ]
+}
