@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+langchain
+langchain-google-genai
+langchain-community
+chromadb
+pdfplumber
+python-dotenv
+langchain-openai
+langchain-core 
+rank_bm25==0.2.2
+kiwipiepy==0.17.0
+cohere
