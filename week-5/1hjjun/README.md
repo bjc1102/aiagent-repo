@@ -1,6 +1,6 @@
 # 5주차 과제: RAG 평가 — Golden Dataset, LLM-as-a-Judge, Ragas
 
-> **이 README는 교수님 1차 피드백을 반영한 v2 재작업본입니다.** 1차 결과(26청크, LLM 메트릭만)와 2차 결과(76청크, LLM+NonLLM)를 함께 비교 기록합니다.
+> **이 README는 피드백을 반영한 v2 재작업본입니다.** 1차 결과(26청크, LLM 메트릭만)와 2차 결과(76청크, LLM+NonLLM)를 함께 비교 기록합니다.
 
 ---
 
