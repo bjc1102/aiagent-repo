@@ -1,0 +1,20 @@
+{"id": "q01", "question": "2025년 65세 이상 1종 수급권자가 틀니를 하면 본인부담률은 몇 %인가요?", "expected_answer": "5%",  "evidence_text": "틀니 임플란트\n1종 5% 10%\n2종 15% 20%", "difficulty": "easy", "source_year": "2025"}
+{"id": "q02", "question": "2025년 2종 수급권자인 4세 아동이 입원하면 본인부담률은 몇 %인가요?", "expected_answer": "무료", "evidence_text": "", "difficulty": "easy", "source_year": "2025"}
+{"id": "q03", "question": "2025년 65세 이상 2종 수급권자가 임플란트를 하면 본인부담률은 몇 %인가요?", "expected_answer": "20%", "evidence_text": "틀니 임플란트\n1종 5% 10%\n2종 15% 20%",  "difficulty": "easy", "source_year": "2025"}
+{"id": "q04", "question": "2025년 17세 2종 수급권자가 치아 홈메우기를 받으면 본인부담률은 몇 %인가요?", "expected_answer": "5%", "evidence_text": "16세 이상 ~ 18세 이하 5%",  "difficulty": "medium", "source_year": "2025"}
+{"id": "q05", "question": "2025년 2종 수급권자인 조헌병 환자가 제2차의료급여기관에서 CT를 찍을 경우 본인부담률은 몇 %인가요?", "expected_answer": "15%", "evidence_text": "조현병 등 정신질환자 제2·3차의료급여기관 15%", "difficulty": "medium", "source_year": "2025"}
+{"id": "q06", "question": "2025년 2종 수급권자가 디스크가 아닌 질환으로 복잡추나를 받으면 본인부담률은 몇 %인가요?", "expected_answer": "80%", "evidence_text": "", "difficulty":"medium", "source_year": "2025"}
+{"id": "q07", "question": "2025년 1종 수급권자가 장기지속형 주사제를 30,000원에 처방받았습니다. 본인부담금은 얼마인가요?", "expected_answer": "1,500원", "evidence_text": "정신질환 외래진료", "difficulty": "hard", "source_year": "2025"}
+{"id": "q08", "question": "2025년 2종 수급권자인 치매 질환자가 제1차의료급여기관에서 MRI를 찍었고 검사비가 600,000원입니다. 본인부담금은 얼마인가요?", "expected_answer": "30,000원", "evidence_text": "치매 질환자 제1차의료급여기관", "difficulty": "hard", "source_year": "2025"}
+{"id": "q09", "question": "2025년 65세 이상 1종 수급권자가 틀니(시술비 1,500,000원)와 임플란트(시술비 1,000,000원)를 동시에 하면 각각의 본인부담금은 얼마인가요?", "expected_answer": "틀니 75,000원, 임플란트 100,000원", "evidence_text": "틀니 임플란트\n1종 5% 10%\n2종 15% 20%", "difficulty":"hard", "source_year": "2025"}
+{"id": "q10", "question": "2025년 대비 2026년에서 달라진 본인부담률은?", "expected_answer": "장기지속형 주사제", "evidence_text": "", "difficulty": "cross-year", "source_year": ""}
+{"id": "q11", "question": "2026년 65세 이상 1종 수급권자가 틀니를 하면 본인부담률은 몇 %인가요?", "expected_answer": "5%",  "evidence_text": "틀니 임플란트\n1종 5% 10%\n2종 15% 20%", "difficulty": "easy", "source_year": "2026"}
+{"id": "q12", "question": "2026년 2종 수급권자인 4세 아동이 입원하면 본인부담률은 몇 %인가요?", "expected_answer": "무료", "evidence_text": "",  "difficulty": "easy", "source_year": "2026"}
+{"id": "q13", "question": "2026년 65세 이상 2종 수급권자가 임플란트를 하면 본인부담률은 몇 %인가요?", "expected_answer": "20%", "evidence_text": "틀니 임플란트\n1종 5% 10%\n2종 15% 20%",  "difficulty": "easy", "source_year": "2026"}
+{"id": "q14", "question": "2026년 17세 2종 수급권자가 치아 홈메우기를 받으면 본인부담률은 몇 %인가요?", "expected_answer": "5%", "evidence_text": "16세 이상 ~ 18세 이하 5%",  "difficulty": "medium", "source_year": "2026"}
+{"id": "q15", "question": "2026년 2종 수급권자인 조헌병 환자가 제2차의료급여기관에서 CT를 찍을 경우 본인부담률은 몇 %인가요?", "expected_answer": "15%", "evidence_text": "조현병 등 정신질환자 제2·3차의료급여기관 15%", "difficulty": "medium", "source_year": "2026"}
+{"id": "q16", "question": "2026년 2종 수급권자가 디스크가 아닌 질환으로 복잡추나를 받으면 본인부담률은 몇 %인가요?", "expected_answer": "80%", "evidence_text": "", "difficulty":"medium", "source_year": "2026"}
+{"id": "q17", "question": "2026년 1종 수급권자가 장기지속형 주사제를 30,000원에 처방받았습니다. 본인부담금은 얼마인가요?", "expected_answer": "600원", "evidence_text": "정신질환 외래진료", "difficulty": "hard", "source_year": "2026"}
+{"id": "q18", "question": "2026년 2종 수급권자인 치매 질환자가 제1차의료급여기관에서 MRI를 찍었고 검사비가 600,000원입니다. 본인부담금은 얼마인가요?", "expected_answer": "30,000원", "evidence_text": "치매 질환자 제1차의료급여기관", "difficulty": "hard", "source_year": "2026"}
+{"id": "q19", "question": "2026년 65세 이상 1종 수급권자가 틀니(시술비 1,500,000원)와 임플란트(시술비 1,000,000원)를 동시에 하면 각각의 본인부담금은 얼마인가요?", "expected_answer": "틀니 75,000원, 임플란트 100,000원", "evidence_text": "틀니 임플란트\n1종 5% 10%\n2종 15% 20%", "difficulty":"hard", "source_year": "2026"}
+{"id": "q20", "question": "2025년과 2026년의 입원 급여 기준 차이가 있는 항목은?", "expected_answer": "장기지속형 주사제", "evidence_text": "", "difficulty": "cross-year", "source_year": ""}
