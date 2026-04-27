@@ -1,0 +1,36 @@
+{
+  "dataset": "/Users/jms/Desktop/project/Ai-agent-PortfolioPage/week5/monkana/golden_dataset_step2_pilot_5.jsonl",
+  "pipelines": [
+    "basic",
+    "advanced"
+  ],
+  "limit": null,
+  "basic_k": 4,
+  "advanced_top_n": 8,
+  "hybrid_com_top_n": 8,
+  "hybrid_com_rerank_top_n": 8,
+  "rebuild_vectorstore": false,
+  "korean_prompts": true,
+  "with_year_accuracy": true,
+  "evaluator": {
+    "provider": "openai",
+    "llm_model": "gpt-4o-mini",
+    "embedding_model": "text-embedding-3-small"
+  },
+  "ragas_version": "0.4.3",
+  "langchain_openai_version": "0.3.35",
+  "prompt_adaptation": [
+    "basic: LLMContextRecall: adapt_prompts/set_prompts",
+    "basic: LLMContextPrecisionWithReference: adapt_prompts/set_prompts",
+    "basic: Faithfulness: adapt_prompts/set_prompts",
+    "basic: ResponseRelevancy: adapt_prompts/set_prompts",
+    "basic: AnswerCorrectness: adapt_prompts/set_prompts",
+    "basic: YearAccuracy: prompt adaptation hook not found",
+    "advanced: LLMContextRecall: adapt_prompts/set_prompts",
+    "advanced: LLMContextPrecisionWithReference: adapt_prompts/set_prompts",
+    "advanced: Faithfulness: adapt_prompts/set_prompts",
+    "advanced: ResponseRelevancy: adapt_prompts/set_prompts",
+    "advanced: AnswerCorrectness: adapt_prompts/set_prompts",
+    "advanced: YearAccuracy: prompt adaptation hook not found"
+  ]
+}

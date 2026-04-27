@@ -1,0 +1,7 @@
+metric,basic,advanced
+answer_correctness,0.889690399512563,0.8829186560715929
+answer_relevancy,0.9025282520635918,0.9034382801887734
+context_recall,1.0,1.0
+faithfulness,0.3,0.4
+llm_context_precision_with_reference,0.711111111086574,0.6141428571231683
+year_accuracy,1.0,1.0
