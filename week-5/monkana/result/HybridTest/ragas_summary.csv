@@ -1,0 +1,6 @@
+metric,hybrid_com,hybrid_com_rerank
+answer_correctness,0.895308445137957,0.9194082095927104
+answer_relevancy,0.844917819801371,0.9006980811358292
+context_recall,1.0,1.0
+faithfulness,0.5,0.5
+llm_context_precision_with_reference,0.7585714285484643,0.6299999999817499
