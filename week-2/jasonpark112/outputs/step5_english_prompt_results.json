@@ -1,0 +1,2228 @@
+[
+  {
+    "id": "q01",
+    "difficulty": "easy",
+    "question": "65세 이상 1종 수급권자가 틀니를 하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type: 1종 수급권자 (Type 1 beneficiary).",
+      "Identify age condition: 65세 이상 (65 years or older).",
+      "Identify special condition: 틀니 (dentures).",
+      "Match with Rule 1: '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'."
+    ],
+    "predicted_reason": "Rule 1 applies: 65세 이상 1종 수급권자의 틀니는 본인부담률 5%입니다.",
+    "all_sample_answers": [
+      "5%",
+      "5%",
+      "본인부담률 5%",
+      "5%",
+      "5%"
+    ],
+    "all_sample_reasons": [
+      "Rule 1 applies: 65세 이상 1종 수급권자의 틀니는 본인부담률 5%입니다.",
+      "Rule 1 applies: 65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%",
+      "65세 이상 1종 수급권자의 틀니에 대한 본인부담률은 5%입니다.",
+      "65세 이상 1종 수급권자의 틀니에 대한 본인부담률은 5%입니다.",
+      "65세 이상 1종 수급권자의 틀니는 본인부담률 5%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type: 1종 수급권자 (Type 1 beneficiary).",
+        "Identify age condition: 65세 이상 (65 years or older).",
+        "Identify special condition: 틀니 (dentures).",
+        "Match with Rule 1: '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify special condition as 틀니.",
+        "Find the matching rule: 65세 이상 + 1종 수급권자 + 틀니."
+      ],
+      [
+        "Identify beneficiary type: 1종 수급권자 (Type 1 beneficiary).",
+        "Identify age condition: 65세 이상 (65 years or older).",
+        "Identify special condition: 틀니 (dentures).",
+        "Find the matching rule: Rule 1 '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1).",
+        "Identify age condition as 65세 이상 (65 years or older).",
+        "Identify the procedure as 틀니 (dentures).",
+        "Find the matching rule: 65세 이상 + 1종 수급권자 + 틀니."
+      ],
+      [
+        "Identify beneficiary type: 1종 수급권자 (Type 1 beneficiary).",
+        "Identify age condition: 65세 이상 (65 years or older).",
+        "Identify special condition: 틀니 (dentures).",
+        "Find the most specific matching rule: Rule 1 matches all conditions."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "5%",
+    "expected_reasoning": "04번 표 → 1종 → 틀니 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q02",
+    "difficulty": "easy",
+    "question": "65세 이상 2종 수급권자가 임플란트를 하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "20%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify age condition as 65세 이상.",
+      "Identify the medical procedure as 치과 임플란트.",
+      "Locate the rule that matches all identified conditions: '65세 이상 + 2종 수급권자 + 치과 임플란트: 본인부담률 20%'."
+    ],
+    "predicted_reason": "65세 이상 2종 수급권자의 치과 임플란트에 대한 본인부담률은 20%입니다.",
+    "all_sample_answers": [
+      "20%",
+      "20%",
+      "본인부담률 20%",
+      "20%",
+      "20%"
+    ],
+    "all_sample_reasons": [
+      "65세 이상 2종 수급권자의 치과 임플란트에 대한 본인부담률은 20%입니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트 본인부담률은 20%입니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트 본인부담률은 20%입니다 (규칙 4).",
+      "65세 이상 2종 수급권자의 치과 임플란트는 본인부담률 20%입니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트는 본인부담률 20%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify the medical procedure as 치과 임플란트.",
+        "Locate the rule that matches all identified conditions: '65세 이상 + 2종 수급권자 + 치과 임플란트: 본인부담률 20%'."
+      ],
+      [
+        "Identify the beneficiary type as Type 2.",
+        "Identify the age condition as 65세 이상.",
+        "Identify the special condition as 치과 임플란트.",
+        "Apply Rule 4: 65세 이상 + 2종 수급권자 + 치과 임플란트."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify special condition as 치과 임플란트.",
+        "Find the most specific rule matching 65세 이상 + 2종 수급권자 + 치과 임플란트."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자 (Type 2 beneficiary).",
+        "Identify age condition: 65세 이상 (65 years or older).",
+        "Identify disease/special condition: 치과 임플란트 (Dental implant).",
+        "Find the most specific matching rule: Rule 4 states '65세 이상 + 2종 수급권자 + 치과 임플란트: 본인부담률 20%'.",
+        "Apply Rule 4."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age condition as 65세 이상.",
+        "Identify the medical service as 치과 임플란트.",
+        "Apply rule 4: 65세 이상 + 2종 수급권자 + 치과 임플란트."
+      ]
+    ],
+    "vote_distribution": {
+      "20%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "20%",
+    "expected_reasoning": "04번 표 → 2종 → 임플란트 = 20%",
+    "is_correct": true
+  },
+  {
+    "id": "q03",
+    "difficulty": "easy",
+    "question": "2종 수급권자인 4세 아동이 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "무료",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify age as 4세 아동, which falls under '6세 미만'.",
+      "Identify the case as '입원'.",
+      "Find the most specific rule matching '15세 이하 아동 + 입원 + 6세 미만'.",
+      "Apply Rule 21: '15세 이하 아동 + 입원 + 6세 미만: 본인부담 없음'."
+    ],
+    "predicted_reason": "15세 이하 아동이 6세 미만으로 입원 시 본인부담은 없음",
+    "all_sample_answers": [
+      "무료",
+      "무료",
+      "무료",
+      "무료",
+      "무료"
+    ],
+    "all_sample_reasons": [
+      "15세 이하 아동이 6세 미만으로 입원 시 본인부담은 없음",
+      "15세 이하 아동이 입원하며 6세 미만인 경우 본인부담 없음.",
+      "15세 이하 아동의 6세 미만 입원 진료는 본인부담이 없습니다.",
+      "15세 이하 아동이 6세 미만으로 입원 시 본인부담 없음.",
+      "15세 이하 아동 중 6세 미만 아동의 입원 진료는 본인부담이 없습니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 4세 아동, which falls under '6세 미만'.",
+        "Identify the case as '입원'.",
+        "Find the most specific rule matching '15세 이하 아동 + 입원 + 6세 미만'.",
+        "Apply Rule 21: '15세 이하 아동 + 입원 + 6세 미만: 본인부담 없음'."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age as 4세 아동, which falls under '6세 미만'.",
+        "Identify the service as 입원 (inpatient).",
+        "Find the rule matching '15세 이하 아동 + 입원 + 6세 미만'."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자, which falls under '15세 이하 아동' context for inpatient care.",
+        "Identify age as 4세 (4 years old).",
+        "Identify the case as inpatient (입원).",
+        "Find the rule for '15세 이하 아동 + 입원 + 6세 미만'.",
+        "Apply Rule 21: '15세 이하 아동 + 입원 + 6세 미만: 본인부담 없음'."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 4세 아동, which falls under '6세 미만'.",
+        "Identify the case as '입원' (inpatient).",
+        "Find the rule matching '15세 이하 아동 + 입원 + 6세 미만'.",
+        "Apply Rule 21: 15세 이하 아동 + 입원 + 6세 미만: 본인부담 없음."
+      ],
+      [
+        "Identify the beneficiary as a Type 2 recipient.",
+        "Identify the age as 4 years old, which falls under '6세 미만' (under 6 years old).",
+        "Identify the service type as inpatient (입원).",
+        "Locate rules related to '15세 이하 아동' (children under 15).",
+        "Apply Rule 21: '15세 이하 아동 + 입원 + 6세 미만: 본인부담 없음'."
+      ]
+    ],
+    "vote_distribution": {
+      "무료": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "무료",
+    "expected_reasoning": "15세 이하 아동 → 입원 → 6세 미만 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q04",
+    "difficulty": "easy",
+    "question": "2종 수급권자인 임신부가 자연분만으로 입원하면 본인부담률은 얼마인가요?",
+    "predicted_answer": "본인부담 없음",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify condition as 임신부 자연분만.",
+      "Identify treatment setting as 입원.",
+      "Locate rule 17: 의료급여 2종 수급권자 + 분만 + 입원 + 자연분만: 본인부담 없음."
+    ],
+    "predicted_reason": "의료급여 2종 수급권자인 임신부가 자연분만으로 입원하는 경우 본인부담이 없습니다.",
+    "all_sample_answers": [
+      "본인부담 없음",
+      "무료",
+      "본인부담 없음",
+      "무료",
+      "무료"
+    ],
+    "all_sample_reasons": [
+      "의료급여 2종 수급권자인 임신부가 자연분만으로 입원하는 경우 본인부담이 없습니다.",
+      "의료급여 2종 수급권자, 분만, 입원, 자연분만에 해당하는 규칙 적용",
+      "의료급여 2종 수급권자가 자연분만으로 입원하는 경우 본인부담 없음.",
+      "의료급여 2종 수급권자 + 분만 + 입원 + 자연분만: 본인부담 없음",
+      "의료급여 2종 수급권자가 자연분만으로 입원하는 경우 본인부담이 없습니다. (규칙 17 적용)"
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify condition as 임신부 자연분만.",
+        "Identify treatment setting as 입원.",
+        "Locate rule 17: 의료급여 2종 수급권자 + 분만 + 입원 + 자연분만: 본인부담 없음."
+      ],
+      [
+        "Identify the beneficiary type as 의료급여 2종 수급권자.",
+        "Identify the condition as 임신부의 자연분만.",
+        "Identify the treatment type as 입원.",
+        "Locate Rule 17: 의료급여 2종 수급권자 + 분만 + 입원 + 자연분만.",
+        "Apply Rule 17, which states 본인부담 없음."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자 (Type 2 beneficiary).",
+        "Identify special condition: 임신부 (Pregnant woman) undergoing 자연분만 (natural childbirth).",
+        "Identify treatment type: 입원 (inpatient).",
+        "Find the most specific rule matching these conditions.",
+        "Rule 17: 의료급여 2종 수급권자 + 분만 + 입원 + 자연분만: 본인부담 없음 matches all criteria."
+      ],
+      [
+        "Beneficiary is Type 2.",
+        "Condition is natural childbirth.",
+        "Treatment is inpatient.",
+        "Matched rule for Type 2 beneficiary, natural childbirth, and inpatient care."
+      ],
+      [
+        "확인된 수급권자 유형은 의료급여 2종입니다.",
+        "확인된 진료 내용은 임신부의 자연분만 입원입니다.",
+        "참조 데이터에서 '의료급여 2종 수급권자 + 분만 + 입원 + 자연분만'에 해당하는 규칙을 찾습니다.",
+        "규칙 17이 해당 조건에 가장 정확히 일치합니다.",
+        "규칙 17에 따라 본인부담은 없습니다.",
+        "지침에 따라 '본인부담 없음'을 '무료'로 변환합니다."
+      ]
+    ],
+    "vote_distribution": {
+      "무료": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "무료",
+    "expected_reasoning": "분만 및 임신부 → 입원 → 자연분만 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q05",
+    "difficulty": "easy",
+    "question": "2종 수급권자의 치매 환자가 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "본인부담률 5%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type: 2종 수급권자 (Type 2 beneficiary).",
+      "Identify disease: 치매질환 (Dementia).",
+      "Identify medical context: 입원 (Inpatient).",
+      "Find the most specific rule for '치매질환' and '입원'.",
+      "Rule 30 states '치매질환 + 입원: 본인부담률 5%'."
+    ],
+    "predicted_reason": "치매질환으로 입원한 경우 본인부담률은 5%입니다.",
+    "all_sample_answers": [
+      "본인부담률 5%",
+      "5%",
+      "본인부담률 5%",
+      "5%",
+      "5%"
+    ],
+    "all_sample_reasons": [
+      "치매질환으로 입원한 경우 본인부담률은 5%입니다.",
+      "Rule 30 applies: 치매질환으로 입원 시 본인부담률은 5%입니다.",
+      "치매질환으로 입원 시 본인부담률은 5%입니다.",
+      "Rule 30: 치매질환 + 입원: 본인부담률 5%",
+      "Rule 30 applies: 치매질환 + 입원: 본인부담률 5%."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type: 2종 수급권자 (Type 2 beneficiary).",
+        "Identify disease: 치매질환 (Dementia).",
+        "Identify medical context: 입원 (Inpatient).",
+        "Find the most specific rule for '치매질환' and '입원'.",
+        "Rule 30 states '치매질환 + 입원: 본인부담률 5%'."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify disease: 치매질환 (dementia).",
+        "Identify type of care: 입원 (inpatient).",
+        "Find matching rule: Rule 30 '치매질환 + 입원: 본인부담률 5%'."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify disease: 치매질환.",
+        "Identify care type: 입원 (Inpatient).",
+        "Find the most specific rule matching '치매질환' and '입원'.",
+        "Rule 30 '치매질환 + 입원: 본인부담률 5%' applies."
+      ],
+      [
+        "Identify beneficiary as Type 2.",
+        "Identify condition as dementia.",
+        "Identify care type as inpatient.",
+        "Apply Rule 30 for dementia inpatient care."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify disease as 치매질환 (Dementia).",
+        "Identify care setting as 입원 (Inpatient).",
+        "Find the matching rule: 치매질환 + 입원."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "5%",
+    "expected_reasoning": "치매질환 입원 및 병원급 이상 외래진료 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q06",
+    "difficulty": "medium",
+    "question": "1종 수급권자가 디스크 진단을 받고 복잡추나를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "30%",
+    "predicted_reasoning_steps": [
+      "Identify the beneficiary type as 1종 수급권자.",
+      "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+      "Identify the disease as 디스크 (disk).",
+      "Apply rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종."
+    ],
+    "predicted_reason": "추나요법 + 복잡추나 + 디스크/협착증 + 1종: 본인부담률 30%",
+    "all_sample_answers": [
+      "30%",
+      "본인부담률 30%",
+      "30%",
+      "본인부담률 30%",
+      "본인부담률 30%"
+    ],
+    "all_sample_reasons": [
+      "추나요법 + 복잡추나 + 디스크/협착증 + 1종: 본인부담률 30%",
+      "Rule 5 applies: 추나요법 + 복잡추나 + 디스크/협착증 + 1종.",
+      "Rule 5 applies: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 수급권자는 본인부담률 30%입니다.",
+      "적용 규칙: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 수급권자 본인부담률 30%",
+      "1종 수급권자가 디스크 진단을 받고 복잡추나를 받는 경우 본인부담률은 30%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify the beneficiary type as 1종 수급권자.",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease as 디스크 (disk).",
+        "Apply rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify disease as 디스크 (disk diagnosis).",
+        "Find the matching rule for 추나요법 + 복잡추나 + 디스크/협착증 + 1종."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1 beneficiary).",
+        "Identify the procedure as 복잡추나 (Complex Chuna therapy).",
+        "Identify the disease as 디스크 (Disk diagnosis).",
+        "Find the rule matching '추나요법 + 복잡추나 + 디스크/협착증 + 1종'."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1 beneficiary).",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease as 디스크 (disk diagnosis).",
+        "Find the matching rule for 1종 수급권자 + 추나요법 + 복잡추나 + 디스크/협착증."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1 beneficiary).",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease as 디스크 (disk diagnosis).",
+        "Match with Rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종."
+      ]
+    ],
+    "vote_distribution": {
+      "30%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "30%",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 → 복잡추나 1종 = 30%",
+    "is_correct": true
+  },
+  {
+    "id": "q07",
+    "difficulty": "medium",
+    "question": "2종 수급권자가 디스크가 아닌 질환으로 복잡추나를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "본인부담률 80%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+      "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+      "Identify the condition as 디스크/협착증 외 (non-disc/stenosis condition).",
+      "Find the rule matching '추나요법 + 복잡추나 + 디스크/협착증 외 + 2종'.",
+      "Apply rule 8 which states '본인부담률 80%'."
+    ],
+    "predicted_reason": "추나요법 + 복잡추나 + 디스크/협착증 외 + 2종 수급권자는 본인부담률 80%가 적용됩니다.",
+    "all_sample_answers": [
+      "본인부담률 80%",
+      "본인부담률 80%",
+      "80%",
+      "80%",
+      "80%"
+    ],
+    "all_sample_reasons": [
+      "추나요법 + 복잡추나 + 디스크/협착증 외 + 2종 수급권자는 본인부담률 80%가 적용됩니다.",
+      "추나요법 + 복잡추나 + 디스크/협착증 외 + 2종에 해당하는 규칙이 적용됩니다.",
+      "적용 규칙: 추나요법 복잡추나 디스크/협착증 외 2종 수급권자 본인부담률 80%",
+      "추나요법 + 복잡추나 + 디스크/협착증 외 + 2종: 본인부담률 80%",
+      "Rule 8: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종: 본인부담률 80%"
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the condition as 디스크/협착증 외 (non-disc/stenosis condition).",
+        "Find the rule matching '추나요법 + 복잡추나 + 디스크/협착증 외 + 2종'.",
+        "Apply rule 8 which states '본인부담률 80%'."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the condition as 디스크/협착증 외 (non-disk/stenosis condition).",
+        "Apply Rule 8: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2).",
+        "Identify the procedure as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease condition as 디스크가 아닌 질환 (other than disc/stenosis).",
+        "Locate the rule for 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종.",
+        "Rule 8 specifies a 본인부담률 (copayment rate) of 80% for this case."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease as 디스크/협착증 외 (non-disk/stenosis disease).",
+        "Find the most specific rule matching these conditions."
+      ],
+      [
+        "Identify the beneficiary type as Medical Aid Type 2.",
+        "Identify the treatment as complex Chuna therapy.",
+        "Identify the disease condition as non-disk/stenosis.",
+        "Apply Rule 8 which matches all identified conditions."
+      ]
+    ],
+    "vote_distribution": {
+      "80%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "80%",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 외 → 복잡추나 2종 = 80%",
+    "is_correct": true
+  },
+  {
+    "id": "q08",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 생후 8개월 아기가 제1차의료급여기관에서 외래 진료를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "무료",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify age as 8 months old, which falls under '1세 미만'.",
+      "Identify the case as outpatient (외래 진료).",
+      "Identify the medical institution as 제1차의료급여기관.",
+      "Find the most specific rule: Rule 23 matches '15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관'."
+    ],
+    "predicted_reason": "15세 이하 아동이 제1차의료급여기관에서 1세 미만으로 외래 진료를 받을 경우 본인부담 없음.",
+    "all_sample_answers": [
+      "무료",
+      "무료",
+      "무료",
+      "무료",
+      "무료"
+    ],
+    "all_sample_reasons": [
+      "15세 이하 아동이 제1차의료급여기관에서 1세 미만으로 외래 진료를 받을 경우 본인부담 없음.",
+      "Rule 23: 15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관: 본인부담 없음",
+      "15세 이하 아동이 제1차의료급여기관에서 외래 진료를 받을 경우 본인부담이 없습니다.",
+      "15세 이하 아동이 1세 미만으로 제1차의료급여기관에서 외래 진료를 받는 경우 본인부담이 없습니다.",
+      "15세 이하 아동 중 1세 미만 의료급여 2종 수급권자가 제1차의료급여기관에서 외래 진료 시 본인부담 없음."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 8 months old, which falls under '1세 미만'.",
+        "Identify the case as outpatient (외래 진료).",
+        "Identify the medical institution as 제1차의료급여기관.",
+        "Find the most specific rule: Rule 23 matches '15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관'."
+      ],
+      [
+        "Identify beneficiary type as Type 2.",
+        "Identify age as 8 months old, which is under 1 year old (1세 미만).",
+        "Identify the case as outpatient (외래).",
+        "Identify the medical institution as Primary Medical Aid Institution (제1차의료급여기관).",
+        "Find the most specific rule matching 15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관.",
+        "Apply Rule 23: 본인부담 없음."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age as 생후 8개월 (under 1 year old), which falls under 15세 이하 아동.",
+        "Identify the case as 외래 진료 (outpatient care).",
+        "Identify the medical institution type as 제1차의료급여기관.",
+        "Find the most specific rule: Rule 23 applies: 15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify age condition: 생후 8개월 아기 (under 1 year old, and under 15 years old).",
+        "Identify case as outpatient: 외래 진료.",
+        "Identify medical institution type: 제1차의료급여기관.",
+        "Find the most specific matching rule: Rule 23 '15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관: 본인부담 없음'."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 8개월, which is '1세 미만' and falls under '15세 이하 아동'.",
+        "Identify the case as '외래' (outpatient).",
+        "Identify the medical institution type as '제1차의료급여기관'.",
+        "Apply rule 23: '15세 이하 아동 + 외래 + 1세 미만 + 제1차의료급여기관: 본인부담 없음'."
+      ]
+    ],
+    "vote_distribution": {
+      "무료": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "무료",
+    "expected_reasoning": "15세 이하 아동 → 외래 → 1세 미만 → 제1차의료급여기관 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q09",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 생후 8개월 아기가 제2차의료급여기관에서 외래 진료를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary as 2종 수급권자.",
+      "Identify age as 8 months old, which is under 1 year old (1세 미만).",
+      "Identify treatment type as outpatient (외래 진료).",
+      "Identify medical institution as 제2차의료급여기관.",
+      "Apply Rule 24: 15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관."
+    ],
+    "predicted_reason": "15세 이하 아동의 외래 진료 중 1세 미만이 제2·3차의료급여기관에서 진료받는 경우 본인부담률은 5%입니다.",
+    "all_sample_answers": [
+      "5%",
+      "5%",
+      "5%",
+      "5%",
+      "5%"
+    ],
+    "all_sample_reasons": [
+      "15세 이하 아동의 외래 진료 중 1세 미만이 제2·3차의료급여기관에서 진료받는 경우 본인부담률은 5%입니다.",
+      "Rule 24: 15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관: 본인부담률 5%",
+      "15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관 본인부담률 5%",
+      "15세 이하 아동의 외래 진료 중 1세 미만이 제2·3차의료급여기관을 이용하는 경우 본인부담률 5%가 적용됩니다.",
+      "15세 이하 아동이 제2차의료급여기관에서 외래 진료를 받을 경우 본인부담률은 5%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary as 2종 수급권자.",
+        "Identify age as 8 months old, which is under 1 year old (1세 미만).",
+        "Identify treatment type as outpatient (외래 진료).",
+        "Identify medical institution as 제2차의료급여기관.",
+        "Apply Rule 24: 15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관."
+      ],
+      [
+        "Identify beneficiary as Type 2 and age as 8 months (under 1 year).",
+        "Identify treatment as outpatient care at a secondary medical institution.",
+        "Find the rule for '15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관'.",
+        "Apply Rule 24."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 8 months old, which falls under '15세 이하 아동' and '1세 미만'.",
+        "Identify the case as outpatient (외래).",
+        "Identify the medical institution as 제2차의료급여기관.",
+        "Match with rule '15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관'."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age as 8개월 (under 1 year old).",
+        "Identify the case as outpatient (외래).",
+        "Identify the medical institution as 제2차의료급여기관.",
+        "Apply rule 24: '15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관'."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 8개월 (under 1 year old).",
+        "Identify treatment as outpatient (외래).",
+        "Identify medical institution as 제2차의료급여기관.",
+        "Match with rule 24: '15세 이하 아동 + 외래 + 1세 미만 + 제2·3차의료급여기관'."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "5%",
+    "expected_reasoning": "15세 이하 아동 → 외래 → 1세 미만 → 제2·3차의료급여기관 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q10",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 17세 청소년이 치아 홈메우기로 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify age as 17세 (16세 이상 ~ 18세 이하).",
+      "Identify medical procedure as 치아 홈메우기.",
+      "Identify treatment type as 입원.",
+      "Apply Rule 13 which matches 2종 수급권자, 치아 홈메우기, 입원, and age 16세 이상 ~ 18세 이하."
+    ],
+    "predicted_reason": "의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하",
+    "all_sample_answers": [
+      "5%",
+      "5%",
+      "5%",
+      "5%",
+      "5%"
+    ],
+    "all_sample_reasons": [
+      "의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하",
+      "의료급여 2종 수급권자, 치아 홈메우기, 입원, 16세 이상 ~ 18세 이하에 해당하는 규칙이 적용됩니다.",
+      "의료급여 2종 수급권자인 16세 이상 18세 이하 청소년이 치아 홈메우기로 입원 시 본인부담률은 5%입니다.",
+      "의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하: 본인부담률 5%",
+      "의료급여 2종 수급권자인 16세 이상 18세 이하 청소년이 치아 홈메우기로 입원 시 본인부담률은 5%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 17세 (16세 이상 ~ 18세 이하).",
+        "Identify medical procedure as 치아 홈메우기.",
+        "Identify treatment type as 입원.",
+        "Apply Rule 13 which matches 2종 수급권자, 치아 홈메우기, 입원, and age 16세 이상 ~ 18세 이하."
+      ],
+      [
+        "Identify the beneficiary as a Type 2 recipient.",
+        "Identify the age as 17 years old, which falls into the 16세 이상 ~ 18세 이하 range.",
+        "Identify the medical service as tooth sealant (치아 홈메우기).",
+        "Identify the treatment setting as inpatient (입원).",
+        "Apply rule 13 which matches all identified conditions."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 17세 (16세 이상 ~ 18세 이하).",
+        "Identify disease/condition as 치아 홈메우기.",
+        "Identify treatment type as 입원.",
+        "Find the matching rule: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하.",
+        "Apply rule 13 which states 본인부담률 5%."
+      ],
+      [
+        "Identify beneficiary as Type 2.",
+        "Identify age as 17 years old.",
+        "Identify condition as dental sealant (치아 홈메우기).",
+        "Identify treatment as inpatient (입원).",
+        "Match the conditions to rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하."
+      ],
+      [
+        "Identify beneficiary as Type 2 (2종 수급권자).",
+        "Identify age as 17 years old.",
+        "Identify medical procedure as dental sealant (치아 홈메우기).",
+        "Identify care type as inpatient (입원).",
+        "Match with rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "5%",
+    "expected_reasoning": "치아 홈메우기 → 입원 → 16세 이상~18세 이하 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q11",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 고위험 임신부가 입원하면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "5%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+      "Identify the special condition as 고위험 임신부 (high-risk pregnant woman).",
+      "Identify the treatment setting as 입원 (inpatient).",
+      "Find the most specific rule matching these conditions: Rule 19 applies (의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부)."
+    ],
+    "predicted_reason": "의료급여 2종 수급권자인 고위험 임신부가 입원 시 본인부담률은 5%입니다.",
+    "all_sample_answers": [
+      "5%",
+      "5%",
+      "5%",
+      "5%",
+      "5%"
+    ],
+    "all_sample_reasons": [
+      "의료급여 2종 수급권자인 고위험 임신부가 입원 시 본인부담률은 5%입니다.",
+      "의료급여 2종 수급권자 고위험 임신부 입원 시 본인부담률 5% 적용",
+      "의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부에 해당하여 본인부담률 5%가 적용됩니다.",
+      "의료급여 2종 수급권자인 고위험 임신부가 입원 시 본인부담률은 5%입니다.",
+      "의료급여 2종 수급권자인 고위험 임신부가 입원한 경우 본인부담률은 5%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify the special condition as 고위험 임신부 (high-risk pregnant woman).",
+        "Identify the treatment setting as 입원 (inpatient).",
+        "Find the most specific rule matching these conditions: Rule 19 applies (의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부)."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2).",
+        "Identify condition as 고위험 임신부 (high-risk pregnant woman).",
+        "Identify treatment type as 입원 (inpatient).",
+        "Find the most specific rule matching these conditions.",
+        "Rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부 matches."
+      ],
+      [
+        "Identify beneficiary type as 의료급여 2종 수급권자.",
+        "Identify the condition as 고위험 임신부.",
+        "Identify the treatment type as 입원.",
+        "Find the most specific matching rule, which is Rule 19.",
+        "Apply Rule 19."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2).",
+        "Identify the patient condition as 고위험 임신부 (high-risk pregnant woman).",
+        "Identify the treatment setting as 입원 (inpatient).",
+        "Apply rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부."
+      ],
+      [
+        "Identify beneficiary type: 의료급여 2종 수급권자 (Type 2 beneficiary).",
+        "Identify special condition: 고위험 임신부 (high-risk pregnant woman).",
+        "Identify case type: 입원 (inpatient).",
+        "Find the rule matching '의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부'.",
+        "Apply Rule 19: 본인부담률 5%."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "5%",
+    "expected_reasoning": "분만 및 임신부 → 입원 → 고위험 임신부 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q12",
+    "difficulty": "medium",
+    "question": "2종 수급권자의 조현병 외 정신질환 환자가 외래 진료를 받으면 본인부담률은 얼마인가요?",
+    "predicted_answer": "10%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary as Medical Aid Type 2.",
+      "Identify the condition as outpatient treatment for a mental illness other than schizophrenia.",
+      "Locate rules for '정신질환 외래진료' (mental illness outpatient treatment).",
+      "Rule 28 specifies '정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상' with a copayment rate of 10%.",
+      "Apply Rule 28 as the most specific match for the given conditions."
+    ],
+    "predicted_reason": "정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10%",
+    "all_sample_answers": [
+      "10%",
+      "본인부담률 10%",
+      "본인부담률 10%",
+      "본인부담률 10%",
+      "본인부담률 10%"
+    ],
+    "all_sample_reasons": [
+      "정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10%",
+      "적용 규칙: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상은 본인부담률 10%입니다.",
+      "Rule 28 applies: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10%",
+      "Rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10% applies to 2종 수급권자.",
+      "적용 규칙: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10%"
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary as Medical Aid Type 2.",
+        "Identify the condition as outpatient treatment for a mental illness other than schizophrenia.",
+        "Locate rules for '정신질환 외래진료' (mental illness outpatient treatment).",
+        "Rule 28 specifies '정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상' with a copayment rate of 10%.",
+        "Apply Rule 28 as the most specific match for the given conditions."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2).",
+        "Identify disease as 조현병 외 정신질환 (mental illness other than schizophrenia).",
+        "Identify treatment type as 외래 진료 (outpatient treatment).",
+        "Match with rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the disease as 조현병 외 정신질환 (mental illness other than schizophrenia).",
+        "Identify the treatment type as 외래 진료 (outpatient treatment).",
+        "Find the rule matching '정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상'."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 조현병 외 정신질환 (mental illness other than schizophrenia).",
+        "Identify treatment type as 외래 진료 (outpatient treatment).",
+        "Locate the rule for '정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상'.",
+        "Apply rule 28 which matches all identified conditions."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 조현병 외 정신질환 (mental illness other than schizophrenia).",
+        "Identify treatment type as 외래 진료 (outpatient treatment).",
+        "Match with rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상.",
+        "The copayment rate is 10%."
+      ]
+    ],
+    "vote_distribution": {
+      "10%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "병원급 이상 10%",
+    "expected_reasoning": "정신질환 외래진료 → 조현병 외 정신질환 = 병원급 이상 10%",
+    "is_correct": false
+  },
+  {
+    "id": "q13",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 임신부가 제1차의료급여기관에서 CT를 찍으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "본인부담률 5%",
+    "predicted_reasoning_steps": [
+      "Identify the beneficiary type as Medical Aid Type 2.",
+      "Identify the patient's condition as pregnant.",
+      "Identify the medical procedure as a CT scan.",
+      "Identify the medical institution type as a primary medical institution (제1차의료급여기관).",
+      "Apply Rule 32 which specifies 'CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%'."
+    ],
+    "predicted_reason": "Rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%",
+    "all_sample_answers": [
+      "본인부담률 5%",
+      "5%",
+      "본인부담률 5%",
+      "5%",
+      "본인부담률 5%"
+    ],
+    "all_sample_reasons": [
+      "Rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%",
+      "CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관에 대한 본인부담률은 5%입니다.",
+      "Rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관 matches the criteria.",
+      "CT/MRI/PET 등 임신부의 제1차의료급여기관 진료는 본인부담률 5%입니다.",
+      "Rule 32 specifies a 5% copayment rate for CT/MRI/PET for pregnant women at primary medical institutions."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify the beneficiary type as Medical Aid Type 2.",
+        "Identify the patient's condition as pregnant.",
+        "Identify the medical procedure as a CT scan.",
+        "Identify the medical institution type as a primary medical institution (제1차의료급여기관).",
+        "Apply Rule 32 which specifies 'CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%'."
+      ],
+      [
+        "Identify the beneficiary as an 임신부 (pregnant woman) and the procedure as a CT scan.",
+        "Identify the medical institution as 제1차의료급여기관 (primary medical institution).",
+        "Locate rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관.",
+        "Apply rule 32, which states a 본인부담률 (copayment rate) of 5%."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자 (Type 2 beneficiary).",
+        "Identify special condition: 임신부 (Pregnant).",
+        "Identify medical procedure: CT.",
+        "Identify medical institution type: 제1차의료급여기관 (Primary medical institution).",
+        "Find the most specific rule matching these conditions: Rule 32 'CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관'."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify special condition as 임신부 (pregnant woman).",
+        "Identify medical service as CT scan.",
+        "Identify medical institution type as 제1차의료급여기관.",
+        "Apply rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the special condition as 임신부 (pregnant woman).",
+        "Identify the medical procedure as CT.",
+        "Identify the medical institution as 제1차의료급여기관 (primary medical institution).",
+        "Find the most specific rule matching these conditions.",
+        "Rule 32: 'CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관' applies."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "5%",
+    "expected_reasoning": "CT/MRI/PET 표 → 임신부(유산·사산 포함) → 제1차의료급여기관 = 5%",
+    "is_correct": true
+  },
+  {
+    "id": "q14",
+    "difficulty": "medium",
+    "question": "2종 수급권자인 생후 8개월 아기가 만성질환자이고 제2차의료급여기관에서 외래 진료를 받으면 본인부담률은 몇 %인가요?",
+    "predicted_answer": "무료",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary as Type 2.",
+      "Identify age as 8 months old, which falls under '1세 미만' (under 1 year old).",
+      "Identify condition as '만성질환자' (chronic disease patient).",
+      "Identify treatment type as '외래 진료' (outpatient treatment).",
+      "Identify medical institution as '제2차의료급여기관' (Secondary Medical Aid Institution).",
+      "Apply rule 25: '15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관' which matches all identified conditions."
+    ],
+    "predicted_reason": "15세 이하 아동의 1세 미만 만성질환자가 제2차의료급여기관에서 외래 진료 시 본인부담 없음.",
+    "all_sample_answers": [
+      "무료",
+      "무료",
+      "무료",
+      "무료",
+      "무료"
+    ],
+    "all_sample_reasons": [
+      "15세 이하 아동의 1세 미만 만성질환자가 제2차의료급여기관에서 외래 진료 시 본인부담 없음.",
+      "15세 이하 아동의 1세 미만 만성질환자가 제2차의료급여기관에서 외래 진료 시 본인부담 없음.",
+      "Rule 25: 15세 이하 아동이 1세 미만 만성질환자로 제2차의료급여기관에서 외래 진료 시 본인부담이 없습니다.",
+      "적용 규칙: 15세 이하 아동의 외래 진료 중 1세 미만 만성질환자가 제2차의료급여기관을 이용하는 경우 본인부담 없음.",
+      "15세 이하 아동이 제2차의료급여기관에서 외래 진료를 받는 1세 미만 만성질환자의 경우 본인부담이 없습니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary as Type 2.",
+        "Identify age as 8 months old, which falls under '1세 미만' (under 1 year old).",
+        "Identify condition as '만성질환자' (chronic disease patient).",
+        "Identify treatment type as '외래 진료' (outpatient treatment).",
+        "Identify medical institution as '제2차의료급여기관' (Secondary Medical Aid Institution).",
+        "Apply rule 25: '15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관' which matches all identified conditions."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 8개월 (1세 미만).",
+        "Identify special condition as 만성질환자.",
+        "Identify treatment type as 외래 진료.",
+        "Identify medical institution type as 제2차의료급여기관.",
+        "Find the most specific rule: 15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify age: 생후 8개월, which is '1세 미만'.",
+        "Identify special condition: 만성질환자.",
+        "Identify type of care: 외래 진료.",
+        "Identify medical institution type: 제2차의료급여기관.",
+        "Locate the most specific rule: Rule 25 '15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담 없음' applies."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify age: 생후 8개월 아기, which falls under '1세 미만' and '15세 이하 아동'.",
+        "Identify disease/condition: 만성질환자.",
+        "Identify type of visit: 외래 진료.",
+        "Identify medical institution: 제2차의료급여기관.",
+        "Find the most specific rule: Rule 25 '15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관' matches all conditions."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify age: 8개월 아기 (1세 미만).",
+        "Identify disease/condition: 만성질환자.",
+        "Identify type of care: 외래 진료.",
+        "Identify medical institution: 제2차의료급여기관.",
+        "Match with Rule 25: 15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관."
+      ]
+    ],
+    "vote_distribution": {
+      "무료": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "무료",
+    "expected_reasoning": "15세 이하 아동 → 외래 → 1세 미만 만성질환자 → 제2차의료급여기관 = 무료",
+    "is_correct": true
+  },
+  {
+    "id": "q15",
+    "difficulty": "medium",
+    "question": "65세 이상 2종 수급권자가 임플란트를 할 때 본인부담 보상제나 상한제가 적용되나요?",
+    "predicted_answer": "적용되지 않음",
+    "predicted_reasoning_steps": [
+      "Identify the beneficiary type as 2종 수급권자.",
+      "Identify the age condition as 65세 이상.",
+      "Identify the medical procedure as 치과 임플란트.",
+      "Refer to the [비고] section for rules regarding '본인부담 보상제·상한제'.",
+      "Locate the specific rule: '65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음'."
+    ],
+    "predicted_reason": "65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음",
+    "all_sample_answers": [
+      "적용되지 않음",
+      "20%",
+      "20%",
+      "적용되지 않습니다",
+      "적용되지 않음"
+    ],
+    "all_sample_reasons": [
+      "65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음",
+      "65세 이상 2종 수급권자의 치과 임플란트는 본인부담률 20%가 적용되며, 비고에 따라 본인부담 보상제·상한제는 적용되지 않습니다.",
+      "Rule 4 is applied for the copayment rate. For 65세 이상 치과 임플란트, 본인부담 보상제·상한제는 해당되지 않습니다.",
+      "65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음",
+      "65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age condition as 65세 이상.",
+        "Identify the medical procedure as 치과 임플란트.",
+        "Refer to the [비고] section for rules regarding '본인부담 보상제·상한제'.",
+        "Locate the specific rule: '65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음'."
+      ],
+      [
+        "수급권자 2종, 65세 이상, 치과 임플란트 조건을 확인합니다.",
+        "규칙 4 (65세 이상 + 2종 수급권자 + 치과 임플란트)에 따라 본인부담률은 20%입니다.",
+        "비고 사항에서 65세 이상 치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않는다는 것을 확인합니다."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age condition as 65세 이상.",
+        "Identify the medical procedure as 치과 임플란트.",
+        "Based on these conditions, Rule 4 applies, setting the 본인부담률 at 20%.",
+        "The '비고' section clarifies that '65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음'."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age condition as 65세 이상.",
+        "Identify the medical procedure as 치과 임플란트.",
+        "Refer to the [비고] section for rules regarding 본인부담 보상제·상한제.",
+        "The [비고] states that 65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않습니다."
+      ],
+      [
+        "Identify the beneficiary type, age, and procedure: 65세 이상, 2종 수급권자, 치과 임플란트.",
+        "Check the [비고] section for rules regarding '본인부담 보상제·상한제'.",
+        "Locate the specific remark: '65세 이상 틀니/치과 임플란트 항목은 본인부담 보상제·상한제에 해당되지 않음'."
+      ]
+    ],
+    "vote_distribution": {
+      "적용되지않음": 2,
+      "20%": 2,
+      "적용되지않습니다": 1
+    },
+    "selected_count": 2,
+    "num_valid_samples": 5,
+    "expected_answer": "해당되지 않음",
+    "expected_reasoning": "04번 표 하단 ※ 본인부담 보상제·상한제 해당되지 않음",
+    "is_correct": false
+  },
+  {
+    "id": "q16",
+    "difficulty": "hard",
+    "question": "65세 이상 1종 수급권자가 틀니 시술을 받았고 시술비가 1,200,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "60,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 1종 수급권자.",
+      "Identify age condition as 65세 이상.",
+      "Identify special condition as 틀니 (denture).",
+      "Find the most specific matching rule: Rule 1 '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'.",
+      "Calculate the copayment: 1,200,000원 * 5% = 60,000원."
+    ],
+    "predicted_reason": "65세 이상 1종 수급권자가 틀니 시술을 받은 경우 본인부담률은 5%입니다.",
+    "all_sample_answers": [
+      "60,000원",
+      "60000원",
+      "60000원",
+      "60000원",
+      "60,000원"
+    ],
+    "all_sample_reasons": [
+      "65세 이상 1종 수급권자가 틀니 시술을 받은 경우 본인부담률은 5%입니다.",
+      "65세 이상 1종 수급권자의 틀니 시술은 본인부담률 5%가 적용됩니다.",
+      "65세 이상 1종 수급권자의 틀니 시술은 본인부담률 5%가 적용됩니다.",
+      "65세 이상 1종 수급권자의 틀니 시술은 본인부담률 5%가 적용됩니다.",
+      "65세 이상 1종 수급권자의 틀니 시술은 본인부담률 5%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify special condition as 틀니 (denture).",
+        "Find the most specific matching rule: Rule 1 '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'.",
+        "Calculate the copayment: 1,200,000원 * 5% = 60,000원."
+      ],
+      [
+        "Beneficiary is Type 1.",
+        "Age is 65 years or older.",
+        "Procedure is denture (틀니).",
+        "Rule 1 matches: 65세 이상 + 1종 수급권자 + 틀니.",
+        "The copayment rate is 5%.",
+        "Calculate 5% of 1,200,000원, which is 60,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify special condition as 틀니.",
+        "Find the matching rule: 65세 이상 + 1종 수급권자 + 틀니.",
+        "Apply the 본인부담률 of 5% to the total cost of 1,200,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify special condition as 틀니.",
+        "Match with rule 1: 65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%.",
+        "Calculate copayment: 1,200,000원 * 5% = 60,000원."
+      ],
+      [
+        "수급권자 유형을 1종으로 확인합니다.",
+        "연령이 65세 이상임을 확인합니다.",
+        "시술 종류가 틀니임을 확인합니다.",
+        "규칙 1 '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'를 적용합니다.",
+        "총 시술비 1,200,000원의 5%를 계산합니다."
+      ]
+    ],
+    "vote_distribution": {
+      "60000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "60,000원",
+    "expected_reasoning": "04번 표 → 1종 틀니 = 5%. 1,200,000 × 0.05 = 60,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q17",
+    "difficulty": "hard",
+    "question": "65세 이상 2종 수급권자가 임플란트를 했고 시술비가 950,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "190,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자 (Type 2).",
+      "Identify age condition as 65세 이상 (65 years or older).",
+      "Identify the procedure as 치과 임플란트 (dental implant).",
+      "Find the most specific rule: '65세 이상 + 2종 수급권자 + 치과 임플란트' which states a 본인부담률 (copayment rate) of 20%.",
+      "Calculate the copayment amount: 950,000원 * 20% = 190,000원."
+    ],
+    "predicted_reason": "65세 이상 2종 수급권자의 치과 임플란트 본인부담률은 20%입니다.",
+    "all_sample_answers": [
+      "190,000원",
+      "190,000원",
+      "190,000원",
+      "190000원",
+      "190,000원"
+    ],
+    "all_sample_reasons": [
+      "65세 이상 2종 수급권자의 치과 임플란트 본인부담률은 20%입니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트는 본인부담률 20%가 적용됩니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트는 본인부담률 20%가 적용됩니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트는 본인부담률 20%가 적용됩니다.",
+      "65세 이상 2종 수급권자의 치과 임플란트 본인부담률은 20%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2).",
+        "Identify age condition as 65세 이상 (65 years or older).",
+        "Identify the procedure as 치과 임플란트 (dental implant).",
+        "Find the most specific rule: '65세 이상 + 2종 수급권자 + 치과 임플란트' which states a 본인부담률 (copayment rate) of 20%.",
+        "Calculate the copayment amount: 950,000원 * 20% = 190,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 65세 이상.",
+        "Identify the condition as 치과 임플란트.",
+        "Find the most specific rule: 65세 이상 + 2종 수급권자 + 치과 임플란트, which states a 본인부담률 20%.",
+        "Calculate the copayment: 950,000원 * 20% = 190,000원."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the age condition as 65세 이상.",
+        "Identify the medical service as 치과 임플란트.",
+        "Apply Rule 4: 65세 이상 + 2종 수급권자 + 치과 임플란트, which specifies a 본인부담률 of 20%.",
+        "Calculate the copayment: 950,000원 * 20% = 190,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 65세 이상.",
+        "Identify procedure as 치과 임플란트.",
+        "Find the matching rule: 65세 이상 + 2종 수급권자 + 치과 임플란트.",
+        "Apply 본인부담률 20% to the 시술비.",
+        "Calculate 950,000원 * 20% = 190,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 65세 이상.",
+        "Identify the procedure as 치과 임플란트.",
+        "Locate rule 4: 65세 이상 + 2종 수급권자 + 치과 임플란트: 본인부담률 20%.",
+        "Calculate the copayment: 950,000원 * 20% = 190,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "190000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "190,000원",
+    "expected_reasoning": "04번 표 → 2종 임플란트 = 20%. 950,000 × 0.20 = 190,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q18",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 10세 아동이 입원하여 진료비가 2,400,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "72,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as Medical Aid Type 2.",
+      "Identify age as 10 years old, which falls under '6세 이상 ~ 15세 이하'.",
+      "Identify care setting as inpatient.",
+      "Find the most specific rule matching '15세 이하 아동 + 입원 + 6세 이상 ~ 15세 이하'.",
+      "Apply Rule 22: '본인부담률 3%'.",
+      "Calculate 3% of the total 진료비 (2,400,000원 * 0.03 = 72,000원)."
+    ],
+    "predicted_reason": "15세 이하 아동이 입원하여 6세 이상 15세 이하에 해당하므로 본인부담률 3%가 적용됩니다.",
+    "all_sample_answers": [
+      "72,000원",
+      "72,000원",
+      "72000원",
+      "72,000원",
+      "본인부담률 3%"
+    ],
+    "all_sample_reasons": [
+      "15세 이하 아동이 입원하여 6세 이상 15세 이하에 해당하므로 본인부담률 3%가 적용됩니다.",
+      "15세 이하 아동이 6세 이상 15세 이하 연령으로 입원 진료를 받았으므로 본인부담률 3%가 적용됩니다.",
+      "15세 이하 아동의 6세 이상 15세 이하 입원 진료는 본인부담률 3%가 적용됩니다.",
+      "Rule 22: 15세 이하 아동이 입원하고, 6세 이상 15세 이하에 해당하므로 본인부담률 3%가 적용됩니다.",
+      "15세 이하 아동이 6세 이상 15세 이하 연령으로 입원 진료를 받았으므로 본인부담률 3%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as Medical Aid Type 2.",
+        "Identify age as 10 years old, which falls under '6세 이상 ~ 15세 이하'.",
+        "Identify care setting as inpatient.",
+        "Find the most specific rule matching '15세 이하 아동 + 입원 + 6세 이상 ~ 15세 이하'.",
+        "Apply Rule 22: '본인부담률 3%'.",
+        "Calculate 3% of the total 진료비 (2,400,000원 * 0.03 = 72,000원)."
+      ],
+      [
+        "Identify beneficiary type as Type 2.",
+        "Identify age as 10 years old, which falls under '6세 이상 ~ 15세 이하'.",
+        "Identify the case as inpatient ('입원').",
+        "Find the rule matching '15세 이하 아동 + 입원 + 6세 이상 ~ 15세 이하'.",
+        "Apply Rule 22: 본인부담률 3%.",
+        "Calculate 3% of 2,400,000원."
+      ],
+      [
+        "Identify the beneficiary as a 10-year-old child, which falls under '15세 이하 아동'.",
+        "Identify the age condition as 10 years old, which is '6세 이상 ~ 15세 이하'.",
+        "Identify the case as inpatient ('입원').",
+        "Locate rule 22: '15세 이하 아동 + 입원 + 6세 이상 ~ 15세 이하: 본인부담률 3%'.",
+        "Calculate the copayment: 2,400,000원 * 3% = 72,000원."
+      ],
+      [
+        "Identify the patient as a 10세 아동 (10-year-old child).",
+        "Identify the service as 입원 (inpatient).",
+        "Locate the rule for '15세 이하 아동 + 입원 + 6세 이상 ~ 15세 이하'.",
+        "Apply the 본인부담률 3% to the total 진료비 2,400,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2).",
+        "Identify age as 10세 아동 (10 years old).",
+        "Identify medical service as 입원 (inpatient).",
+        "Find the most specific rule for a 10-year-old child receiving inpatient care.",
+        "Rule 22: '15세 이하 아동 + 입원 + 6세 이상 ~ 15세 이하: 본인부담률 3%' matches the conditions (10 years old is between 6 and 15)."
+      ]
+    ],
+    "vote_distribution": {
+      "72000원": 4,
+      "3%": 1
+    },
+    "selected_count": 4,
+    "num_valid_samples": 5,
+    "expected_answer": "72,000원",
+    "expected_reasoning": "15세 이하 아동 → 입원 → 6세 이상~15세 이하 = 3%. 2,400,000 × 0.03 = 72,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q19",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 고위험 임신부가 입원하여 진료비가 3,500,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "본인부담률 5%",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify special condition as 고위험 임신부.",
+      "Identify treatment type as 입원.",
+      "Find the most specific rule matching 2종 수급권자, 고위험 임신부, and 입원.",
+      "Apply rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부."
+    ],
+    "predicted_reason": "의료급여 2종 수급권자 고위험 임신부 입원 본인부담률 5%",
+    "all_sample_answers": [
+      "175000원",
+      "본인부담률 5%",
+      "본인부담률 5%",
+      "본인부담률 5%",
+      "175000원"
+    ],
+    "all_sample_reasons": [
+      "의료급여 2종 수급권자인 고위험 임신부가 입원한 경우 본인부담률은 5%입니다.",
+      "의료급여 2종 수급권자 고위험 임신부 입원 본인부담률 5%",
+      "의료급여 2종 수급권자인 고위험 임신부의 입원 진료는 본인부담률 5%가 적용됩니다.",
+      "의료급여 2종 수급권자인 고위험 임신부의 입원 진료는 본인부담률 5%가 적용됩니다.",
+      "의료급여 2종 수급권자인 고위험 임신부의 입원 진료는 본인부담률 5%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify condition as 고위험 임신부.",
+        "Identify treatment setting as 입원.",
+        "Match with Rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부: 본인부담률 5%.",
+        "Calculate 5% of 3,500,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify special condition as 고위험 임신부.",
+        "Identify treatment type as 입원.",
+        "Find the most specific rule matching 2종 수급권자, 고위험 임신부, and 입원.",
+        "Apply rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the special condition as 고위험 임신부.",
+        "Identify the case as 입원 (inpatient).",
+        "Match with Rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부.",
+        "Apply the 본인부담률 of 5% from the matched rule."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the special condition as 고위험 임신부.",
+        "Identify the case as 입원 (inpatient).",
+        "Locate the most specific rule matching these conditions.",
+        "Apply Rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부, which states 본인부담률 5%."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify condition as 고위험 임신부.",
+        "Identify case as 입원 (inpatient).",
+        "Find the most specific rule matching these conditions.",
+        "Rule 19: 의료급여 2종 수급권자 + 임신부 + 입원 + 고위험 임신부 applies, with a 본인부담률 of 5%.",
+        "Calculate the copayment: 3,500,000원 * 5% = 175,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "175000원": 2,
+      "5%": 3
+    },
+    "selected_count": 3,
+    "num_valid_samples": 5,
+    "expected_answer": "175,000원",
+    "expected_reasoning": "분만 및 임신부 → 입원 → 고위험 임신부 = 5%. 3,500,000 × 0.05 = 175,000원",
+    "is_correct": false
+  },
+  {
+    "id": "q20",
+    "difficulty": "hard",
+    "question": "1종 수급권자가 디스크로 복잡추나를 받았고 치료비가 180,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "54,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 1종 수급권자.",
+      "Identify treatment as 복잡추나 for 디스크.",
+      "Find the rule matching 추나요법 + 복잡추나 + 디스크/협착증 + 1종.",
+      "Apply Rule 5: 본인부담률 30%.",
+      "Calculate 30% of 180,000원."
+    ],
+    "predicted_reason": "Rule 5: 1종 수급권자가 디스크로 복잡추나를 받은 경우 본인부담률 30% 적용",
+    "all_sample_answers": [
+      "본인부담률 30%",
+      "54,000원",
+      "54000원",
+      "54,000원",
+      "54,000원"
+    ],
+    "all_sample_reasons": [
+      "추나요법 복잡추나 중 디스크/협착증을 가진 1종 수급권자에 해당하여 본인부담률 30%가 적용됩니다.",
+      "Rule 5: 1종 수급권자가 디스크로 복잡추나를 받은 경우 본인부담률 30% 적용",
+      "Rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 본인부담률 30% applies.",
+      "1종 수급권자가 디스크로 복잡추나를 받은 경우 본인부담률 30%가 적용됩니다.",
+      "적용 규칙: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 수급권자, 본인부담률 30%."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type: 1종 수급권자.",
+        "Identify treatment type: 복잡추나 (Chuna therapy - complex).",
+        "Identify disease: 디스크 (Disk).",
+        "Find the matching rule for 1종 수급권자, 복잡추나, and 디스크/협착증.",
+        "Rule 5 applies: 추나요법 + 복잡추나 + 디스크/협착증 + 1종."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify treatment as 복잡추나 for 디스크.",
+        "Find the rule matching 추나요법 + 복잡추나 + 디스크/협착증 + 1종.",
+        "Apply Rule 5: 본인부담률 30%.",
+        "Calculate 30% of 180,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1 beneficiary).",
+        "Identify the treatment as 복잡추나 (Complex Chuna therapy) for 디스크 (Disk problem).",
+        "Match these conditions to rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종.",
+        "Apply the 본인부담률 (copayment rate) of 30% to the total treatment cost.",
+        "Calculate 30% of 180,000원, which is 54,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1 beneficiary).",
+        "Identify the treatment as 복잡추나 (Complex Chuna therapy) for 디스크 (disk problem).",
+        "Locate the rule for 추나요법 + 복잡추나 + 디스크/협착증 + 1종.",
+        "Apply Rule 5: 본인부담률 30%.",
+        "Calculate the copayment: 180,000원 * 30% = 54,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자 (Type 1 beneficiary).",
+        "Identify the treatment as 복잡추나 (Complex Chuna therapy) for 디스크 (Disk problem).",
+        "Find the matching rule for 1종 수급권자, 복잡추나, and 디스크.",
+        "Rule 5 states a 본인부담률 (copayment rate) of 30% for these conditions.",
+        "Calculate 30% of the 180,000원 treatment cost: 180,000원 * 0.30 = 54,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "30%": 1,
+      "54000원": 4
+    },
+    "selected_count": 4,
+    "num_valid_samples": 5,
+    "expected_answer": "54,000원",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 → 복잡추나 1종 = 30%. 180,000 × 0.30 = 54,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q21",
+    "difficulty": "hard",
+    "question": "2종 수급권자가 디스크가 아닌 질환으로 복잡추나를 받았고 치료비가 250,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "200,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+      "Identify the disease condition as 디스크/협착증 외 (non-disk/stenosis).",
+      "Find the matching rule: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종.",
+      "Apply rule 8 which states a 80% 본인부담률 (copayment rate).",
+      "Calculate the copayment: 250,000원 * 80% = 200,000원."
+    ],
+    "predicted_reason": "적용규칙 8: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종: 본인부담률 80%",
+    "all_sample_answers": [
+      "200,000원",
+      "200,000원",
+      "200,000원",
+      "200,000원",
+      "200,000원"
+    ],
+    "all_sample_reasons": [
+      "적용규칙 8: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종: 본인부담률 80%",
+      "의료급여 2종 수급권자가 디스크/협착증 외 질환으로 복잡추나를 받은 경우 본인부담률은 80%가 적용됩니다.",
+      "Rule 8 states that for a Type 2 beneficiary receiving complex Chuna therapy for a non-disk/stenosis condition, the copayment rate is 80%.",
+      "추나요법 + 복잡추나 + 디스크/협착증 외 + 2종: 본인부담률 80% 적용",
+      "Rule 8 (추나요법 + 복잡추나 + 디스크/협착증 외 + 2종) applies, resulting in a 80% copayment rate."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease condition as 디스크/협착증 외 (non-disk/stenosis).",
+        "Find the matching rule: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종.",
+        "Apply rule 8 which states a 80% 본인부담률 (copayment rate).",
+        "Calculate the copayment: 250,000원 * 80% = 200,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify treatment as 복잡추나 for 디스크/협착증 외 condition.",
+        "Locate rule 8: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종: 본인부담률 80%.",
+        "Calculate 80% of 250,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the treatment as 복잡추나.",
+        "Identify the disease as 디스크/협착증 외 (non-disk/stenosis).",
+        "Find the matching rule: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종 (Rule 8).",
+        "Apply the 본인부담률 of 80% to the total treatment cost.",
+        "Calculate the copayment: 250,000원 * 80% = 200,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease as 디스크/협착증 외 (non-disk/stenosis).",
+        "Find the rule matching '추나요법 + 복잡추나 + 디스크/협착증 외 + 2종'.",
+        "Apply rule 8 which states 본인부담률 80%.",
+        "Calculate the copayment: 250,000원 * 80% = 200,000원."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify the treatment as 복잡추나 (complex Chuna therapy).",
+        "Identify the disease as 디스크가 아닌 질환 (non-disc/stenosis related condition).",
+        "Match the conditions to rule 8: 추나요법 + 복잡추나 + 디스크/협착증 외 + 2종.",
+        "Apply the 본인부담률 (copayment rate) of 80% to the total treatment cost of 250,000원 (250,000원 * 80% = 200,000원)."
+      ]
+    ],
+    "vote_distribution": {
+      "200000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "200,000원",
+    "expected_reasoning": "05번 추나요법 표 → 디스크·협착증 외 → 복잡추나 2종 = 80%. 250,000 × 0.80 = 200,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q22",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 조현병 환자가 병원에서 외래 진료를 받았고 진료비가 780,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "39000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as Type 2.",
+      "Identify disease as Schizophrenia (조현병).",
+      "Identify treatment as outpatient (외래) at a hospital (병원급 이상).",
+      "Apply Rule 27: '정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%'.",
+      "Calculate 5% of 780,000원, which is 39,000원."
+    ],
+    "predicted_reason": "Rule 27: 정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%",
+    "all_sample_answers": [
+      "본인부담률 5%",
+      "39000원",
+      "39000원",
+      "39000원",
+      "39,000원"
+    ],
+    "all_sample_reasons": [
+      "정신질환 외래진료 + 조현병 + 병원급 이상에 해당하여 본인부담률 5%가 적용됩니다.",
+      "Rule 27: 정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%",
+      "정신질환 외래진료 중 조현병에 대한 병원급 이상 본인부담률은 5%입니다.",
+      "적용된 규칙은 '정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%' 입니다.",
+      "정신질환 외래진료 시 조현병 환자의 병원급 이상 진료 본인부담률은 5%입니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the condition as 조현병 (schizophrenia).",
+        "Identify the treatment type as 외래 진료 (outpatient treatment).",
+        "Identify the medical institution as 병원급 이상 (hospital level or higher).",
+        "Apply Rule 27, which matches '정신질환 외래진료 + 조현병 + 병원급 이상'."
+      ],
+      [
+        "Identify beneficiary type as Type 2.",
+        "Identify disease as Schizophrenia (조현병).",
+        "Identify treatment as outpatient (외래) at a hospital (병원급 이상).",
+        "Apply Rule 27: '정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%'.",
+        "Calculate 5% of 780,000원, which is 39,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 조현병 (Schizophrenia).",
+        "Identify treatment as 외래 진료 (outpatient) at 병원급 이상 (hospital level or higher).",
+        "Apply Rule 27: 정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%.",
+        "Calculate copayment: 780,000원 * 5% = 39,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 조현병 (schizophrenia).",
+        "Identify treatment as 외래 진료 (outpatient treatment) at a 병원 (hospital급 이상).",
+        "Locate Rule 27: 정신질환 외래진료 + 조현병 + 병원급 이상: 본인부담률 5%.",
+        "Calculate 5% of 780,000원, which is 39,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 조현병.",
+        "Identify treatment type as 외래 진료.",
+        "Identify medical institution as 병원급 이상.",
+        "Apply Rule 27: 정신질환 외래진료 + 조현병 + 병원급 이상, which specifies a copayment rate of 5%.",
+        "Calculate the copayment amount: 780,000원 * 5% = 39,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 1,
+      "39000원": 4
+    },
+    "selected_count": 4,
+    "num_valid_samples": 5,
+    "expected_answer": "39,000원",
+    "expected_reasoning": "정신질환 외래진료 → 조현병 = 병원급 이상 5%. 780,000 × 0.05 = 39,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q23",
+    "difficulty": "hard",
+    "question": "2종 수급권자의 조현병 외 정신질환 환자가 병원에서 외래 진료를 받았고 진료비가 450,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "45,000원",
+    "predicted_reasoning_steps": [
+      "Identify the beneficiary type as Medical Aid Type 2.",
+      "Identify the condition as mental illness other than schizophrenia.",
+      "Identify the treatment as outpatient at a hospital.",
+      "Apply Rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상 has a copayment rate of 10%.",
+      "Calculate the copayment: 450,000원 * 10% = 45,000원."
+    ],
+    "predicted_reason": "정신질환 외래진료 시 조현병 외 정신질환으로 병원급 이상에서 진료받은 2종 수급권자는 본인부담률 10%가 적용됩니다.",
+    "all_sample_answers": [
+      "본인부담률 10%",
+      "45,000원",
+      "45,000원",
+      "본인부담률 10%",
+      "45,000원"
+    ],
+    "all_sample_reasons": [
+      "Rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10% 적용",
+      "정신질환 외래진료 시 조현병 외 정신질환으로 병원급 이상에서 진료받은 2종 수급권자는 본인부담률 10%가 적용됩니다.",
+      "정신질환 외래진료 중 조현병 외 정신질환으로 병원급 이상에서 진료 시 본인부담률 10%가 적용됩니다.",
+      "정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상 본인부담률 10% 적용",
+      "정신질환 외래진료 중 조현병 외 정신질환으로 병원급 이상에서 진료 시 본인부담률 10%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify disease: 조현병 외 정신질환.",
+        "Identify treatment type: 외래 진료.",
+        "Identify medical institution: 병원급 이상.",
+        "Find the most specific matching rule for '정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상'."
+      ],
+      [
+        "Identify the beneficiary type as Medical Aid Type 2.",
+        "Identify the condition as mental illness other than schizophrenia.",
+        "Identify the treatment as outpatient at a hospital.",
+        "Apply Rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상 has a copayment rate of 10%.",
+        "Calculate the copayment: 450,000원 * 10% = 45,000원."
+      ],
+      [
+        "Identify the beneficiary type as 2종 수급권자.",
+        "Identify the disease as 조현병 외 정신질환.",
+        "Identify the treatment type as 외래 진료.",
+        "Identify the medical institution type as 병원급 이상.",
+        "Apply Rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10%.",
+        "Calculate the copayment amount: 450,000원 * 10% = 45,000원."
+      ],
+      [
+        "Identify beneficiary as 2종 수급권자.",
+        "Identify the condition as 조현병 외 정신질환.",
+        "Identify the treatment type as 외래 진료.",
+        "Identify the medical institution as 병원급 이상.",
+        "Apply rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the disease as 조현병 외 정신질환.",
+        "Identify the treatment type as 외래 진료.",
+        "Identify the medical institution as 병원급 이상.",
+        "Apply rule 28: 정신질환 외래진료 + 조현병 외 정신질환 + 병원급 이상: 본인부담률 10%.",
+        "Calculate 10% of 450,000원, which is 45,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "10%": 2,
+      "45000원": 3
+    },
+    "selected_count": 3,
+    "num_valid_samples": 5,
+    "expected_answer": "45,000원",
+    "expected_reasoning": "정신질환 외래진료 → 조현병 외 정신질환 = 병원급 이상 10%. 450,000 × 0.10 = 45,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q24",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 치매 환자가 입원하여 진료비가 6,200,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "310,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify disease as 치매질환 (dementia).",
+      "Identify treatment as 입원 (inpatient).",
+      "Find rule 30: '치매질환 + 입원: 본인부담률 5%' which matches all conditions.",
+      "Calculate the copayment amount: 6,200,000원 * 5% = 310,000원."
+    ],
+    "predicted_reason": "치매질환 입원 진료는 본인부담률 5%가 적용됩니다.",
+    "all_sample_answers": [
+      "310,000원",
+      "310,000원",
+      "310000원",
+      "310000원",
+      "310,000원"
+    ],
+    "all_sample_reasons": [
+      "치매질환 입원 진료는 본인부담률 5%가 적용됩니다.",
+      "치매질환으로 입원한 2종 수급권자는 본인부담률 5%가 적용됩니다.",
+      "치매질환 입원 진료 시 본인부담률 5% 규칙 적용",
+      "Rule 30: 치매질환 입원 시 본인부담률 5% 적용.",
+      "치매질환 입원 본인부담률 5% 규칙 적용"
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 치매질환 (dementia).",
+        "Identify treatment as 입원 (inpatient).",
+        "Find rule 30: '치매질환 + 입원: 본인부담률 5%' which matches all conditions.",
+        "Calculate the copayment amount: 6,200,000원 * 5% = 310,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 치매질환.",
+        "Identify treatment type as 입원.",
+        "Apply rule 30: 치매질환 + 입원: 본인부담률 5%.",
+        "Calculate 5% of 6,200,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the condition as 치매질환 (dementia).",
+        "Identify the treatment setting as 입원 (inpatient).",
+        "Find the most specific rule matching '치매질환 + 입원'.",
+        "Rule 30 states that for 치매질환 + 입원, the 본인부담률 (copayment rate) is 5%.",
+        "Calculate the copayment: 6,200,000원 * 5% = 310,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the condition as 치매질환 (Dementia).",
+        "Identify the case as 입원 (Inpatient).",
+        "Apply rule 30: 치매질환 + 입원: 본인부담률 5%.",
+        "Calculate the copayment: 6,200,000원 * 5% = 310,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the condition as 치매질환 (Dementia).",
+        "Identify the treatment type as 입원 (Inpatient).",
+        "Find the matching rule: 치매질환 + 입원: 본인부담률 5%.",
+        "Calculate the copayment: 6,200,000원 * 5% = 310,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "310000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "310,000원",
+    "expected_reasoning": "치매질환 입원 = 5%. 6,200,000 × 0.05 = 310,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q25",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 조현병 환자가 제2차의료급여기관에서 PET를 찍었고 검사비가 1,400,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "210000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+      "Identify the medical procedure as PET scan, which falls under CT/MRI/PET 등.",
+      "Identify the disease as 조현병 (Schizophrenia), which is a 정신질환 (mental illness).",
+      "Identify the medical institution type as 제2차의료급여기관 (secondary medical institution).",
+      "Apply rule 36: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%.",
+      "Calculate the copayment: 1,400,000원 * 15% = 210,000원."
+    ],
+    "predicted_reason": "적용 규칙: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%",
+    "all_sample_answers": [
+      "210000원",
+      "210,000원",
+      "210,000원",
+      "210000원",
+      "210000원"
+    ],
+    "all_sample_reasons": [
+      "적용 규칙: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%",
+      "CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%",
+      "CT/MRI/PET 등 조현병 등 정신질환자의 제2·3차의료급여기관 본인부담률은 15%입니다.",
+      "적용 규칙: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관은 본인부담률 15%이다.",
+      "CT/MRI/PET 등 검사를 받은 2종 수급권자 조현병 환자의 제2차의료급여기관 진료는 본인부담률 15%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자 (Type 2 beneficiary).",
+        "Identify the medical procedure as PET scan, which falls under CT/MRI/PET 등.",
+        "Identify the disease as 조현병 (Schizophrenia), which is a 정신질환 (mental illness).",
+        "Identify the medical institution type as 제2차의료급여기관 (secondary medical institution).",
+        "Apply rule 36: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%.",
+        "Calculate the copayment: 1,400,000원 * 15% = 210,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the medical service as PET, which falls under CT/MRI/PET 등.",
+        "Identify the disease as 조현병 (schizophrenia).",
+        "Identify the medical institution as 제2차의료급여기관.",
+        "Locate the most specific rule for CT/MRI/PET for schizophrenia patients in a secondary institution.",
+        "Apply Rule 36: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%.",
+        "Calculate 15% of the 1,400,000원 examination fee."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify medical service as PET, falling under CT/MRI/PET 등.",
+        "Identify disease as 조현병 (schizophrenia), which is a 정신질환자 (mental illness).",
+        "Identify medical institution type as 제2차의료급여기관.",
+        "Apply rule 36: CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관: 본인부담률 15%.",
+        "Calculate copayment: 1,400,000원 * 15% = 210,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the condition as 조현병 (schizophrenia) and the procedure as PET scan (CT/MRI/PET 등).",
+        "Identify the medical institution type as 제2차의료급여기관.",
+        "Find the most specific rule: Rule 36 matches 'CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관' with a 본인부담률 of 15%.",
+        "Calculate the copayment: 1,400,000원 * 15% = 210,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify disease as 조현병.",
+        "Identify procedure as PET and medical institution as 제2차의료급여기관.",
+        "Find the most specific rule: Rule 36 (CT/MRI/PET 등 + 조현병 등 정신질환자 + 제2·3차의료급여기관) applies.",
+        "Apply the 본인부담률 of 15% to the total cost of 1,400,000원.",
+        "Calculate the copayment: 1,400,000원 * 15% = 210,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "210000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "210,000원",
+    "expected_reasoning": "CT/MRI/PET → 조현병 등 정신질환자 → 제2·3차의료급여기관 = 15%. 1,400,000 × 0.15 = 210,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q26",
+    "difficulty": "hard",
+    "question": "65세 이상 1종 수급권자가 틀니(시술비 1,500,000원)와 임플란트(시술비 1,000,000원)를 동시에 하면 각각의 본인부담금은 얼마인가요?",
+    "predicted_answer": "틀니 75,000원, 치과 임플란트 100,000원",
+    "predicted_reasoning_steps": [
+      "수급권자 유형 1종, 연령 65세 이상으로 확인됩니다.",
+      "틀니 시술에 대해 규칙 1(65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%)을 적용합니다.",
+      "틀니 본인부담금은 1,500,000원 * 5% = 75,000원입니다.",
+      "치과 임플란트 시술에 대해 규칙 3(65세 이상 + 1종 수급권자 + 치과 임플란트: 본인부담률 10%)을 적용합니다.",
+      "치과 임플란트 본인부담금은 1,000,000원 * 10% = 100,000원입니다."
+    ],
+    "predicted_reason": "65세 이상 1종 수급권자의 틀니 본인부담률 5%와 치과 임플란트 본인부담률 10%를 적용합니다.",
+    "all_sample_answers": [
+      "틀니 75,000원, 치과 임플란트 100,000원",
+      "틀니: 본인부담률 5% (75,000원), 임플란트: 본인부담률 10% (100,000원)",
+      "틀니 본인부담률 5%, 치과 임플란트 본인부담률 10%",
+      "틀니: 본인부담률 5%, 치과 임플란트: 본인부담률 10%",
+      "틀니: 본인부담률 5%, 임플란트: 본인부담률 10%"
+    ],
+    "all_sample_reasons": [
+      "65세 이상 1종 수급권자의 틀니 본인부담률 5%와 치과 임플란트 본인부담률 10%를 적용합니다.",
+      "65세 이상 1종 수급권자의 틀니 본인부담률은 5%, 치과 임플란트 본인부담률은 10%가 적용됩니다.",
+      "65세 이상 1종 수급권자의 틀니 및 치과 임플란트 본인부담률에 대한 규칙을 적용합니다.",
+      "65세 이상 1종 수급권자의 틀니 본인부담률 5%와 치과 임플란트 본인부담률 10% 규칙 적용",
+      "65세 이상 1종 수급권자의 틀니는 본인부담률 5%, 치과 임플란트는 본인부담률 10%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "수급권자 유형 1종, 연령 65세 이상으로 확인됩니다.",
+        "틀니 시술에 대해 규칙 1(65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%)을 적용합니다.",
+        "틀니 본인부담금은 1,500,000원 * 5% = 75,000원입니다.",
+        "치과 임플란트 시술에 대해 규칙 3(65세 이상 + 1종 수급권자 + 치과 임플란트: 본인부담률 10%)을 적용합니다.",
+        "치과 임플란트 본인부담금은 1,000,000원 * 10% = 100,000원입니다."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify age condition as 65세 이상.",
+        "Identify the medical procedures as 틀니 and 치과 임플란트.",
+        "For 틀니, apply Rule 1: '65세 이상 + 1종 수급권자 + 틀니: 본인부담률 5%'.",
+        "For 치과 임플란트, apply Rule 3: '65세 이상 + 1종 수급권자 + 치과 임플란트: 본인부담률 10%'."
+      ],
+      [
+        "수급권자는 1종 수급권자이며 65세 이상임을 확인합니다.",
+        "첫 번째 시술은 틀니임을 확인합니다.",
+        "규칙 1 (65세 이상 + 1종 수급권자 + 틀니)에 따라 본인부담률 5%를 적용합니다.",
+        "두 번째 시술은 치과 임플란트임을 확인합니다.",
+        "규칙 3 (65세 이상 + 1종 수급권자 + 치과 임플란트)에 따라 본인부담률 10%를 적용합니다."
+      ],
+      [
+        "Identify the beneficiary type as 1종 수급권자.",
+        "Identify the age condition as 65세 이상.",
+        "For 틀니, apply rule 1: 65세 이상 + 1종 수급권자 + 틀니.",
+        "For 치과 임플란트, apply rule 3: 65세 이상 + 1종 수급권자 + 치과 임플란트."
+      ],
+      [
+        "Identify the beneficiary type as Medical Aid Type 1.",
+        "Identify the age condition as 65 years or older.",
+        "Identify the first procedure as dentures (틀니).",
+        "Apply Rule 1 for 65세 이상 + 1종 수급권자 + 틀니, resulting in a 5% copayment rate.",
+        "Identify the second procedure as dental implants (치과 임플란트).",
+        "Apply Rule 3 for 65세 이상 + 1종 수급권자 + 치과 임플란트, resulting in a 10% copayment rate."
+      ]
+    ],
+    "vote_distribution": {
+      "틀니75000원치과임플란트100000원": 1,
+      "틀니:5%(75000원)임플란트:10%(100000원)": 1,
+      "틀니5%치과임플란트10%": 1,
+      "틀니:5%치과임플란트:10%": 1,
+      "틀니:5%임플란트:10%": 1
+    },
+    "selected_count": 1,
+    "num_valid_samples": 5,
+    "expected_answer": "틀니 75,000원, 임플란트 100,000원",
+    "expected_reasoning": "04번 표 → 1종 틀니 = 5%, 임플란트 = 10%. 틀니: 1,500,000 × 0.05 = 75,000원. 임플란트: 1,000,000 × 0.10 = 100,000원",
+    "is_correct": false
+  },
+  {
+    "id": "q27",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 16세 청소년이 치아 홈메우기로 입원하여 진료비가 320,000원 발생했습니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "16,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify age as 16세.",
+      "Identify medical condition as 치아 홈메우기.",
+      "Identify treatment type as 입원.",
+      "Match with Rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하.",
+      "Apply 본인부담률 5% to the total 진료비 320,000원."
+    ],
+    "predicted_reason": "의료급여 2종 수급권자 16세 청소년의 치아 홈메우기 입원 진료는 본인부담률 5%가 적용됩니다.",
+    "all_sample_answers": [
+      "16,000원",
+      "16000원",
+      "16,000원",
+      "16,000원",
+      "16000원"
+    ],
+    "all_sample_reasons": [
+      "의료급여 2종 수급권자 16세 청소년의 치아 홈메우기 입원 진료는 본인부담률 5%가 적용됩니다.",
+      "의료급여 2종 수급권자인 16세 이상 18세 이하 청소년이 치아 홈메우기로 입원한 경우 본인부담률은 5%입니다.",
+      "Rule 13 applies: 의료급여 2종 수급권자, 치아 홈메우기, 입원, 16세 이상 ~ 18세 이하, 본인부담률 5%.",
+      "Rule 13: 의료급여 2종 수급권자, 16세 이상 ~ 18세 이하, 치아 홈메우기, 입원 시 본인부담률 5%가 적용됩니다.",
+      "의료급여 2종 수급권자인 16세 이상 18세 이하 청소년의 치아 홈메우기 입원 진료는 본인부담률 5%가 적용됩니다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 16세.",
+        "Identify medical condition as 치아 홈메우기.",
+        "Identify treatment type as 입원.",
+        "Match with Rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하.",
+        "Apply 본인부담률 5% to the total 진료비 320,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 16세, which falls into 16세 이상 ~ 18세 이하.",
+        "Identify the condition as 치아 홈메우기.",
+        "Identify the treatment setting as 입원.",
+        "Match with rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하, which states a 본인부담률 of 5%.",
+        "Calculate the copayment: 320,000원 * 5% = 16,000원."
+      ],
+      [
+        "Identify beneficiary type as Medical Aid Type 2.",
+        "Identify age as 16 years old.",
+        "Identify condition as dental filling (치아 홈메우기).",
+        "Identify case as inpatient (입원).",
+        "Match with Rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하.",
+        "Apply 본인부담률 5% to the total 진료비 of 320,000원.",
+        "Calculate 320,000원 * 5% = 16,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 16세, which falls under 16세 이상 ~ 18세 이하.",
+        "Identify the medical procedure as 치아 홈메우기.",
+        "Identify the care setting as 입원.",
+        "Find the most specific rule: Rule 13 (의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하: 본인부담률 5%).",
+        "Calculate the copayment: 320,000원 * 5% = 16,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 16세, which falls under 16세 이상 ~ 18세 이하.",
+        "Identify the medical procedure as 치아 홈메우기.",
+        "Identify the treatment type as 입원.",
+        "Match with rule 13: 의료급여 2종 수급권자 + 치아 홈메우기 + 입원 + 16세 이상 ~ 18세 이하: 본인부담률 5%.",
+        "Calculate 5% of 320,000원, which is 16,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "16000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "16,000원",
+    "expected_reasoning": "치아 홈메우기 → 입원 → 16세 이상~18세 이하 = 5%. 320,000 × 0.05 = 16,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q28",
+    "difficulty": "hard",
+    "question": "1종 수급권자가 디스크로 복잡추나(치료비 200,000원)와 단순추나(치료비 120,000원)를 각각 받았습니다. 각각의 본인부담금은 얼마인가요?",
+    "predicted_answer": "복잡추나 60,000원, 단순추나 36,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 1종 수급권자.",
+      "Identify disease as 디스크.",
+      "Identify the first treatment as 복잡추나.",
+      "Apply Rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 -> 본인부담률 30%.",
+      "Calculate copayment for 복잡추나: 200,000원 * 30% = 60,000원.",
+      "Identify the second treatment as 단순추나.",
+      "Apply Rule 9: 추나요법 + 단순추나/특수추나 + 디스크/협착증 + 1종 -> 본인부담률 30%.",
+      "Calculate copayment for 단순추나: 120,000원 * 30% = 36,000원."
+    ],
+    "predicted_reason": "1종 수급권자의 디스크 복잡추나는 본인부담률 30%(규칙 5), 단순추나는 본인부담률 30%(규칙 9)가 적용됩니다.",
+    "all_sample_answers": [
+      "복잡추나 60,000원, 단순추나 36,000원",
+      "복잡추나 60,000원, 단순추나 36,000원",
+      "복잡추나 본인부담금 60,000원, 단순추나 본인부담금 36,000원",
+      "복잡추나: 60,000원, 단순추나: 36,000원",
+      "복잡추나: 60,000원, 단순추나: 36,000원"
+    ],
+    "all_sample_reasons": [
+      "1종 수급권자의 디스크 복잡추나는 본인부담률 30%(규칙 5), 단순추나는 본인부담률 30%(규칙 9)가 적용됩니다.",
+      "Rule 5 (추나요법 복잡추나 디스크 1종) and Rule 9 (추나요법 단순추나/특수추나 디스크 1종) were applied.",
+      "1종 수급권자의 디스크 복잡추나 본인부담률 30% (규칙 5) 및 단순추나 본인부담률 30% (규칙 9) 적용",
+      "Applied rule 5 for 복잡추나 and rule 9 for 단순추나, both resulting in a 30% copayment rate for 1종 수급권자 with 디스크.",
+      "Applied Rule 5 for 복잡추나 and Rule 9 for 단순추나, both for a Type 1 beneficiary with a disk condition."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify disease as 디스크.",
+        "Identify the first treatment as 복잡추나.",
+        "Apply Rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 -> 본인부담률 30%.",
+        "Calculate copayment for 복잡추나: 200,000원 * 30% = 60,000원.",
+        "Identify the second treatment as 단순추나.",
+        "Apply Rule 9: 추나요법 + 단순추나/특수추나 + 디스크/협착증 + 1종 -> 본인부담률 30%.",
+        "Calculate copayment for 단순추나: 120,000원 * 30% = 36,000원."
+      ],
+      [
+        "Identify the beneficiary as 1종 수급권자.",
+        "For 복잡추나 with 디스크, apply Rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종.",
+        "Calculate copayment for 복잡추나: 200,000원 * 30% = 60,000원.",
+        "For 단순추나 with 디스크, apply Rule 9: 추나요법 + 단순추나/특수추나 + 디스크/협착증 + 1종.",
+        "Calculate copayment for 단순추나: 120,000원 * 30% = 36,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify disease as 디스크.",
+        "For 복잡추나, apply rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종, resulting in a 30% copayment rate.",
+        "Calculate 복잡추나 copayment: 200,000원 * 30% = 60,000원.",
+        "For 단순추나, apply rule 9: 추나요법 + 단순추나/특수추나 + 디스크/협착증 + 1종, resulting in a 30% copayment rate.",
+        "Calculate 단순추나 copayment: 120,000원 * 30% = 36,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify disease as 디스크.",
+        "For 복잡추나, apply rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종, resulting in 30% copayment.",
+        "Calculate copayment for 복잡추나: 200,000원 * 30% = 60,000원.",
+        "For 단순추나, apply rule 9: 추나요법 + 단순추나/특수추나 + 디스크/협착증 + 1종, resulting in 30% copayment.",
+        "Calculate copayment for 단순추나: 120,000원 * 30% = 36,000원."
+      ],
+      [
+        "Identify beneficiary type as 1종 수급권자.",
+        "Identify disease as 디스크.",
+        "For 복잡추나, apply Rule 5: 추나요법 + 복잡추나 + 디스크/협착증 + 1종 -> 본인부담률 30%.",
+        "Calculate copayment for 복잡추나: 200,000원 * 30% = 60,000원.",
+        "For 단순추나, apply Rule 9: 추나요법 + 단순추나/특수추나 + 디스크/협착증 + 1종 -> 본인부담률 30%.",
+        "Calculate copayment for 단순추나: 120,000원 * 30% = 36,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "복잡추나60000원단순추나36000원": 3,
+      "복잡추나:60000원단순추나:36000원": 2
+    },
+    "selected_count": 3,
+    "num_valid_samples": 5,
+    "expected_answer": "복잡추나 60,000원, 단순추나 36,000원",
+    "expected_reasoning": "05번 표 → 디스크 + 1종: 복잡추나 30%, 단순추나 30%. 복잡추나: 200,000 × 0.30 = 60,000원. 단순추나: 120,000 × 0.30 = 36,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q29",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 유산한 임신부가 제1차의료급여기관에서 CT를 찍었고 검사비가 380,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "19,000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary type as 2종 수급권자.",
+      "Identify the condition as 유산한 임신부 (pregnant woman who had a miscarriage).",
+      "Identify the service as CT scan.",
+      "Identify the medical institution as 제1차의료급여기관.",
+      "Locate Rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%.",
+      "Calculate the copayment: 380,000원 * 5% = 19,000원."
+    ],
+    "predicted_reason": "적용 규칙: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관은 본인부담률 5%입니다.",
+    "all_sample_answers": [
+      "본인부담률 5%",
+      "19,000원",
+      "19,000원",
+      "19,000원",
+      "19,000원"
+    ],
+    "all_sample_reasons": [
+      "규칙 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%",
+      "적용 규칙: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관은 본인부담률 5%입니다.",
+      "CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관에 해당하여 본인부담률 5%가 적용됩니다.",
+      "CT/MRI/PET 등 검사를 받은 유산한 임신부가 제1차의료급여기관을 이용했으므로 본인부담률 5%가 적용됩니다.",
+      "적용규칙: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관 본인부담률 5%"
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify patient condition as 유산한 임신부 and medical procedure as CT.",
+        "Identify medical institution as 제1차의료급여기관.",
+        "Find the most specific rule for CT/MRI/PET 등 for 임신부(유산·사산 포함) at 제1차의료급여기관.",
+        "Rule 32 matches all conditions: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the condition as 유산한 임신부 (pregnant woman who had a miscarriage).",
+        "Identify the service as CT scan.",
+        "Identify the medical institution as 제1차의료급여기관.",
+        "Locate Rule 32: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5%.",
+        "Calculate the copayment: 380,000원 * 5% = 19,000원."
+      ],
+      [
+        "Identify beneficiary as 2종 수급권자.",
+        "Identify condition as 유산한 임신부가 CT 검사를 받은 경우.",
+        "Identify medical institution as 제1차의료급여기관.",
+        "Find the most specific rule: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관.",
+        "Apply the 본인부담률 5% to the 검사비 380,000원."
+      ],
+      [
+        "Identify the beneficiary as a 2종 수급권자.",
+        "Identify the condition as a pregnant woman who had a miscarriage (유산한 임신부) and the service as a CT scan.",
+        "Identify the medical institution as 제1차의료급여기관 (Primary medical aid institution).",
+        "Find the most specific rule: Rule 32 matches 'CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관' with a copayment rate of 5%.",
+        "Calculate the copayment: 380,000원 * 5% = 19,000원."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify the condition as 유산한 임신부 and the procedure as CT.",
+        "Identify the visit type as 외래 and the medical institution as 제1차의료급여기관.",
+        "Find the most specific rule: CT/MRI/PET 등 + 임신부(유산·사산 포함) + 제1차의료급여기관: 본인부담률 5% (Rule 32).",
+        "Calculate the copayment: 380,000원 * 5% = 19,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "5%": 1,
+      "19000원": 4
+    },
+    "selected_count": 4,
+    "num_valid_samples": 5,
+    "expected_answer": "19,000원",
+    "expected_reasoning": "CT/MRI/PET → 임신부(유산·사산 포함) → 제1차의료급여기관 = 5%. 380,000 × 0.05 = 19,000원",
+    "is_correct": true
+  },
+  {
+    "id": "q30",
+    "difficulty": "hard",
+    "question": "2종 수급권자인 생후 6개월 만성질환 아기가 제2차의료급여기관에서 MRI를 찍었고 검사비가 520,000원입니다. 본인부담금은 얼마인가요?",
+    "predicted_answer": "26000원",
+    "predicted_reasoning_steps": [
+      "Identify beneficiary as Type 2.",
+      "Identify age as 6 months (under 1 year old).",
+      "Identify condition as chronic disease.",
+      "Identify procedure as MRI, which is an outpatient diagnostic service.",
+      "Identify medical institution as a second-tier medical aid institution.",
+      "Compare Rule 25 (15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담 없음) and Rule 35 (CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담률 5%).",
+      "Determine Rule 35 is more specific as it directly refers to CT/MRI/PET scans, which includes MRI, while Rule 25 refers to general outpatient care.",
+      "Apply Rule 35, resulting in a 5% copayment.",
+      "Calculate 5% of 520,000 won."
+    ],
+    "predicted_reason": "CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담률 5%.",
+    "all_sample_answers": [
+      "26000원",
+      "26,000원",
+      "26,000원",
+      "26,000원",
+      "26000원"
+    ],
+    "all_sample_reasons": [
+      "CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담률 5%.",
+      "CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담률 5%",
+      "Rule 35, 'CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관' applies, with a copayment rate of 5%.",
+      "CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관의 본인부담률은 5%입니다.",
+      "CT/MRI/PET 등 촬영을 한 1세 미만 만성질환 아기가 제2차의료급여기관에서 진료받은 경우 본인부담률은 5%이다."
+    ],
+    "all_sample_reasoning_steps": [
+      [
+        "Identify beneficiary as Type 2.",
+        "Identify age as 6 months (under 1 year old).",
+        "Identify condition as chronic disease.",
+        "Identify procedure as MRI, which is an outpatient diagnostic service.",
+        "Identify medical institution as a second-tier medical aid institution.",
+        "Compare Rule 25 (15세 이하 아동 + 외래 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담 없음) and Rule 35 (CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담률 5%).",
+        "Determine Rule 35 is more specific as it directly refers to CT/MRI/PET scans, which includes MRI, while Rule 25 refers to general outpatient care.",
+        "Apply Rule 35, resulting in a 5% copayment.",
+        "Calculate 5% of 520,000 won."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 생후 6개월 (1세 미만).",
+        "Identify special condition as 만성질환.",
+        "Identify medical procedure as MRI (CT/MRI/PET 등).",
+        "Identify medical institution type as 제2차의료급여기관.",
+        "Apply rule 35: CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관: 본인부담률 5%.",
+        "Calculate 5% of 520,000원, which is 26,000원."
+      ],
+      [
+        "Identify beneficiary as Medical Aid Type 2.",
+        "Identify age as 6 months (under 1 year old).",
+        "Identify condition as chronic disease.",
+        "Identify medical service as MRI (outpatient imaging).",
+        "Identify medical institution as a secondary medical aid institution.",
+        "Apply Rule 35: CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관.",
+        "Calculate 5% of 520,000 won."
+      ],
+      [
+        "Identify beneficiary type as 2종 수급권자.",
+        "Identify age as 생후 6개월 (1세 미만).",
+        "Identify condition as 만성질환 아기 and medical procedure as MRI (CT/MRI/PET 등).",
+        "Identify medical institution as 제2차의료급여기관.",
+        "Apply the most specific rule: CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관.",
+        "Calculate copayment: 520,000원 * 5% = 26,000원."
+      ],
+      [
+        "Identify beneficiary type: 2종 수급권자.",
+        "Identify age: 생후 6개월 (1세 미만).",
+        "Identify condition: 만성질환 아기.",
+        "Identify medical service: MRI (CT/MRI/PET 등).",
+        "Identify medical institution: 제2차의료급여기관.",
+        "Apply the most specific rule: CT/MRI/PET 등 + 1세 미만 만성질환자 + 제2차의료급여기관 (Rule 35).",
+        "Calculate copayment: 520,000원 * 5% = 26,000원."
+      ]
+    ],
+    "vote_distribution": {
+      "26000원": 5
+    },
+    "selected_count": 5,
+    "num_valid_samples": 5,
+    "expected_answer": "26,000원",
+    "expected_reasoning": "CT/MRI/PET → 1세 미만 만성질환자 → 제2차의료급여기관 = 5%. 520,000 × 0.05 = 26,000원",
+    "is_correct": true
+  }
+]
